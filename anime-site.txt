@@ -1,0 +1,28 @@
+Anime Site
+
+What can we do - 
+Ability to vote
+Ability to make comments on anime
+Ability to have a collection of animes (When you register, you choose which genres you like and these are suggested to you on your profile)
+Trailers and images
+Page/component transitions
+Similar to anichart site
+
+
+Technologies - 
+
+React
+Webpack (with hot reloading) - https://www.valentinog.com/blog/babel/ https://dev.to/siradji/react-without-create-react-app-start-building-your-react-project-like-a-professional-1hih 
+React-testing-library - https://testing-library.com/docs/react-testing-library/intro
+jest-dom - (extends functionality) https://testing-library.com/docs/ecosystem-jest-dom
+Jest - https://jestjs.io/docs/en/getting-started
+Cypress - https://www.cypress.io/
+GSAP - Animations
+Highway - Transitions
+esLint
+React-router
+Emotion - https://emotion.sh/docs/install? https://github.com/emotion-js/emotion/tree/master/packages/babel-preset-css-prop
+SASS
+prop-types - https://www.npmjs.com/package/prop-types
+
+
