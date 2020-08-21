@@ -26,3 +26,4 @@ SASS
 prop-types - https://www.npmjs.com/package/prop-types
 
 
+Placement preview - Campaign links to filtered campaign which shows related placements/Ads/creatives

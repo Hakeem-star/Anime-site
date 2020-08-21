@@ -1,6 +1,7 @@
 import React from "react";
 import { jsx, css } from "@emotion/core";
 import PropTypes from "prop-types";
+import { Link } from "react-router-dom";
 
 const headerStyle = css`
   color: red;
@@ -48,52 +49,52 @@ export default function Header({ setBgState }) {
     <header css={headerStyle}>
       <ul className="nav">
         <li>
-          <a
+          <Link
             onClick={(e) => {
               setBgState(
                 "/src/images/gabriel-alenius-USXfF_ONUGo-unsplash.jpg"
               );
             }}
-            href="#"
+            to="/winter"
             className="winter"
           >
             Winter
-          </a>
+          </Link>
         </li>
         <li>
-          <a
+          <Link
             onClick={(e) => {
               setBgState("/src/images/masaaki-komori-Z8TQv3yKQd4-unsplash.jpg");
             }}
-            href="#"
+            to="/spring"
             className="spring"
           >
             Spring
-          </a>
+          </Link>
         </li>
         <li>
-          <a
+          <Link
             onClick={(e) => {
               setBgState("/src/images/sean-o-KMn4VEeEPR8-unsplash.jpg");
             }}
-            href="#"
+            to="/summer"
             className="summer"
           >
             Summer
-          </a>
+          </Link>
         </li>
         <li>
-          <a
+          <Link
             onClick={(e) => {
               setBgState(
                 "/src/images/kristian-seedorff-BvUicqkaZZ0-unsplash.jpg"
               );
             }}
-            href="#"
+            to="/fall"
             className="fall"
           >
             Fall
-          </a>
+          </Link>
         </li>
       </ul>
     </header>

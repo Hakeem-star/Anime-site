@@ -9,6 +9,8 @@ const query = `
       averageScore
       title {
         english
+        romaji
+        native
       }
       genres
       season
@@ -51,7 +53,7 @@ const query = `
 function queryVariables(season) {
   return { variables: { season } };
 }
-export async function getSeasonData(season) {
+async function getSeasonData(season) {
   return await Axios.post("https://graphql.anilist.co", {
     query,
     ...queryVariables(season),
@@ -59,3 +61,5 @@ export async function getSeasonData(season) {
     console.log(error);
   });
 }
+
+module.exports = { getSeasonData };

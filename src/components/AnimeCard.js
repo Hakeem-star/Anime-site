@@ -42,6 +42,7 @@ export default function AnimeCard({ animeData }) {
     title,
     trailer,
   } = animeData;
+
   return (
     <div css={AnimeCardStyle}>
       <div css={ratingsBlockContainerStyle} className="ratings-container">
@@ -100,7 +101,7 @@ export default function AnimeCard({ animeData }) {
           line-height: 1.2;
         `}
       >
-        <p>{title.english}</p>
+        <p>{title.romaji}</p>
         <div></div>
       </div>
       <div

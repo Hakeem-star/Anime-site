@@ -4,8 +4,8 @@ import AnimeCard from "../components/AnimeCard";
 import Header from "../components/header";
 import Background from "../components/Background";
 import Axios from "axios";
-import { getSeasonData } from "../utils/API/AnilistGraphQL/graphQLQueries";
 import AnimeCardsList from "../components/AnimeCardsList";
+import { Route, Redirect, BrowserRouter as Router } from "react-router-dom";
 
 export default function Home() {
   const [bgState, setBgState] = useState(
@@ -13,27 +13,39 @@ export default function Home() {
   );
   const [seasonData, setSeasonData] = useState([]);
   useEffect(() => {
-    (async function getSeasonDataCover() {
-      const seasonData = await getSeasonData("WINTER");
-      setSeasonData(seasonData.data.data.Page.media);
-      console.log(seasonData.data.data.Page.media);
-    })();
+    Axios.get("/api/seasons/WINTER")
+      .then((res) => {
+        setSeasonData(res.data);
+      })
+      .catch((err) => {
+        console.log(err);
+      });
   }, []);
 
   return (
-    <>
-      <Header setBgState={setBgState} />
-      <section
-        css={css`
-          width: 85%;
-          margin: 170px auto 0;
-          position: relative;
-          z-index: 1;
-        `}
-      >
-        <AnimeCardsList seasonData={seasonData}></AnimeCardsList>
-      </section>
-      <Background bgState={bgState} />
-    </>
+    <Router>
+      <Route exact path="/">
+        <Redirect to="/winter" />
+      </Route>
+      <Route
+        path="/"
+        render={() => (
+          <>
+            <Header setBgState={setBgState} />
+            <section
+              css={css`
+                width: 85%;
+                margin: 170px auto 0;
+                position: relative;
+                z-index: 1;
+              `}
+            >
+              <AnimeCardsList seasonData={seasonData}></AnimeCardsList>
+            </section>
+            <Background bgState={bgState} />
+          </>
+        )}
+      ></Route>
+    </Router>
   );
 }
