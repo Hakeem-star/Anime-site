@@ -1,134 +1,39 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import { jsx, css } from "@emotion/core";
 import AnimeCard from "../components/AnimeCard";
+import Header from "../components/header";
+import Background from "../components/Background";
+import Axios from "axios";
+import { getSeasonData } from "../utils/API/AnilistGraphQL/graphQLQueries";
+import AnimeCardsList from "../components/AnimeCardsList";
 
-const homeStyle = css`
-  color: red;
-  font-size: 50px;
-  width: 100%;
-  height: 100px;
-  z-index: 1;
-  position: relative;
-  display: grid;
-  place-content: center;
-  .nav {
-    display: flex;
-    width: 370px;
-    margin: auto;
-    justify-content: space-between;
-    font-family: overpass;
-    font-size: 1.4rem;
-    a {
-      text-decoration: none;
-    }
-    a:visited {
-      color: black;
-    }
-    .winter:hover {
-      color: #79d0f2;
-    }
-    .spring:hover {
-      color: #add90d;
-    }
-    .summer:hover {
-      color: #f2bf27;
-    }
-    .fall:hover {
-      color: #f27d16;
-    }
-  }
-`;
-const bg = css`
-  position: absolute;
-  top: 0;
-  width: 100vw;
-  height: 100vh;
-  background-image: url("/src/images/masaaki-komori-Z8TQv3yKQd4-unsplash.jpg");
-  background-size: cover;
-  background-position: center;
-  background-attachment: fixed;
-`;
 export default function Home() {
   const [bgState, setBgState] = useState(
     "/src/images/masaaki-komori-Z8TQv3yKQd4-unsplash.jpg"
   );
+  const [seasonData, setSeasonData] = useState([]);
+  useEffect(() => {
+    (async function getSeasonDataCover() {
+      const seasonData = await getSeasonData("WINTER");
+      setSeasonData(seasonData.data.data.Page.media);
+      console.log(seasonData.data.data.Page.media);
+    })();
+  }, []);
+
   return (
     <>
-      <header css={homeStyle}>
-        <ul className="nav">
-          <li>
-            <a
-              onClick={(e) => {
-                setBgState(
-                  "/src/images/gabriel-alenius-USXfF_ONUGo-unsplash.jpg"
-                );
-              }}
-              href="#"
-              className="winter"
-            >
-              Winter
-            </a>
-          </li>
-          <li>
-            <a
-              onClick={(e) => {
-                setBgState(
-                  "/src/images/masaaki-komori-Z8TQv3yKQd4-unsplash.jpg"
-                );
-              }}
-              href="#"
-              className="spring"
-            >
-              Spring
-            </a>
-          </li>
-          <li>
-            <a
-              onClick={(e) => {
-                setBgState("/src/images/sean-o-KMn4VEeEPR8-unsplash.jpg");
-              }}
-              href="#"
-              className="summer"
-            >
-              Summer
-            </a>
-          </li>
-          <li>
-            <a
-              onClick={(e) => {
-                setBgState(
-                  "/src/images/kristian-seedorff-BvUicqkaZZ0-unsplash.jpg"
-                );
-              }}
-              href="#"
-              className="fall"
-            >
-              Fall
-            </a>
-          </li>
-        </ul>
-      </header>
+      <Header setBgState={setBgState} />
       <section
         css={css`
           width: 85%;
           margin: 170px auto 0;
           position: relative;
           z-index: 1;
-          grid-template-columns: auto auto;
-          grid-template-rows: auto;
         `}
       >
-        <AnimeCard></AnimeCard>
+        <AnimeCardsList seasonData={seasonData}></AnimeCardsList>
       </section>
-      <div
-        css={[
-          bg,
-          css`
-            background-image: url(${bgState});
-          `,
-        ]}
-        className="bg"
-      ></div>
+      <Background bgState={bgState} />
     </>
   );
 }

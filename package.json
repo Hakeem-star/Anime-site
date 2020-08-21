@@ -13,6 +13,7 @@
   "license": "ISC",
   "devDependencies": {
     "@babel/core": "^7.11.1",
+    "@babel/plugin-transform-runtime": "^7.11.0",
     "@babel/preset-env": "^7.11.0",
     "@babel/preset-react": "^7.10.4",
     "@testing-library/jest-dom": "^5.11.3",
@@ -34,6 +35,7 @@
   "dependencies": {
     "@emotion/babel-preset-css-prop": "^10.0.27",
     "@emotion/core": "^10.0.35",
+    "axios": "^0.19.2",
     "babel-jest": "^26.3.0",
     "cypress": "^5.0.0",
     "prop-types": "^15.7.2",

@@ -11,6 +11,8 @@ const AnimeCardStyle = css`
   border: 1px solid #0000ff1a;
   border-radius: 10px;
   background: #f0f8ff59;
+  margin-bottom: 80px;
+  justify-self: center;
 `;
 
 const ratingsBlockContainerStyle = css`
@@ -27,13 +29,35 @@ const ratingsBlockStyle = css`
   border-radius: 9px 9px 0 0;
 `;
 
-const genres = ["action", "adventure", "sports", "Isekai"];
+// const genres = ["action", "adventure", "sports", "Isekai"];
 
-export default function AnimeCard() {
+export default function AnimeCard({ animeData }) {
+  const {
+    averageScore,
+    coverImage,
+    description,
+    genres,
+    id,
+    popularity,
+    title,
+    trailer,
+  } = animeData;
   return (
     <div css={AnimeCardStyle}>
       <div css={ratingsBlockContainerStyle} className="ratings-container">
-        <div css={ratingsBlockStyle}></div>
+        <div
+          css={[
+            ratingsBlockStyle,
+            css`
+              background: linear-gradient(
+                to right,
+                #33ff00 0%,
+                #33ff00 ${averageScore}%,
+                #ff0000 ${averageScore}% 100%
+              );
+            `,
+          ]}
+        ></div>
       </div>
 
       <div
@@ -62,11 +86,11 @@ export default function AnimeCard() {
           margin-top: 20px;
           margin-right: 20px;
           top: 51px;
-          padding: 10px;
+          padding: 10px 30px;
           border-radius: 5px;
           font-size: 1.1rem;
           z-index: 1;
-          width: 320px;
+          max-width: 320px;
           box-shadow: -3px 1px 5px 0px #65656552;
           background-color: #f9f9f9cf;
           color: rgb(110, 133, 158);
@@ -76,7 +100,7 @@ export default function AnimeCard() {
           line-height: 1.2;
         `}
       >
-        <p> Re:Zero kara Hajimeru Isekai Seikatsu 2nd Season</p>
+        <p>{title.english}</p>
         <div></div>
       </div>
       <div
@@ -87,7 +111,8 @@ export default function AnimeCard() {
           background-color: red;
           border-radius: 5px;
           margin: 20px;
-          background-image: url(${imagePath});
+          background-image: url(${coverImage.extraLarge});
+          background-size: cover;
           box-shadow: -3px 1px 11px 4px #65656552;
         `}
         className="image-card"
@@ -111,22 +136,18 @@ export default function AnimeCard() {
           font-weight: 400;
           font-size: 0.9rem;
           line-height: 1.2;
+          overflow: auto;
         `}
         className="synopsis-card"
       >
-        <p>
-          The first cour of the second season of Re:Zero kara Hajimeru Isekai
-          Seikatsu. Even after dying countless times, Subaru finally ended the
-          threat of the White Whale and defeated the Witch Cult's Sin Archbishop
-          representing sloth, Petelgeuse Romaneeconti. But only shortly after
-          overcoming a tragic ending and reuniting with his beloved Emilia,
-          Subaru learns that Rem has been erased from this world, having fallen
-          victim to the White Whale's Fog of Elimination in the midst of
-          Subaru's death loop. With the White Whale now gone, Subaru and Emilia
-          are forced to confront a reality they never dreamed would happen.
-        </p>
+        <p
+          css={css`
+            padding-bottom: 30px;
+          `}
+          dangerouslySetInnerHTML={{ __html: description }}
+        ></p>
       </div>
-      <GenrePillList genres={genres} />
+      <GenrePillList colour={coverImage.color} genres={genres} />
     </div>
   );
 }

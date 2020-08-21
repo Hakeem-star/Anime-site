@@ -1,12 +1,14 @@
 import { css } from "@emotion/core";
 
 const GlobalStyle = css`
+  /* Custom cursor */
   html {
     cursor: url("src/images/icons8-naruto-sign-32.png"), auto;
   }
 
   /* Fonts */
   @import url("https://fonts.googleapis.com/css2?family=Overpass:wght@100;200;300;400;600&display=swap");
+
   /* CSS reset */
   html,
   body,

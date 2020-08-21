@@ -16,11 +16,18 @@ const GenrePillListStyle = css`
   justify-items: center;
 `;
 
-export default function GenrePillList({ genres }) {
+export default function GenrePillList({ genres, colour }) {
+  const maximumGenres = genres.length > 4 ? genres.slice(3) : genres;
   return (
     <div css={GenrePillListStyle}>
-      {genres.map((genre) => (
-        <GenrePill text={genre} />
+      {maximumGenres.map((genre) => (
+        <GenrePill
+          colorOveride={css`
+            background-color: ${colour};
+          `}
+          key={genre}
+          text={genre}
+        />
       ))}
     </div>
   );
