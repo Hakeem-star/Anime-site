@@ -9,13 +9,13 @@ const port = process.env.PORT || 5000;
 app.use(cors());
 app.use(express.json());
 
-app.get("/*", function (req, res) {
-  res.sendFile(path.join(__dirname, "../src/index.html"), function (err) {
-    if (err) {
-      res.status(500).send(err);
-    }
-  });
-});
+// app.get("/*", function (req, res) {
+//   res.sendFile(path.join(__dirname, "../src/index.html"), function (err) {
+//     if (err) {
+//       res.status(500).send(err);
+//     }
+//   });
+// });
 
 /////////////////////////////////////
 // Get Seasonal Anime Data

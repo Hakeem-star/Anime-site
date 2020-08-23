@@ -1,29 +1,59 @@
 import React, { useState, useEffect } from "react";
 import { jsx, css } from "@emotion/core";
-import AnimeCard from "../components/AnimeCard";
 import Header from "../components/header";
 import Background from "../components/Background";
 import Axios from "axios";
 import AnimeCardsList from "../components/AnimeCardsList";
-import { Route, Redirect, BrowserRouter as Router } from "react-router-dom";
+import { Route, Redirect, useHistory } from "react-router-dom";
 
 export default function Home() {
   const [bgState, setBgState] = useState(
     "/src/images/masaaki-komori-Z8TQv3yKQd4-unsplash.jpg"
   );
   const [seasonData, setSeasonData] = useState([]);
+  const history = useHistory();
+
   useEffect(() => {
-    Axios.get("/api/seasons/WINTER")
-      .then((res) => {
-        setSeasonData(res.data);
-      })
-      .catch((err) => {
-        console.log(err);
-      });
+    //get the correct season on mount and use that to call the API
+    const seasons = ["winter", "summer", "spring", "fall"];
+    const seasonPath = window.location.pathname.split("/")[1].toUpperCase();
+    const matchSeason = (season) => {
+      return season.toUpperCase() === seasonPath;
+    };
+    if (seasons.some(matchSeason)) {
+      Axios.get(`/api/seasons/${seasonPath}`)
+        .then((res) => {
+          console.log(res);
+          setSeasonData(res.data);
+        })
+        .catch((err) => {
+          console.log(err);
+        });
+    }
   }, []);
 
+  useEffect(() => {
+    //Set up a listener to get the right season and use that to call the API
+    history.listen((location) => {
+      const seasons = ["winter", "summer", "spring", "fall"];
+      const seasonPath = window.location.pathname.split("/")[1].toUpperCase();
+      const matchSeason = (season) => {
+        return season.toUpperCase() === seasonPath;
+      };
+      if (seasons.some(matchSeason)) {
+        Axios.get(`/api/seasons/${seasonPath}`)
+          .then((res) => {
+            setSeasonData(res.data);
+          })
+          .catch((err) => {
+            console.log(err);
+          });
+      }
+    });
+  }, [history]);
+
   return (
-    <Router>
+    <>
       <Route exact path="/">
         <Redirect to="/winter" />
       </Route>
@@ -35,7 +65,7 @@ export default function Home() {
             <section
               css={css`
                 width: 85%;
-                margin: 170px auto 0;
+                margin: 85px auto 0;
                 position: relative;
                 z-index: 1;
               `}
@@ -46,6 +76,6 @@ export default function Home() {
           </>
         )}
       ></Route>
-    </Router>
+    </>
   );
 }

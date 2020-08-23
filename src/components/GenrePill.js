@@ -3,14 +3,16 @@ import { css } from "@emotion/core";
 
 const pillStyle = css`
   /* width: 80px; */
-  height: 22px;
+  height: max-content;
+  text-align: center;
   background-color: hsl(240 100% 69% / 1);
   display: grid;
   place-items: center;
   border-radius: 10px;
   color: white;
   line-height: 1.1;
-  padding: 0 15px;
+  padding: 5px 10px;
+  white-space: nowrap;
 `;
 
 export default function GenrePill({ text, colorOveride }) {

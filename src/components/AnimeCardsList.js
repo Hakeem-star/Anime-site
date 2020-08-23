@@ -8,6 +8,9 @@ export default function AnimeCardsList({ seasonData }) {
       css={css`
         display: grid;
         grid-template-columns: auto auto;
+        @media (max-width: 1300px) {
+          grid-template-columns: auto;
+        }
         grid-template-rows: auto;
       `}
     >

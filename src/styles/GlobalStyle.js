@@ -1,9 +1,12 @@
 import { css } from "@emotion/core";
 
 const GlobalStyle = css`
+  @media (max-width: 1300px) {
+    font-size: 14px;
+  }
   /* Custom cursor */
   html {
-    cursor: url("src/images/icons8-naruto-sign-32.png"), auto;
+    cursor: url("src/images/icons8-naruto-sign-32(copy).png"), auto;
   }
 
   /* Fonts */

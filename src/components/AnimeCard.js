@@ -5,7 +5,8 @@ import GenrePillList from "./GenrePillList";
 const imagePath = "src/images/reZero.jpg";
 
 const AnimeCardStyle = css`
-  width: 740px;
+  max-width: 740px;
+  width: 95%;
   height: 410px;
   position: relative;
   border: 1px solid #0000ff1a;
@@ -93,7 +94,7 @@ export default function AnimeCard({ animeData }) {
           z-index: 1;
           max-width: 320px;
           box-shadow: -3px 1px 5px 0px #65656552;
-          background-color: #f9f9f9cf;
+          background-color: #f9f9f9eb;
           color: rgb(110, 133, 158);
           font-family: "Overpass", sans-serif;
           font-weight: bold;
@@ -121,12 +122,13 @@ export default function AnimeCard({ animeData }) {
       <div
         css={css`
           position: absolute;
-          width: 390px;
+          max-width: 390px;
+          width: 50%;
           height: 240px;
-          background-color: #f9f9f9cf;
+          background-color: #f9f9f9eb;
           border-radius: 5px;
           right: 0;
-          bottom: 0;
+          top: 120px;
           margin: 20px;
           padding: 20px;
           display: grid;
@@ -138,6 +140,32 @@ export default function AnimeCard({ animeData }) {
           font-size: 0.9rem;
           line-height: 1.2;
           overflow: auto;
+          ::-webkit-scrollbar {
+            width: 10px;
+            opacity: 0;
+          }
+
+          /* Track */
+          ::-webkit-scrollbar-track {
+             {
+              /* background: #f1f1f1; */
+            }
+          }
+          &:hover {
+            ::-webkit-scrollbar-thumb {
+              background: #888;
+            }
+          }
+          /* Handle */
+          ::-webkit-scrollbar-thumb {
+            background: #8880;
+          }
+          transition: background 0.8s ease;
+
+          /* Handle on hover */
+          ::-webkit-scrollbar-thumb:hover {
+            background: #555;
+          }
         `}
         className="synopsis-card"
       >
