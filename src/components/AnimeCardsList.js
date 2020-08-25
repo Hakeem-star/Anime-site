@@ -1,5 +1,5 @@
 import React from "react";
-import AnimeCard from "./AnimeCard";
+import AnimeCard from "./AnimeCard/AnimeCard";
 import { css } from "@emotion/core";
 
 export default function AnimeCardsList({ seasonData }) {

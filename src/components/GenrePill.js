@@ -1,6 +1,6 @@
 import React from "react";
 import { css } from "@emotion/core";
-
+//Needs to filter on click
 const pillStyle = css`
   /* width: 80px; */
   height: max-content;
@@ -13,6 +13,7 @@ const pillStyle = css`
   line-height: 1.1;
   padding: 5px 10px;
   white-space: nowrap;
+  cursor: pointer;
 `;
 
 export default function GenrePill({ text, colorOveride }) {
