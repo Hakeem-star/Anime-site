@@ -1,6 +1,8 @@
 import React, { useContext } from "react";
 import { css } from "@emotion/core";
 import { AnimeCardContext } from "./AnimeCard";
+import AnimeCardGallery from "./AnimeCardGallery";
+import AnimeRecommendations from "./AnimeRecommendations";
 
 const titleContainerStyle = css`
   color: white;
@@ -28,9 +30,28 @@ const titleContainerStyle = css`
 `;
 
 export default function AnimeCardTitle() {
-  const { title, imageHoverTitleStyles, openDiscussionStyles } = useContext(
-    AnimeCardContext
-  );
+  const {
+    title,
+    imageHoverTitleStyles,
+    openDiscussionStyles,
+    galleryImages,
+    galleryPageVisibleState,
+    recommendationsPageVisibleState,
+    recommendationsData,
+  } = useContext(AnimeCardContext);
+
+  function innerPageToDisplay() {
+    if (galleryPageVisibleState) {
+      return galleryImages.gfycats ? (
+        <AnimeCardGallery images={galleryImages.gfycats} />
+      ) : null;
+    } else if (
+      recommendationsPageVisibleState &&
+      recommendationsData.length > 0
+    ) {
+      return <AnimeRecommendations recommendations={recommendationsData} />;
+    }
+  }
 
   return (
     <div
@@ -38,10 +59,12 @@ export default function AnimeCardTitle() {
       css={[titleContainerStyle, imageHoverTitleStyles, openDiscussionStyles]}
     >
       <div>
-        <p>{title.romaji}</p>
+        <p>{title.english || title.romaji}</p>
       </div>
       {/* //discussion thread */}
-      <div></div>
+
+      {/* If gyfcats are in the result */}
+      {innerPageToDisplay()}
     </div>
   );
 }

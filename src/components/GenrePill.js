@@ -14,8 +14,17 @@ const pillStyle = css`
   padding: 5px 10px;
   white-space: nowrap;
   cursor: pointer;
+  border: 0;
 `;
 
-export default function GenrePill({ text, colorOveride }) {
-  return <div css={[pillStyle, colorOveride]}>{text}</div>;
+export default function GenrePill({ text, colorOveride, pillClick }) {
+  return (
+    <button
+      title={`Filter page by ${text}`}
+      onClick={pillClick}
+      css={[pillStyle, colorOveride]}
+    >
+      {text}
+    </button>
+  );
 }

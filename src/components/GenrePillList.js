@@ -1,7 +1,9 @@
-import React from "react";
+import React, { useContext } from "react";
 import GenrePill from "./GenrePill";
 import { css } from "@emotion/core";
 import PropTypes from "prop-types";
+import { seasonsHomePage } from "../Pages/Home";
+import filterSeasonData from "../utils/filterSeasonData";
 
 const GenrePillListStyle = css`
   font-family: overpass;
@@ -21,11 +23,16 @@ const GenrePillListStyle = css`
 `;
 
 export default function GenrePillList({ genres, colour, addCss }) {
+  const { setSeasonData, rawSeasonData } = useContext(seasonsHomePage);
   const maximumGenres = genres.length > 4 ? genres.slice(3) : genres;
   return (
     <div css={[GenrePillListStyle, addCss]}>
       {maximumGenres.map((genre) => (
         <GenrePill
+          pillClick={() => {
+            console.log(genre);
+            filterSeasonData(genre, setSeasonData, rawSeasonData);
+          }}
           colorOveride={[
             css`
               background-color: ${colour};

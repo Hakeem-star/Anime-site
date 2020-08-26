@@ -1,15 +1,19 @@
 import React, { useState, useEffect } from "react";
-import { jsx, css } from "@emotion/core";
+import { css } from "@emotion/core";
 import Header from "../components/header";
 import Background from "../components/Background";
 import Axios from "axios";
 import AnimeCardsList from "../components/AnimeCardsList";
 import { Route, Redirect, useHistory } from "react-router-dom";
 
+export const seasonsHomePage = React.createContext();
+
 export default function Home() {
   const [bgState, setBgState] = useState(
     "/src/images/masaaki-komori-Z8TQv3yKQd4-unsplash.jpg"
   );
+
+  const [rawSeasonData, setRawSeasonData] = useState([]);
   const [seasonData, setSeasonData] = useState([]);
   const history = useHistory();
 
@@ -24,7 +28,7 @@ export default function Home() {
       Axios.get(`/api/seasons/${seasonPath}`)
         .then((res) => {
           console.log(res);
-          setSeasonData(res.data);
+          setRawSeasonData(res.data);
         })
         .catch((err) => {
           console.log(err);
@@ -43,7 +47,7 @@ export default function Home() {
       if (seasons.some(matchSeason)) {
         Axios.get(`/api/seasons/${seasonPath}`)
           .then((res) => {
-            setSeasonData(res.data);
+            setRawSeasonData(res.data);
           })
           .catch((err) => {
             console.log(err);
@@ -52,6 +56,9 @@ export default function Home() {
     });
   }, [history]);
 
+  useEffect(() => {
+    setSeasonData(rawSeasonData);
+  }, [rawSeasonData]);
   return (
     <>
       <Route exact path="/">
@@ -70,7 +77,14 @@ export default function Home() {
                 z-index: 1;
               `}
             >
-              <AnimeCardsList seasonData={seasonData}></AnimeCardsList>
+              <seasonsHomePage.Provider
+                value={{
+                  setSeasonData,
+                  rawSeasonData,
+                }}
+              >
+                <AnimeCardsList seasonData={seasonData}></AnimeCardsList>
+              </seasonsHomePage.Provider>
             </section>
             <Background bgState={bgState} />
           </>

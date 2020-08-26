@@ -1,4 +1,4 @@
-import React, { useState, useRef, useContext } from "react";
+import React, { useState, useRef, useContext, useEffect } from "react";
 import { jsx, css, keyframes } from "@emotion/core";
 import GenrePillList from "../GenrePillList";
 import PropTypes from "prop-types";
@@ -9,6 +9,7 @@ import { BsChatDots } from "react-icons/bs";
 import { AiFillHeart } from "react-icons/ai";
 import AnimeCardOptions from "./AnimeCardOptions";
 import AnimeCardTitle from "./AnimeCardTitle";
+import Axios from "axios";
 
 export const AnimeCardContext = React.createContext();
 
@@ -41,6 +42,7 @@ const ratingsBlockStyle = css`
 
 export default function AnimeCard({ animeData }) {
   const {
+    relations,
     averageScore,
     coverImage,
     description,
@@ -58,6 +60,14 @@ export default function AnimeCard({ animeData }) {
   const [pillButtonsHoverStyles, setPillButtonsHoverStyles] = useState({});
   const [imageOverlayHoverStyles, setImageOverlayHoverStyles] = useState({});
   const [openDiscussionStyles, setOpenDiscussionStyles] = useState({});
+  const [galleryPageVisibleState, setGalleryPageVisibleState] = useState(false);
+  const [
+    recommendationsPageVisibleState,
+    setRecommendationsPageVisibleState,
+  ] = useState(false);
+
+  const [galleryImages, setgalleryImages] = useState({});
+  const [recommendationsData, setRecommendationsData] = useState([]);
 
   function imageCardHoverSylesChange() {
     //set new styles
@@ -117,12 +127,48 @@ export default function AnimeCard({ animeData }) {
       },
     };
   }
+
+  useEffect(() => {
+    //Get Anime Review data
+    if (recommendationsPageVisibleState)
+      Axios.get(`/api/seasons/reviews/${id}`).then((res) => {
+        console.log("CARD", res.data[0].recommendations.nodes);
+        setRecommendationsData(res.data[0].recommendations.nodes);
+      });
+  }, [recommendationsPageVisibleState]);
+
+  useEffect(() => {
+    // console.log(title.english, title.romaji);
+    //Get Anime Gallery data
+    //We need to use relations where we can to increase the search results
+    const dataInGallery = Object.keys(galleryImages);
+    if (galleryPageVisibleState && dataInGallery < 1) {
+      const cleanName = (title.english || title.romaji).replace(
+        /[^0-9a-zA-Z:,]+/,
+        " "
+      );
+
+      Axios.get(`/api/gyfcat/anime/${cleanName}`).then((res) => {
+        console.log(res.data);
+        setgalleryImages(res.data);
+
+        // setExtraTitleContent(<GalleryList>galleryImages</GalleryList>)
+      });
+    }
+  }, [galleryPageVisibleState]);
+
   return (
     <AnimeCardContext.Provider
       value={{
         imageCardHoverSylesChange,
         imageCardClickedSylesChange,
         setOpenDiscussionStyles,
+        setGalleryPageVisibleState,
+        setRecommendationsPageVisibleState,
+        recommendationsData,
+        recommendationsPageVisibleState,
+        galleryPageVisibleState,
+        galleryImages,
         openDiscussionStyles,
         imageHoverTitleStyles,
         imageCardHoverStyles,
@@ -132,6 +178,7 @@ export default function AnimeCard({ animeData }) {
         coverImage,
         description,
         title,
+        id,
       }}
     >
       <div css={AnimeCardStyle}>

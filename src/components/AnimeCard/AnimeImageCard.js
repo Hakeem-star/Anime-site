@@ -15,6 +15,7 @@ const imageCardStyle = css`
   box-shadow: -3px 1px 11px 4px #65656552;
   transition: width 0.8s ease-out, height 0.8s ease-out, margin 0.8s ease-out;
   overflow: hidden;
+  cursor: pointer;
 `;
 
 export default function AnimeImageCard() {
