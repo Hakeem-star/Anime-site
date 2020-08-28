@@ -14,9 +14,3 @@ router.route(`${/anime/}:anime`).get((req, res) => {
 });
 
 module.exports = router;
-
-//   Axios.get(`https://api.gfycat.com/v1/gfycats/search?search_text=${}`,{
-//     "grant_type":"client_credentials",
-//     "client_id":process.env.GYCAT_CLIENT_ID,
-//     "client_secret":process.env.GYCAT_CLIENT_SECRET
-//   });

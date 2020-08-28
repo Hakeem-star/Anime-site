@@ -5,21 +5,29 @@ import { RiHeartAddLine } from "react-icons/ri";
 import { css } from "@emotion/core";
 import { AnimeCardContext } from "./AnimeCard";
 import { BiDirections } from "react-icons/bi";
+import getAdditionalAnimeInfo from "../../utils/getAdditionalAnimeInfo";
 
-const addToListBtnStyle = css`
-  width: 30px;
-  height: 30px;
-  background-size: 52%;
-  border-radius: 50%;
-  background-image: url("src/images/icons8-plus.svg");
-  background-color: #e8e8e8;
-  background-position: center;
-  background-repeat: no-repeat;
-  cursor: pointer;
+const expandTitleStyles = css`
+  width: 100%;
+  min-height: 100%;
+  min-width: 100%;
+  max-width: 100%;
+  max-height: 100%;
+  background-color: #f9f9f9;
+  margin: 0;
+  top: 0;
+  right: 0;
+`;
+
+const additionalInfoStyles = css`
+  transform: rotateY(180deg);
 `;
 
 export default function AnimeCardOptions() {
   const {
+    id,
+    additionalInfoVisibleState,
+    setAdditionalInfoVisibleState,
     setOpenDiscussionStyles,
     setGalleryPageVisibleState,
     setRecommendationsPageVisibleState,
@@ -48,61 +56,60 @@ export default function AnimeCardOptions() {
       `}
     >
       {/* Show us information about the anime */}
-      <IoIosInformationCircle />
-      <IoMdImages
+      <IoIosInformationCircle
         onClick={() => {
-          //If the review pages are closed, open the expansion
-          if (!recommendationsPageVisibleState) {
+          if (!recommendationsPageVisibleState && !galleryPageVisibleState) {
             //open this thing
             setOpenDiscussionStyles((state) => {
-              return Object.keys(state).length === 0
-                ? css`
-                    width: 100%;
-                    min-height: 100%;
-                    min-width: 100%;
-                    max-width: 100%;
-                    max-height: 100%;
-                    background-color: #f9f9f9;
-                    margin: 0;
-                    top: 0;
-                    right: 0;
-                  `
-                : {};
+              return Object.keys(state).length === 0 ? expandTitleStyles : {};
             });
           }
 
+          //Enable or disable the additional info view
+          //Triggers request to server to get gallery info
+          setAdditionalInfoVisibleState((state) => {
+            //Make sure the others are closed
+            setGalleryPageVisibleState(false);
+            setRecommendationsPageVisibleState(false);
+            return !state;
+          });
+        }}
+      />
+      <IoMdImages
+        onClick={() => {
+          //If the review pages are closed, open the expansion
+          if (!recommendationsPageVisibleState && !additionalInfoVisibleState) {
+            //open this thing
+            setOpenDiscussionStyles((state) => {
+              return Object.keys(state).length === 0 ? expandTitleStyles : {};
+            });
+          }
+          //Enable or disable the gallery view
           //Triggers request to server to get gallery info
           setGalleryPageVisibleState((state) => {
-            //Make sure the review state is closed
+            //Make sure the other options are closed
             setRecommendationsPageVisibleState(false);
+            setAdditionalInfoVisibleState(false);
             return !state;
           });
         }}
       />
       <BiDirections
         onClick={() => {
-          if (!galleryPageVisibleState) {
+          if (!galleryPageVisibleState && !additionalInfoVisibleState) {
             //open this thing
             setOpenDiscussionStyles((state) => {
-              return Object.keys(state).length === 0
-                ? css`
-                    width: 100%;
-                    min-height: 100%;
-                    min-width: 100%;
-                    max-width: 100%;
-                    max-height: 100%;
-                    background-color: #f9f9f9;
-                    margin: 0;
-                    top: 0;
-                    right: 0;
-                  `
-                : {};
+              return Object.keys(state).length === 0 ? expandTitleStyles : {};
             });
           }
           //Enable or disable the reviews
+          //Triggers request to server to get recommendations info
+
           setRecommendationsPageVisibleState((state) => {
-            //Make sure the gallery state is closed
+            //Make sure the other options are closed
             setGalleryPageVisibleState(false);
+            setAdditionalInfoVisibleState(false);
+
             return !state;
           });
         }}
@@ -119,13 +126,6 @@ export default function AnimeCardOptions() {
             setAddedTocollection((state) => !state);
           }}
         />
-        // <div
-        //   className="add-to-list-btn"
-        //   css={addToListBtnStyle}
-        //   onClick={() => {
-        //     setAddedTocollection((state) => !state);
-        //   }}
-        // ></div>
       )}
     </div>
   );

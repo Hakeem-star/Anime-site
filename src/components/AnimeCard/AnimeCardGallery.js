@@ -1,6 +1,7 @@
 import React from "react";
 import { css } from "@emotion/core";
 import { innerTitleContainerGeneralStyle } from "./styles/innerTitleStyles";
+import PropTypes from "prop-types";
 
 export default function AnimeCardGallery({ images }) {
   function filteredImages(images) {
@@ -49,3 +50,6 @@ export default function AnimeCardGallery({ images }) {
     </div>
   );
 }
+AnimeCardGallery.propTypes = {
+  images: PropTypes.array,
+};

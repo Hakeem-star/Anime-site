@@ -2,9 +2,9 @@ import React, { useState, useEffect } from "react";
 import { css } from "@emotion/core";
 import Header from "../components/header";
 import Background from "../components/Background";
-import Axios from "axios";
 import AnimeCardsList from "../components/AnimeCardsList";
 import { Route, Redirect, useHistory } from "react-router-dom";
+import getSeasonData from "../utils/API/getSeasonData";
 
 export const seasonsHomePage = React.createContext();
 
@@ -19,46 +19,21 @@ export default function Home() {
 
   useEffect(() => {
     //get the correct season on mount and use that to call the API
-    const seasons = ["winter", "summer", "spring", "fall"];
-    const seasonPath = window.location.pathname.split("/")[1].toUpperCase();
-    const matchSeason = (season) => {
-      return season.toUpperCase() === seasonPath;
-    };
-    if (seasons.some(matchSeason)) {
-      Axios.get(`/api/seasons/${seasonPath}`)
-        .then((res) => {
-          console.log(res);
-          setRawSeasonData(res.data);
-        })
-        .catch((err) => {
-          console.log(err);
-        });
-    }
+    getSeasonData(setRawSeasonData);
   }, []);
 
   useEffect(() => {
     //Set up a listener to get the right season and use that to call the API
     history.listen((location) => {
-      const seasons = ["winter", "summer", "spring", "fall"];
-      const seasonPath = window.location.pathname.split("/")[1].toUpperCase();
-      const matchSeason = (season) => {
-        return season.toUpperCase() === seasonPath;
-      };
-      if (seasons.some(matchSeason)) {
-        Axios.get(`/api/seasons/${seasonPath}`)
-          .then((res) => {
-            setRawSeasonData(res.data);
-          })
-          .catch((err) => {
-            console.log(err);
-          });
-      }
+      getSeasonData(setRawSeasonData);
     });
   }, [history]);
 
   useEffect(() => {
+    //Whenever the raw data changes, update the season data so it's unfiltered
     setSeasonData(rawSeasonData);
   }, [rawSeasonData]);
+
   return (
     <>
       <Route exact path="/">

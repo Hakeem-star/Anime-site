@@ -107,4 +107,44 @@ async function getAnimeRecommendations(id) {
     console.log(error);
   });
 }
-module.exports = { getSeasonData, getAnimeRecommendations };
+
+const animeAdditionalInformationQuery = `
+query ($id:Int ){
+  Page(page: 1) {
+    media(id: $id ) {
+      id
+   episodes
+      nextAiringEpisode {
+        id
+        timeUntilAiring
+         airingAt
+        episode
+      }
+      streamingEpisodes {
+        title
+        thumbnail
+        url
+        site
+      }
+
+      averageScore
+    }
+  }
+}
+
+`;
+
+async function getAdditionalAnimeInformation(id) {
+  return await Axios.post("https://graphql.anilist.co", {
+    query: animeAdditionalInformationQuery,
+    variables: { id },
+  }).catch(function (error) {
+    console.log(error);
+  });
+}
+
+module.exports = {
+  getSeasonData,
+  getAnimeRecommendations,
+  getAdditionalAnimeInformation,
+};

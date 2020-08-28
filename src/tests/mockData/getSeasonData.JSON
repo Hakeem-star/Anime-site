@@ -1,0 +1,2651 @@
+{
+  "data": {
+    "Page": {
+      "media": [
+        {
+          "id": 106625,
+          "description": "The fourth season of <i>Haikyuu!!</i><br><br>The Karasuno High School Volleyball Club finally won their way into the nationals after an intense battle for the Miyagi Prefecture Spring Tournament qualifiers. As they were preparing for the nationals, Kageyama is invited to go to All-Japan Youth Training Camp. At the same time, Tsukishima is invited to go to a special rookie select training camp for first-years in Miyagi Prefecture. Hinata feels panic that he’s being left behind as one of the first-years and then decides to show up at the Miyagi Prefecture rookie select training camp anyway... <br><br>(Source: Crunchyroll)",
+          "popularity": 63431,
+          "averageScore": 85,
+          "title": {
+            "english": "HAIKYU‼ TO THE TOP",
+            "romaji": "Haikyuu!! TO THE TOP",
+            "native": "ハイキュー!! TO THE TOP"
+          },
+          "relations": {
+            "nodes": [
+              {
+                "title": {
+                  "romaji": "Haikyuu!!",
+                  "english": "Haikyu!!"
+                }
+              },
+              {
+                "title": {
+                  "romaji": "Haikyuu!! Riku VS Kuu",
+                  "english": "HAIKYU‼ LAND VS. AIR"
+                }
+              },
+              {
+                "title": {
+                  "romaji": "Haikyuu!! TO THE TOP 2",
+                  "english": "HAIKYU‼ TO THE TOP Part 2"
+                }
+              }
+            ]
+          },
+          "genres": ["Action", "Comedy", "Drama", "Sports"],
+          "season": "WINTER",
+          "seasonYear": 2020,
+          "startDate": {
+            "year": 2020,
+            "month": 1,
+            "day": 11
+          },
+          "endDate": {
+            "year": 2020,
+            "month": 4,
+            "day": 4
+          },
+          "episodes": 13,
+          "nextAiringEpisode": null,
+          "coverImage": {
+            "extraLarge": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx106625-UR22wB2NuNVi.png",
+            "large": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/medium/bx106625-UR22wB2NuNVi.png",
+            "medium": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/small/bx106625-UR22wB2NuNVi.png",
+            "color": "#f1a150"
+          },
+          "bannerImage": "https://s4.anilist.co/file/anilistcdn/media/anime/banner/106625-wab2Mx4NQqPQ.jpg",
+          "externalLinks": [
+            {
+              "url": "https://www.youtube.com/channel/UCoG-H6mgt8vwZ7cKVhUqNAw",
+              "site": "Youtube"
+            },
+            {
+              "url": "https://twitter.com/animehaikyu_com",
+              "site": "Twitter"
+            },
+            {
+              "url": "https://haikyu.jp/",
+              "site": "Official Site"
+            },
+            {
+              "url": "https://www.crunchyroll.com/haikyu",
+              "site": "Crunchyroll"
+            }
+          ],
+          "trailer": {
+            "id": "IZ8iIHpe4Lg",
+            "site": "youtube",
+            "thumbnail": "https://i.ytimg.com/vi/IZ8iIHpe4Lg/hqdefault.jpg"
+          }
+        },
+        {
+          "id": 104462,
+          "description": "The third season of <i>Toaru Kagaku no Railgun</i>.<br></br>\n\nThe Daihasei Festival has begun, and that of course means that Tokiwadai Middle School—a prestigious all-girls' middle school—is competing too. Despite the participation of the \"Ace of Tokiwadai,\" Mikoto Misaka, the other students who are participating are still putting their utmost effort into winning, no matter how impossible the feat may seem against her might.<br></br>\n\nHowever, not all is fun and games. Due to the the festival, Academy City opens to the outside world, and various factions have begun plotting ways to infiltrate the city. Misaka appears to be on their radar, and as the festival proceeds, people lurking from the shadows begin to emerge...<br></br>\n\nToaru Kagaku no Railgun T brings back the Tokiwadai Ace and her friends as they dive deeper into the dark side of Academy City. From terrorist attacks to ruthless underground projects, anything is possible in this city.<br></br>\n\n(Source: MyAnimeList)",
+          "popularity": 21123,
+          "averageScore": 80,
+          "title": {
+            "english": "A Certain Scientific Railgun T",
+            "romaji": "Toaru Kagaku no Railgun T",
+            "native": "とある科学の超電磁砲T"
+          },
+          "relations": {
+            "nodes": [
+              {
+                "title": {
+                  "romaji": "Toaru Kagaku no Railgun",
+                  "english": "A Certain Scientific Railgun"
+                }
+              },
+              {
+                "title": {
+                  "romaji": "Toaru Kagaku no Railgun S",
+                  "english": "A Certain Scientific Railgun S"
+                }
+              },
+              {
+                "title": {
+                  "romaji": "Toaru Kagaku no Railgun T: Motto Marutto Railgun",
+                  "english": null
+                }
+              }
+            ]
+          },
+          "genres": ["Action", "Sci-Fi"],
+          "season": "WINTER",
+          "seasonYear": 2020,
+          "startDate": {
+            "year": 2020,
+            "month": 1,
+            "day": 10
+          },
+          "endDate": {
+            "year": null,
+            "month": null,
+            "day": null
+          },
+          "episodes": 25,
+          "nextAiringEpisode": {
+            "timeUntilAiring": 87658
+          },
+          "coverImage": {
+            "extraLarge": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx104462-KrVWRvPcR7ci.jpg",
+            "large": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/medium/bx104462-KrVWRvPcR7ci.jpg",
+            "medium": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/small/bx104462-KrVWRvPcR7ci.jpg",
+            "color": "#f17828"
+          },
+          "bannerImage": "https://s4.anilist.co/file/anilistcdn/media/anime/banner/104462-OwuXVJfGJgwy.jpg",
+          "externalLinks": [
+            {
+              "url": "https://twitter.com/toaru_project",
+              "site": "Twitter"
+            },
+            {
+              "url": "http://toaru-project.com/railgun_3/",
+              "site": "Official Site"
+            },
+            {
+              "url": "https://www.funimation.com/shows/a-certain-scientific-railgun/",
+              "site": "Funimation"
+            },
+            {
+              "url": "https://www.crunchyroll.com/a-certain-scientific-railgun",
+              "site": "Crunchyroll"
+            },
+            {
+              "url": "https://www.animelab.com/shows/certain-scientific-railgun",
+              "site": "AnimeLab"
+            },
+            {
+              "url": "https://vrv.co/series/G649J4XPY/",
+              "site": "VRV"
+            }
+          ],
+          "trailer": {
+            "id": "dKLdA60lUw4",
+            "site": "youtube",
+            "thumbnail": "https://i.ytimg.com/vi/dKLdA60lUw4/hqdefault.jpg"
+          }
+        },
+        {
+          "id": 109298,
+          "description": "First year high schooler Midori Asakusa loves anime so much, she insists that \"concept is everything\" in animation. Though she draws a variety of ideas in her sketchbook, she hasn't taken the first step to creating anime, insisting that she can't do it alone. The producer-type Sayaka Kanamori is the first to notice Asakusa's genius. Then, when it becomes clear that their classmate, charismatic fashion model Tsubame Mizusaki, really wants to be an animator, they create an animation club to realize the \"ultimate world\" that exists in their minds.<br>\n<br>\n(Source: Crunchyroll)",
+          "popularity": 36052,
+          "averageScore": 80,
+          "title": {
+            "english": "Keep Your Hands Off Eizouken!",
+            "romaji": "Eizouken ni wa Te wo Dasu na!",
+            "native": "映像研には手を出すな！"
+          },
+          "relations": {
+            "nodes": [
+              {
+                "title": {
+                  "romaji": "Eizouken ni wa Te wo Dasu na!",
+                  "english": "Keep Your Hands Off Eizouken!"
+                }
+              },
+              {
+                "title": {
+                  "romaji": "Eizouken Mini Anime",
+                  "english": null
+                }
+              }
+            ]
+          },
+          "genres": ["Adventure", "Comedy"],
+          "season": "WINTER",
+          "seasonYear": 2020,
+          "startDate": {
+            "year": 2020,
+            "month": 1,
+            "day": 6
+          },
+          "endDate": {
+            "year": 2020,
+            "month": 3,
+            "day": 23
+          },
+          "episodes": 12,
+          "nextAiringEpisode": null,
+          "coverImage": {
+            "extraLarge": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx109298-YvjfI88hX76T.png",
+            "large": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/medium/bx109298-YvjfI88hX76T.png",
+            "medium": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/small/bx109298-YvjfI88hX76T.png",
+            "color": "#e4a135"
+          },
+          "bannerImage": "https://s4.anilist.co/file/anilistcdn/media/anime/banner/109298-ej4YYg87HHoA.jpg",
+          "externalLinks": [
+            {
+              "url": "http://eizouken-anime.com/",
+              "site": "Official Site"
+            },
+            {
+              "url": "https://twitter.com/Eizouken_anime",
+              "site": "Twitter"
+            },
+            {
+              "url": "https://www.crunchyroll.com/keep-your-hands-off-eizouken",
+              "site": "Crunchyroll"
+            },
+            {
+              "url": "https://vrv.co/series/GY0X54Q96",
+              "site": "VRV"
+            },
+            {
+              "url": "https://play.hbomax.com/series/urn:hbo:series:GXqdBgAwowb2_wwEAAAqu",
+              "site": "HBO Max"
+            }
+          ],
+          "trailer": {
+            "id": "b95pvNfDv8M",
+            "site": "youtube",
+            "thumbnail": "https://i.ytimg.com/vi/b95pvNfDv8M/hqdefault.jpg"
+          }
+        },
+        {
+          "id": 105228,
+          "description": "The story revolves around Kaiman, who does not remember who he was before he was transfigured by a Magic user. This transformation left him with a reptile's head, and a desire to find out the truth about who he really is. Accompanied by Nikaido, his female companion, he tracks down Magic Users in \"The Hole\" and unceremoniously chomps down on their head, hoping to find out who it was that put him in this state. One by one, they witness this \"second man\" inside the head of Kaiman, and after pulling them back out of his mouth he asks them all a question... \"What did the guy inside my head say?\"<br><br>\n(Source: MangaUpdates)",
+          "popularity": 30424,
+          "averageScore": 79,
+          "title": {
+            "english": "Dorohedoro",
+            "romaji": "Dorohedoro",
+            "native": "ドロヘドロ"
+          },
+          "relations": {
+            "nodes": [
+              {
+                "title": {
+                  "romaji": "Dorohedoro",
+                  "english": "Dorohedoro"
+                }
+              },
+              {
+                "title": {
+                  "romaji": "Dorohedoro: Ma no Omake",
+                  "english": null
+                }
+              }
+            ]
+          },
+          "genres": ["Action", "Adventure", "Comedy", "Fantasy", "Horror"],
+          "season": "WINTER",
+          "seasonYear": 2020,
+          "startDate": {
+            "year": 2020,
+            "month": 1,
+            "day": 13
+          },
+          "endDate": {
+            "year": 2020,
+            "month": 3,
+            "day": 30
+          },
+          "episodes": 12,
+          "nextAiringEpisode": null,
+          "coverImage": {
+            "extraLarge": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx105228-9KSgNMIX3kPa.jpg",
+            "large": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/medium/bx105228-9KSgNMIX3kPa.jpg",
+            "medium": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/small/bx105228-9KSgNMIX3kPa.jpg",
+            "color": "#783528"
+          },
+          "bannerImage": "https://s4.anilist.co/file/anilistcdn/media/anime/banner/105228-QBAya2q8SP52.jpg",
+          "externalLinks": [
+            {
+              "url": "https://dorohedoro.net/sp/",
+              "site": "Official Site"
+            },
+            {
+              "url": "https://twitter.com/dorohedoro_PR",
+              "site": "Twitter"
+            },
+            {
+              "url": "https://www.netflix.com/title/80991903",
+              "site": "Netflix"
+            }
+          ],
+          "trailer": {
+            "id": "IS6l1K19N1U",
+            "site": "youtube",
+            "thumbnail": "https://i.ytimg.com/vi/IS6l1K19N1U/hqdefault.jpg"
+          }
+        },
+        {
+          "id": 101634,
+          "description": "The third season of <i>BanG Dream!</i><br>\n<br>\nThe girl-powered bands are gigging again. That means Poppin’Party and other fan favorites are set to return for an all new season of BanG Dream! Now that Kasumi and the rest of Poppin’Party are taking charge of their own show, the sky’s the limit for their rockin’ musical ambitions and dreams of stardom. But they’ll have to contend with other bands looking for their big break, and their friendship will be put to the ultimate test as they rock their way to the top of the charts!<br>\n<br>\n(Source: Sentai Filmworks)<br><br>\n\n<i>Episodes are being released ahead of the official broadcast date via Blu-ray.</i>",
+          "popularity": 4788,
+          "averageScore": 78,
+          "title": {
+            "english": "BanG Dream! 3rd Season",
+            "romaji": "BanG Dream! 3rd Season",
+            "native": "BanG Dream! 3rd Season"
+          },
+          "relations": {
+            "nodes": [
+              {
+                "title": {
+                  "romaji": "BanG Dream! 2nd Season",
+                  "english": "BanG Dream! S2"
+                }
+              },
+              {
+                "title": {
+                  "romaji": "BanG Dream! Episode of Roselia I: Yakusoku",
+                  "english": null
+                }
+              },
+              {
+                "title": {
+                  "romaji": "BanG Dream! Episode of Roselia II: Song I am.",
+                  "english": null
+                }
+              },
+              {
+                "title": {
+                  "romaji": "BanG Dream! Poppin' Dream!",
+                  "english": null
+                }
+              },
+              {
+                "title": {
+                  "romaji": "Bandori! Girls Band Party!",
+                  "english": "BanG Dream! Girls Band Party!"
+                }
+              }
+            ]
+          },
+          "genres": ["Comedy", "Music", "Slice of Life"],
+          "season": "WINTER",
+          "seasonYear": 2020,
+          "startDate": {
+            "year": 2020,
+            "month": 1,
+            "day": 23
+          },
+          "endDate": {
+            "year": 2020,
+            "month": 4,
+            "day": 23
+          },
+          "episodes": 13,
+          "nextAiringEpisode": null,
+          "coverImage": {
+            "extraLarge": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx101634-4PSQAU2bw7s3.png",
+            "large": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/medium/bx101634-4PSQAU2bw7s3.png",
+            "medium": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/small/bx101634-4PSQAU2bw7s3.png",
+            "color": "#d61a1a"
+          },
+          "bannerImage": "https://s4.anilist.co/file/anilistcdn/media/anime/banner/101634-hyXv3NNQ1XnL.jpg",
+          "externalLinks": [
+            {
+              "url": "https://twitter.com/bang_dream_info",
+              "site": "Twitter"
+            },
+            {
+              "url": "https://anime.bang-dream.com/3rd/",
+              "site": "Official Site"
+            },
+            {
+              "url": "https://www.hidive.com/tv/bang-dream-3rd-season",
+              "site": "Hidive"
+            },
+            {
+              "url": "https://vrv.co/series/GR8D4PN4R",
+              "site": "VRV"
+            }
+          ],
+          "trailer": {
+            "id": "dXVz7SHu6Rs",
+            "site": "youtube",
+            "thumbnail": "https://i.ytimg.com/vi/dXVz7SHu6Rs/hqdefault.jpg"
+          }
+        },
+        {
+          "id": 108463,
+          "description": "<i>\"Hanako-san, Hanako-san... are you there?\"</i>\n<br><br>\nAt Kamome Academy, rumors abound about the school's Seven Mysteries, one of which is Hanako-san. Said to occupy the third stall of the third floor girls' bathroom in the old school building, Hanako-san grants any wish when summoned. Nene Yashiro, an occult-loving high school girl who dreams of romance, ventures into this haunted bathroom... but the Hanako-san she meets there is nothing like she imagined! Kamome Academy's Hanako-san... is a boy!\n<br><br>\n(Source: Yen Press)",
+          "popularity": 45727,
+          "averageScore": 78,
+          "title": {
+            "english": "Toilet-bound Hanako-kun",
+            "romaji": "Jibaku Shounen Hanako-kun",
+            "native": "地縛少年 花子くん"
+          },
+          "relations": {
+            "nodes": [
+              {
+                "title": {
+                  "romaji": "Jibaku Shounen Hanako-kun",
+                  "english": "Toilet-Bound Hanako-kun"
+                }
+              }
+            ]
+          },
+          "genres": ["Action", "Comedy", "Drama", "Mystery", "Supernatural"],
+          "season": "WINTER",
+          "seasonYear": 2020,
+          "startDate": {
+            "year": 2020,
+            "month": 1,
+            "day": 10
+          },
+          "endDate": {
+            "year": 2020,
+            "month": 3,
+            "day": 27
+          },
+          "episodes": 12,
+          "nextAiringEpisode": null,
+          "coverImage": {
+            "extraLarge": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx108463-knWkFUR311ho.jpg",
+            "large": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/medium/bx108463-knWkFUR311ho.jpg",
+            "medium": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/small/bx108463-knWkFUR311ho.jpg",
+            "color": "#f19335"
+          },
+          "bannerImage": "https://s4.anilist.co/file/anilistcdn/media/anime/banner/108463-pJ5XS6oJwvKh.jpg",
+          "externalLinks": [
+            {
+              "url": "https://twitter.com/hanakokun_info",
+              "site": "Twitter"
+            },
+            {
+              "url": "https://www.tbs.co.jp/anime/hanakokun/",
+              "site": "Official Site"
+            },
+            {
+              "url": "https://www.funimation.com/shows/toilet-bound-hanako-kun/",
+              "site": "Funimation"
+            },
+            {
+              "url": "https://www.animelab.com/shows/toilet-bound-hanako-kun",
+              "site": "AnimeLab"
+            },
+            {
+              "url": "https://www.hulu.com/toilet-bound-hanako-kun",
+              "site": "Hulu"
+            }
+          ],
+          "trailer": {
+            "id": "CKnXq1qaTG0",
+            "site": "youtube",
+            "thumbnail": "https://i.ytimg.com/vi/CKnXq1qaTG0/hqdefault.jpg"
+          }
+        },
+        {
+          "id": 110350,
+          "description": "Welcome to Kura, an organization that investigates crime using the Mizuhanome system which senses the drive to kill. Sakaido is a brilliant detective and pilot of the Mizuhanome. To solve a case, he enters the world of the killer's unconscious mind: the id well. In the shadows of brutal and puzzling cases lurks John Walker, the Serial Killer Creator. Where will Sakaido's pursuit lead?<br>\n<br>\n(Source: Funimation)",
+          "popularity": 30770,
+          "averageScore": 77,
+          "title": {
+            "english": "ID: INVADED",
+            "romaji": "ID: INVADED",
+            "native": "イド：インヴェイデッド"
+          },
+          "relations": {
+            "nodes": [
+              {
+                "title": {
+                  "romaji": "ID: INVADED #BRAKE BROKEN",
+                  "english": null
+                }
+              }
+            ]
+          },
+          "genres": ["Drama", "Mystery", "Psychological", "Sci-Fi"],
+          "season": "WINTER",
+          "seasonYear": 2020,
+          "startDate": {
+            "year": 2020,
+            "month": 1,
+            "day": 6
+          },
+          "endDate": {
+            "year": 2020,
+            "month": 3,
+            "day": 23
+          },
+          "episodes": 13,
+          "nextAiringEpisode": null,
+          "coverImage": {
+            "extraLarge": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx110350-uchN78wglmhN.png",
+            "large": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/medium/bx110350-uchN78wglmhN.png",
+            "medium": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/small/bx110350-uchN78wglmhN.png",
+            "color": null
+          },
+          "bannerImage": "https://s4.anilist.co/file/anilistcdn/media/anime/banner/110350-kJfEuQ4Cx4j1.jpg",
+          "externalLinks": [
+            {
+              "url": "https://id-invaded-anime.com/",
+              "site": "Official Site"
+            },
+            {
+              "url": "https://twitter.com/idinvadedanim",
+              "site": "Twitter"
+            },
+            {
+              "url": "https://www.funimation.com/shows/id-invaded/",
+              "site": "Funimation"
+            },
+            {
+              "url": "https://www.animelab.com/shows/id-invaded",
+              "site": "AnimeLab"
+            },
+            {
+              "url": "https://www.hulu.com/id-invaded",
+              "site": "Hulu"
+            }
+          ],
+          "trailer": {
+            "id": "nc7Y0BvEYQk",
+            "site": "youtube",
+            "thumbnail": "https://i.ytimg.com/vi/nc7Y0BvEYQk/hqdefault.jpg"
+          }
+        },
+        {
+          "id": 108617,
+          "description": "The world is ruled by a diversity of inhuman beings, who persecuted humans and drove them to near-extinction. One day, the forest guardian Golem meets a human girl. This is a chronicle of a journey that would bind a member of the dying \"human\" clan to the forest guardian Golem, as father and daughter.\n<br><br>\n(Source: Crunchyroll)<br><br><i>The first episode received an advance web distribution on January 3. The regular TV broadcast started on January 10.</i>",
+          "popularity": 33504,
+          "averageScore": 76,
+          "title": {
+            "english": "Somali and the Forest Spirit",
+            "romaji": "Somali to Mori no Kamisama",
+            "native": "ソマリと森の神様"
+          },
+          "relations": {
+            "nodes": [
+              {
+                "title": {
+                  "romaji": "Somali to Mori no Kamisama",
+                  "english": "Somari and the Guardian of the Forest"
+                }
+              }
+            ]
+          },
+          "genres": ["Adventure", "Drama", "Fantasy", "Slice of Life"],
+          "season": "WINTER",
+          "seasonYear": 2020,
+          "startDate": {
+            "year": 2020,
+            "month": 1,
+            "day": 10
+          },
+          "endDate": {
+            "year": 2020,
+            "month": 3,
+            "day": 27
+          },
+          "episodes": 12,
+          "nextAiringEpisode": null,
+          "coverImage": {
+            "extraLarge": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx108617-PgoYLgWzzm0c.png",
+            "large": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/medium/bx108617-PgoYLgWzzm0c.png",
+            "medium": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/small/bx108617-PgoYLgWzzm0c.png",
+            "color": "#28bbe4"
+          },
+          "bannerImage": "https://s4.anilist.co/file/anilistcdn/media/anime/banner/108617-K5pexm0OYdJl.jpg",
+          "externalLinks": [
+            {
+              "url": "https://twitter.com/somali_anime",
+              "site": "Twitter"
+            },
+            {
+              "url": "http://somali-anime.com/",
+              "site": "Official Site"
+            },
+            {
+              "url": "https://www.crunchyroll.com/somali-and-the-forest-spirit",
+              "site": "Crunchyroll"
+            },
+            {
+              "url": "https://vrv.co/series/G60X5KMPR",
+              "site": "VRV"
+            }
+          ],
+          "trailer": {
+            "id": "XRIXy8zngZc",
+            "site": "youtube",
+            "thumbnail": "https://i.ytimg.com/vi/XRIXy8zngZc/hqdefault.jpg"
+          }
+        },
+        {
+          "id": 110270,
+          "description": "Beauty truly is in the eye of the beholder! From elves to succubi to cyclopes and more, the Yoruno Gloss reviewers are here to rate the red-light delights of all manner of monster girls...The only thing is, they can never agree on which species are the hottest!\n<br><br>\n(Source: Yen Press)",
+          "popularity": 32799,
+          "averageScore": 75,
+          "title": {
+            "english": "Interspecies Reviewers",
+            "romaji": "Ishuzoku Reviewers",
+            "native": "異種族レビュアーズ"
+          },
+          "relations": {
+            "nodes": [
+              {
+                "title": {
+                  "romaji": "Ishuzoku Reviewers",
+                  "english": "Interspecies Reviewers"
+                }
+              },
+              {
+                "title": {
+                  "romaji": "Ishuzoku Reviewers: Ecstasy Days",
+                  "english": "Interspecies Reviewers: Ecstasy Days"
+                }
+              }
+            ]
+          },
+          "genres": ["Comedy", "Ecchi", "Fantasy"],
+          "season": "WINTER",
+          "seasonYear": 2020,
+          "startDate": {
+            "year": 2020,
+            "month": 1,
+            "day": 11
+          },
+          "endDate": {
+            "year": 2020,
+            "month": 3,
+            "day": 28
+          },
+          "episodes": 12,
+          "nextAiringEpisode": null,
+          "coverImage": {
+            "extraLarge": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx110270-4NVRRcffK70k.jpg",
+            "large": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/medium/bx110270-4NVRRcffK70k.jpg",
+            "medium": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/small/bx110270-4NVRRcffK70k.jpg",
+            "color": "#e4935d"
+          },
+          "bannerImage": "https://s4.anilist.co/file/anilistcdn/media/anime/banner/110270-NIVO37S631oB.jpg",
+          "externalLinks": [
+            {
+              "url": "https://isyuzoku.com/",
+              "site": "Official Site"
+            },
+            {
+              "url": "https://twitter.com/isyuzoku",
+              "site": "Twitter"
+            },
+            {
+              "url": "https://www.animelab.com/shows/interspecies-reviewers",
+              "site": "AnimeLab"
+            }
+          ],
+          "trailer": {
+            "id": "FpveDH9E--g",
+            "site": "youtube",
+            "thumbnail": "https://i.ytimg.com/vi/FpveDH9E--g/hqdefault.jpg"
+          }
+        },
+        {
+          "id": 106479,
+          "description": "The story centers on Kaede Honjou, who is invited by her friend Risa Shiramine to play a virtual reality MMO game with her. While Kaede doesn't dislike games, what she really, truly dislikes is being in pain. She creates a character named Maple, and decides to put all her points in VIT to minimize pain. As a result, she moves slowly, can't use magic, and even a rabbit can get the best of her. However, as it turns out, she acquires a skill known as \"Absolute Defense\" as a result of her pumping points into VIT, as well as a \"Counter Skill\" that works against special moves. Now, with her ability to nullify all damage, she goes on adventures.<br><br>(Source: Anime News Network, edited)",
+          "popularity": 37276,
+          "averageScore": 75,
+          "title": {
+            "english": "BOFURI: I Don't Want to Get Hurt, so I'll Max Out My Defense.",
+            "romaji": "Itai no wa Iya nano de Bougyoryoku ni Kyokufuri Shitai to Omoimasu.",
+            "native": "痛いのは嫌なので防御力に極振りしたいと思います。"
+          },
+          "relations": {
+            "nodes": [
+              {
+                "title": {
+                  "romaji": "Itai no wa Iya nano de Bougyoryoku ni Kyokufuri Shitai to Omoimasu.",
+                  "english": null
+                }
+              },
+              {
+                "title": {
+                  "romaji": "Itai no wa Iya nano de Bougyoryoku ni Kyokufuri Shitai to Omoimasu.",
+                  "english": null
+                }
+              },
+              {
+                "title": {
+                  "romaji": "Itai no wa Iya nano de Bougyoryoku ni Kyokufuri Shitai to Omoimasu. II",
+                  "english": null
+                }
+              }
+            ]
+          },
+          "genres": [
+            "Action",
+            "Adventure",
+            "Comedy",
+            "Fantasy",
+            "Slice of Life"
+          ],
+          "season": "WINTER",
+          "seasonYear": 2020,
+          "startDate": {
+            "year": 2020,
+            "month": 1,
+            "day": 8
+          },
+          "endDate": {
+            "year": 2020,
+            "month": 3,
+            "day": 25
+          },
+          "episodes": 12,
+          "nextAiringEpisode": null,
+          "coverImage": {
+            "extraLarge": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx106479-JmPk1F5ubMtm.png",
+            "large": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/medium/bx106479-JmPk1F5ubMtm.png",
+            "medium": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/small/bx106479-JmPk1F5ubMtm.png",
+            "color": "#1ac9d6"
+          },
+          "bannerImage": "https://s4.anilist.co/file/anilistcdn/media/anime/banner/106479-G1rExJ4m8Be3.jpg",
+          "externalLinks": [
+            {
+              "url": "https://twitter.com/bofuri_anime",
+              "site": "Twitter"
+            },
+            {
+              "url": "https://bofuri.jp/",
+              "site": "Official Site"
+            },
+            {
+              "url": "https://www.funimation.com/shows/bofuri-i-dont-want-to-get-hurt-so-ill-max-out-my-defense/",
+              "site": "Funimation"
+            },
+            {
+              "url": "https://www.animelab.com/shows/bofuri-i-dont-want-to-get-hurt-so-ill-max-out-my-defense",
+              "site": "AnimeLab"
+            },
+            {
+              "url": "https://www.hulu.com/bofuri-i-dont-want-to-get-hurt-so-ill-max-out-my-defense",
+              "site": "Hulu"
+            },
+            {
+              "url": "https://www.youtube.com/playlist?list=PLwLSw1_eDZl0fxMZfFjcKLnL0Hj6cw3Op",
+              "site": "Youtube"
+            }
+          ],
+          "trailer": {
+            "id": "2ji-cLcT-UI",
+            "site": "youtube",
+            "thumbnail": "https://i.ytimg.com/vi/2ji-cLcT-UI/hqdefault.jpg"
+          }
+        },
+        {
+          "id": 111501,
+          "description": "Chiyuki Fujito has a dream: to become a Paris Collection model. The problem is, she's too short to be a model, and everyone around her tells her so! But no matter what they say, she won't give up. Her classmate, a poor student named Ikuto Tsumura, also has a dream: to become a fashion designer. One day Chiyuki tells him that it's \"probably impossible\" for him, causing him to consider giving it up...?! This is the story of two individuals wholeheartedly chasing after their dreams in spite of all the negativity that comes after them!<br><br>(Source: Kodansha Comics)",
+          "popularity": 13314,
+          "averageScore": 73,
+          "title": {
+            "english": "Smile Down the Runway",
+            "romaji": "Runway de Waratte",
+            "native": "ランウェイで笑って"
+          },
+          "relations": {
+            "nodes": [
+              {
+                "title": {
+                  "romaji": "Runway de Waratte",
+                  "english": "Smile Down the Runway"
+                }
+              },
+              {
+                "title": {
+                  "romaji": "Runway de Waratte Mini",
+                  "english": null
+                }
+              }
+            ]
+          },
+          "genres": ["Drama", "Slice of Life"],
+          "season": "WINTER",
+          "seasonYear": 2020,
+          "startDate": {
+            "year": 2020,
+            "month": 1,
+            "day": 11
+          },
+          "endDate": {
+            "year": 2020,
+            "month": 3,
+            "day": 28
+          },
+          "episodes": 12,
+          "nextAiringEpisode": null,
+          "coverImage": {
+            "extraLarge": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx111501-qZgcR8eb86t3.png",
+            "large": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/medium/bx111501-qZgcR8eb86t3.png",
+            "medium": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/small/bx111501-qZgcR8eb86t3.png",
+            "color": "#4386e4"
+          },
+          "bannerImage": "https://s4.anilist.co/file/anilistcdn/media/anime/banner/111501-ufC7ytuouG1n.jpg",
+          "externalLinks": [
+            {
+              "url": "https://runway-anime.com",
+              "site": "Official Site"
+            },
+            {
+              "url": "https://twitter.com/runway_anime",
+              "site": "Twitter"
+            },
+            {
+              "url": "https://www.funimation.com/shows/smile-down-the-runway/",
+              "site": "Funimation"
+            },
+            {
+              "url": "https://www.animelab.com/shows/smile-down-the-runway",
+              "site": "AnimeLab"
+            },
+            {
+              "url": "https://www.hulu.com/smile-down-the-runway",
+              "site": "Hulu"
+            },
+            {
+              "url": "https://www.youtube.com/playlist?list=PLwLSw1_eDZl3L-ETuwyahztJSxCJwxsKu",
+              "site": "Youtube"
+            }
+          ],
+          "trailer": {
+            "id": "u5g-E9aB08k",
+            "site": "youtube",
+            "thumbnail": "https://i.ytimg.com/vi/u5g-E9aB08k/hqdefault.jpg"
+          }
+        },
+        {
+          "id": 104391,
+          "description": " Eripiyo is an extreme idol fan. She is wildly enthusiastic about Maina, the shy and lowest-ranking member of the minor underground idol group ChamJam that performs in Okayama Prefecture. Eri will continue to give her complete devotion to Maina until the day she can perform at Budokan.<br><br>(Source: Anime News Network, edited)",
+          "popularity": 6388,
+          "averageScore": 72,
+          "title": {
+            "english": "If My Favorite Pop Idol Made It to the Budokan, I Would Die",
+            "romaji": "Oshi ga Budoukan Ittekuretara Shinu",
+            "native": "推しが武道館いってくれたら死ぬ"
+          },
+          "relations": {
+            "nodes": [
+              {
+                "title": {
+                  "romaji": "Oshi ga Budoukan Ittekuretara Shinu",
+                  "english": null
+                }
+              }
+            ]
+          },
+          "genres": ["Comedy", "Music"],
+          "season": "WINTER",
+          "seasonYear": 2020,
+          "startDate": {
+            "year": 2020,
+            "month": 1,
+            "day": 10
+          },
+          "endDate": {
+            "year": 2020,
+            "month": 3,
+            "day": 27
+          },
+          "episodes": 12,
+          "nextAiringEpisode": null,
+          "coverImage": {
+            "extraLarge": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx104391-5gOoFEMiSFg1.png",
+            "large": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/medium/bx104391-5gOoFEMiSFg1.png",
+            "medium": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/small/bx104391-5gOoFEMiSFg1.png",
+            "color": "#50aee4"
+          },
+          "bannerImage": "https://s4.anilist.co/file/anilistcdn/media/anime/banner/104391-71TskFyKltUg.jpg",
+          "externalLinks": [
+            {
+              "url": "https://oshibudo.com/",
+              "site": "Official Site"
+            },
+            {
+              "url": "https://twitter.com/anime_oshibudo",
+              "site": "Twitter"
+            },
+            {
+              "url": "https://www.funimation.com/shows/if-my-favorite-pop-idol-made-it-to-the-budokan-i-would-die/",
+              "site": "Funimation"
+            },
+            {
+              "url": "https://www.animelab.com/shows/if-my-favourite-pop-idol-went-to-the-budokan-i-would-die",
+              "site": "AnimeLab"
+            }
+          ],
+          "trailer": {
+            "id": "fbKFGJ8TiHw",
+            "site": "youtube",
+            "thumbnail": "https://i.ytimg.com/vi/fbKFGJ8TiHw/hqdefault.jpg"
+          }
+        },
+        {
+          "id": 105190,
+          "description": "Kaname Sudo, an ordinary high school student, receives an invitation email to try a mysterious app called \"Darwin's Game.\" Kaname, upon launching the app, is drawn into a game where players fight one another using superpowers called Sigils.<br>\n<br>\nWithout knowing the reason for all this, can Kaname survive furious battles against the powerful players who attack him?<br>\n<br>\n(Source: Aniplex of America)\n<br><br>\n<i>Note: The first episode aired with a runtime of ~48 minutes as opposed to the standard 24 minute long episode.</i>",
+          "popularity": 40232,
+          "averageScore": 70,
+          "title": {
+            "english": "Darwin's Game",
+            "romaji": "Darwin's Game",
+            "native": "ダーウィンズゲーム"
+          },
+          "relations": {
+            "nodes": [
+              {
+                "title": {
+                  "romaji": "Darwin's Game",
+                  "english": null
+                }
+              }
+            ]
+          },
+          "genres": ["Action", "Mystery", "Sci-Fi", "Thriller"],
+          "season": "WINTER",
+          "seasonYear": 2020,
+          "startDate": {
+            "year": 2020,
+            "month": 1,
+            "day": 4
+          },
+          "endDate": {
+            "year": 2020,
+            "month": 3,
+            "day": 21
+          },
+          "episodes": 11,
+          "nextAiringEpisode": null,
+          "coverImage": {
+            "extraLarge": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx105190-1OG3lBqoIQ7o.png",
+            "large": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/medium/bx105190-1OG3lBqoIQ7o.png",
+            "medium": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/small/bx105190-1OG3lBqoIQ7o.png",
+            "color": "#e4506b"
+          },
+          "bannerImage": "https://s4.anilist.co/file/anilistcdn/media/anime/banner/105190-HhqT6N5MJCpE.jpg",
+          "externalLinks": [
+            {
+              "url": "https://darwins-game.com/",
+              "site": "Official Site"
+            },
+            {
+              "url": "https://twitter.com/d_game_official",
+              "site": "Twitter"
+            },
+            {
+              "url": "https://www.funimation.com/shows/darwins-game/",
+              "site": "Funimation"
+            },
+            {
+              "url": "https://www.animelab.com/shows/darwins-game",
+              "site": "AnimeLab"
+            },
+            {
+              "url": "https://www.hidive.com/tv/darwins-game",
+              "site": "Hidive"
+            },
+            {
+              "url": "https://www.crunchyroll.com/darwins-game",
+              "site": "Crunchyroll"
+            },
+            {
+              "url": "https://vrv.co/series/G61X24PZ6/",
+              "site": "VRV"
+            }
+          ],
+          "trailer": {
+            "id": "uyegnzQ1CrM",
+            "site": "youtube",
+            "thumbnail": "https://i.ytimg.com/vi/uyegnzQ1CrM/hqdefault.jpg"
+          }
+        },
+        {
+          "id": 112293,
+          "description": "Seton Academy, a school where animals of all species gather to live and learn together. A sacred garden of learning, where students hone their primal instincts and the laws are of the jungle. Where species pit against species in a daily struggle for survival... Now enter the animal-hating human Jin Mazama, and the lonely wolf Ranka Okami. When man meets wolf in an encounter for the ages, this food chain is about to be shook. “Species shmecies! If we’ve shared face-licks, you’re a friend to me! Welcome to the pack!”<br>\n<br>\n(Source: Crunchyroll)",
+          "popularity": 17633,
+          "averageScore": 69,
+          "title": {
+            "english": "Seton Academy: Join the Pack!",
+            "romaji": "Murenase! Seton Gakuen",
+            "native": "群れなせ！シートン学園"
+          },
+          "relations": {
+            "nodes": [
+              {
+                "title": {
+                  "romaji": "Murenase! Seton Gakuen",
+                  "english": null
+                }
+              },
+              {
+                "title": {
+                  "romaji": "Murenase! Seton Gakuen EX: Juu Joshi-tachi no Yuzame Chuuihou",
+                  "english": null
+                }
+              }
+            ]
+          },
+          "genres": ["Comedy", "Ecchi", "Romance"],
+          "season": "WINTER",
+          "seasonYear": 2020,
+          "startDate": {
+            "year": 2020,
+            "month": 1,
+            "day": 7
+          },
+          "endDate": {
+            "year": 2020,
+            "month": 3,
+            "day": 24
+          },
+          "episodes": 12,
+          "nextAiringEpisode": null,
+          "coverImage": {
+            "extraLarge": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx112293-UXFSGOfRbBe8.png",
+            "large": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/medium/bx112293-UXFSGOfRbBe8.png",
+            "medium": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/small/bx112293-UXFSGOfRbBe8.png",
+            "color": "#e4ae50"
+          },
+          "bannerImage": "https://s4.anilist.co/file/anilistcdn/media/anime/banner/112293-dgnTgHiXyAIc.jpg",
+          "externalLinks": [
+            {
+              "url": "https://twitter.com/anime_seton",
+              "site": "Twitter"
+            },
+            {
+              "url": "https://anime-seton.jp/",
+              "site": "Official Site"
+            },
+            {
+              "url": "https://www.crunchyroll.com/seton-academy-join-the-pack",
+              "site": "Crunchyroll"
+            },
+            {
+              "url": "https://vrv.co/series/GRMEJWQGY",
+              "site": "VRV"
+            },
+            {
+              "url": "https://www.youtube.com/playlist?list=PLxSscENEp7JiazRuzo7l7hCx6ul7r8Oxc",
+              "site": "Youtube"
+            }
+          ],
+          "trailer": {
+            "id": "JlCLXa-pHZc",
+            "site": "youtube",
+            "thumbnail": "https://i.ytimg.com/vi/JlCLXa-pHZc/hqdefault.jpg"
+          }
+        },
+        {
+          "id": 107201,
+          "description": "At the young age of 11, Kotoko Iwanaga was abducted by youkai for two weeks and asked to become their \"God of Wisdom,\" a mediator between the spirit and human worlds, to which the girl quickly agreed but at the cost of her right eye and left leg. Now, six years later, whenever youkai wish for their problems to be solved, they make their way to Kotoko for consultation.<br>\n<br>\nMeanwhile, Kurou Sakuragawa, a 22-year-old university student, has just broken up with his girlfriend after he fled alone when the two encountered a kappa. Seeing this as her chance to become closer with him, Kotoko immediately makes her move, hoping to get married to Kurou one day. However, she quickly realizes there is something more to Kurou. With this knowledge, she asks for his help in solving the various issues presented by the supernatural, all the while wishing her newfound partner will eventually reciprocate her feelings.<br>\n<br>\n(Source: MyAnimeList)",
+          "popularity": 39039,
+          "averageScore": 69,
+          "title": {
+            "english": "In/Spectre",
+            "romaji": "Kyokou Suiri",
+            "native": "虚構推理"
+          },
+          "relations": {
+            "nodes": [
+              {
+                "title": {
+                  "romaji": "Kyokou Suiri",
+                  "english": "In/Spectre"
+                }
+              },
+              {
+                "title": {
+                  "romaji": "Kyokou Suiri Mini",
+                  "english": "In/Spectre Mini"
+                }
+              },
+              {
+                "title": {
+                  "romaji": "Kyokou Uranai",
+                  "english": null
+                }
+              }
+            ]
+          },
+          "genres": ["Comedy", "Mystery", "Romance", "Supernatural"],
+          "season": "WINTER",
+          "seasonYear": 2020,
+          "startDate": {
+            "year": 2020,
+            "month": 1,
+            "day": 12
+          },
+          "endDate": {
+            "year": 2020,
+            "month": 3,
+            "day": 29
+          },
+          "episodes": 12,
+          "nextAiringEpisode": null,
+          "coverImage": {
+            "extraLarge": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx107201-XwayV7vVveFS.png",
+            "large": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/medium/bx107201-XwayV7vVveFS.png",
+            "medium": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/small/bx107201-XwayV7vVveFS.png",
+            "color": "#e435ae"
+          },
+          "bannerImage": "https://s4.anilist.co/file/anilistcdn/media/anime/banner/107201-XZHSg0HdC9kR.jpg",
+          "externalLinks": [
+            {
+              "url": "http://kyokousuiri.jp/",
+              "site": "Official Site"
+            },
+            {
+              "url": "https://twitter.com/kyokou_suiri",
+              "site": "Twitter"
+            },
+            {
+              "url": "https://www.crunchyroll.com/inspectre",
+              "site": "Crunchyroll"
+            },
+            {
+              "url": "https://vrv.co/series/GYZJEEQGR",
+              "site": "VRV"
+            },
+            {
+              "url": "https://play.hbomax.com/series/urn:hbo:series:GXpncJAl458MDYQEAAABm",
+              "site": "HBO Max"
+            }
+          ],
+          "trailer": {
+            "id": "A2b2Gxy-flU",
+            "site": "youtube",
+            "thumbnail": "https://i.ytimg.com/vi/A2b2Gxy-flU/hqdefault.jpg"
+          }
+        },
+        {
+          "id": 111951,
+          "description": "The 'heartwarming jewel mystery' series centers on the handsome jewelry appraiser Richard Ranashinha de Vulpian and the bright and cheerful college student Seigi Nakata as they uncover the hidden messages that lie within jewels while they solve various jewel-related cases by unravelling the hidden psychological aspects of their owners that lie within the gems.\n<br><br>\n(Source: Anime News Network, Edited)",
+          "popularity": 6816,
+          "averageScore": 67,
+          "title": {
+            "english": "The Case Files of Jeweler Richard",
+            "romaji": "Housekishou Richard-shi no Nazo Kantei",
+            "native": "宝石商リチャード氏の謎鑑定"
+          },
+          "relations": {
+            "nodes": [
+              {
+                "title": {
+                  "romaji": "Houseki-shou Richard-shi no Nazo Kantei",
+                  "english": null
+                }
+              },
+              {
+                "title": {
+                  "romaji": "Housekishou Richard-shi no Nazo Kantei",
+                  "english": null
+                }
+              }
+            ]
+          },
+          "genres": ["Drama", "Mystery", "Slice of Life"],
+          "season": "WINTER",
+          "seasonYear": 2020,
+          "startDate": {
+            "year": 2020,
+            "month": 1,
+            "day": 9
+          },
+          "endDate": {
+            "year": 2020,
+            "month": 3,
+            "day": 26
+          },
+          "episodes": 12,
+          "nextAiringEpisode": null,
+          "coverImage": {
+            "extraLarge": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx111951-vzX8hv9fl9pR.png",
+            "large": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/medium/bx111951-vzX8hv9fl9pR.png",
+            "medium": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/small/bx111951-vzX8hv9fl9pR.png",
+            "color": "#5dbbe4"
+          },
+          "bannerImage": "https://s4.anilist.co/file/anilistcdn/media/anime/banner/111951-aSghPZlHU0yS.jpg",
+          "externalLinks": [
+            {
+              "url": "https://jeweler-richard.com",
+              "site": "Official Site"
+            },
+            {
+              "url": "https://twitter.com/jeweler_richard",
+              "site": "Twitter"
+            },
+            {
+              "url": "https://www.crunchyroll.com/the-case-files-of-jeweler-richard",
+              "site": "Crunchyroll"
+            },
+            {
+              "url": "https://www.youtube.com/playlist?list=PLwLSw1_eDZl0vwHVQLtVh4xoUX5pxEiJD",
+              "site": "Youtube"
+            }
+          ],
+          "trailer": {
+            "id": "51Oa9kBKMUs",
+            "site": "youtube",
+            "thumbnail": "https://i.ytimg.com/vi/51Oa9kBKMUs/hqdefault.jpg"
+          }
+        },
+        {
+          "id": 108092,
+          "description": "When she was little, Konohata Mira promises a boy she meets at a campsite that they can find an asteroid together. When she enters high school, she joins the astronomy club. But that year, the astronomy club happened to combine with the geology club, making it the astrogeo club?!<br>\n<br>\nWon't you find all kinds of sparkles with the astrogeo girls?<br>\n<br>\n(Source: Crunchyroll)",
+          "popularity": 14604,
+          "averageScore": 67,
+          "title": {
+            "english": "Asteroid in Love",
+            "romaji": "Koisuru Asteroid",
+            "native": "恋する小惑星〈アステロイド〉"
+          },
+          "relations": {
+            "nodes": [
+              {
+                "title": {
+                  "romaji": "Koisuru Asteroid",
+                  "english": null
+                }
+              },
+              {
+                "title": {
+                  "romaji": "Koisuru Asteroid: KiraKira Zoukangou",
+                  "english": null
+                }
+              }
+            ]
+          },
+          "genres": ["Comedy", "Slice of Life"],
+          "season": "WINTER",
+          "seasonYear": 2020,
+          "startDate": {
+            "year": 2020,
+            "month": 1,
+            "day": 3
+          },
+          "endDate": {
+            "year": 2020,
+            "month": 3,
+            "day": 27
+          },
+          "episodes": 12,
+          "nextAiringEpisode": null,
+          "coverImage": {
+            "extraLarge": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx108092-vbL3rf0b23sp.jpg",
+            "large": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/medium/bx108092-vbL3rf0b23sp.jpg",
+            "medium": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/small/bx108092-vbL3rf0b23sp.jpg",
+            "color": "#0d2886"
+          },
+          "bannerImage": "https://s4.anilist.co/file/anilistcdn/media/anime/banner/108092-y9c4xaGJU8m9.jpg",
+          "externalLinks": [
+            {
+              "url": "http://koiastv.com/",
+              "site": "Official Site"
+            },
+            {
+              "url": "https://twitter.com/koiastv",
+              "site": "Twitter"
+            },
+            {
+              "url": "https://www.crunchyroll.com/asteroid-in-love",
+              "site": "Crunchyroll"
+            },
+            {
+              "url": "https://vrv.co/series/GRMEJX3VY",
+              "site": "VRV"
+            },
+            {
+              "url": "https://www.funimation.com/shows/asteroid-in-love/",
+              "site": "Funimation"
+            },
+            {
+              "url": "https://www.animelab.com/shows/asteroid-in-love",
+              "site": "AnimeLab"
+            },
+            {
+              "url": "https://www.youtube.com/playlist?list=PLwLSw1_eDZl279Yd4R1ENjMTLDZBSfX1Z",
+              "site": "Youtube"
+            }
+          ],
+          "trailer": {
+            "id": "ogIQ3d1w8Rs",
+            "site": "youtube",
+            "thumbnail": "https://i.ytimg.com/vi/ogIQ3d1w8Rs/hqdefault.jpg"
+          }
+        },
+        {
+          "id": 113470,
+          "description": "The new anime will center around the band Mashumairesh!!!!, which includes guitarist and vocalist Howan of fox lineage, guitarist and vocalist MashimaHimeko of striped cat lineage, bassist and vocalist Delmin of the Devilmint Kiryuu lineage, and drummer and vocalist Ruhuyu of wolf-girl lineage.<br>\n<br>\n(Source: Anime News Network)",
+          "popularity": 2209,
+          "averageScore": 65,
+          "title": {
+            "english": "SHOW BY ROCK!! Mashumairesh!!",
+            "romaji": "Show By Rock!! Mashumairesh!!",
+            "native": "SHOW BY ROCK!!ましゅまいれっしゅ!!"
+          },
+          "relations": {
+            "nodes": [
+              {
+                "title": {
+                  "romaji": "Show By Rock!!#",
+                  "english": null
+                }
+              },
+              {
+                "title": {
+                  "romaji": "Show By Rock!! Stars!!",
+                  "english": null
+                }
+              }
+            ]
+          },
+          "genres": ["Music"],
+          "season": "WINTER",
+          "seasonYear": 2020,
+          "startDate": {
+            "year": 2020,
+            "month": 1,
+            "day": 9
+          },
+          "endDate": {
+            "year": 2020,
+            "month": 3,
+            "day": 26
+          },
+          "episodes": 12,
+          "nextAiringEpisode": null,
+          "coverImage": {
+            "extraLarge": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx113470-Ecw16VC6b2V2.jpg",
+            "large": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/medium/bx113470-Ecw16VC6b2V2.jpg",
+            "medium": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/small/bx113470-Ecw16VC6b2V2.jpg",
+            "color": "#35e450"
+          },
+          "bannerImage": null,
+          "externalLinks": [
+            {
+              "url": "https://showbyrock-anime-m.com/sp/",
+              "site": "Official Site"
+            },
+            {
+              "url": "https://twitter.com/SB69A",
+              "site": "Twitter"
+            },
+            {
+              "url": "https://www.funimation.com/shows/show-by-rock-mashumairesh/",
+              "site": "Funimation"
+            },
+            {
+              "url": "https://www.animelab.com/shows/show-by-rock",
+              "site": "AnimeLab"
+            },
+            {
+              "url": "https://www.youtube.com/playlist?list=PLxSscENEp7Jik2vpUVcSQhgVnuPJ2h4xm",
+              "site": "Youtube"
+            }
+          ],
+          "trailer": {
+            "id": "nDZKQcnaAeQ",
+            "site": "youtube",
+            "thumbnail": "https://i.ytimg.com/vi/nDZKQcnaAeQ/hqdefault.jpg"
+          }
+        },
+        {
+          "id": 107651,
+          "description": "Mankai Company is a far cry from its glory days as an all-male theater. With only one member left and debt collectors at the door, it’s no wonder Izumi Tachibana finds herself in over her head when she boldly confronts the yakuza’s loan sharks, promising to bring her father’s theater back into the spotlight. She might be able to recruit enough talent, but can they bloom into the actors she needs?<br>\n<br>\n(Source: Funimation)",
+          "popularity": 3487,
+          "averageScore": 65,
+          "title": {
+            "english": "A3! Season Spring & Summer",
+            "romaji": "A3! SEASON SPRING ＆ SUMMER",
+            "native": "A3! SEASON SPRING ＆ SUMMER"
+          },
+          "relations": {
+            "nodes": [
+              {
+                "title": {
+                  "romaji": "A3! SEASON AUTUMN & WINTER",
+                  "english": null
+                }
+              }
+            ]
+          },
+          "genres": ["Comedy", "Drama"],
+          "season": "WINTER",
+          "seasonYear": 2020,
+          "startDate": {
+            "year": 2020,
+            "month": 1,
+            "day": 14
+          },
+          "endDate": {
+            "year": 2020,
+            "month": 6,
+            "day": 23
+          },
+          "episodes": 12,
+          "nextAiringEpisode": null,
+          "coverImage": {
+            "extraLarge": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx107651-GYi8XSIHW0pG.png",
+            "large": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/medium/bx107651-GYi8XSIHW0pG.png",
+            "medium": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/small/bx107651-GYi8XSIHW0pG.png",
+            "color": "#86e45d"
+          },
+          "bannerImage": "https://s4.anilist.co/file/anilistcdn/media/anime/banner/107651-FmxfHXYOBsXy.jpg",
+          "externalLinks": [
+            {
+              "url": "https://www.a3-animation.jp/",
+              "site": "Official Site"
+            },
+            {
+              "url": "https://twitter.com/mankai_anime",
+              "site": "Twitter"
+            },
+            {
+              "url": "https://www.funimation.com/shows/a3/",
+              "site": "Funimation"
+            },
+            {
+              "url": "https://www.animelab.com/shows/a3-season-spring-and-summer",
+              "site": "AnimeLab"
+            }
+          ],
+          "trailer": {
+            "id": "pZpDtpjGPw4",
+            "site": "youtube",
+            "thumbnail": "https://i.ytimg.com/vi/pZpDtpjGPw4/hqdefault.jpg"
+          }
+        },
+        {
+          "id": 104051,
+          "description": "A dream of an unknown girl beckons Iroha Tamaki to Kamihama City, a mysterious place where Magical Girls gather and Witches of unimaginable strength proliferate. A new power drawn from evil Witches is on the rise, and as the mysteries of Kamihama begin to come to light, Iroha is sure of one thing only: understanding the secrets of Kamihama is the key to unlocking the identity of the enigmatic — and inexplicably familiar — girl in her dreams.<br><br>(Source: HIDIVE)",
+          "popularity": 20981,
+          "averageScore": 65,
+          "title": {
+            "english": "Magia Record: Puella Magi Madoka Magica Side Story",
+            "romaji": "Magia Record: Mahou Shoujo Madoka☆Magica Gaiden",
+            "native": "マギアレコード 魔法少女まどか☆マギカ外伝"
+          },
+          "relations": {
+            "nodes": [
+              {
+                "title": {
+                  "romaji": "Mahou Shoujo Madoka☆Magica",
+                  "english": "Puella Magi Madoka Magica"
+                }
+              },
+              {
+                "title": {
+                  "romaji": "Magia Record: Mahou Shoujo Madoka☆Magica Gaiden",
+                  "english": "Magia Record: Puella Magi Madoka Magica Side Story"
+                }
+              },
+              {
+                "title": {
+                  "romaji": "Magia Record: Mahou Shoujo Madoka☆Magica Gaiden 2nd Season",
+                  "english": null
+                }
+              }
+            ]
+          },
+          "genres": ["Drama", "Mahou Shoujo", "Psychological", "Thriller"],
+          "season": "WINTER",
+          "seasonYear": 2020,
+          "startDate": {
+            "year": 2020,
+            "month": 1,
+            "day": 5
+          },
+          "endDate": {
+            "year": 2020,
+            "month": 3,
+            "day": 29
+          },
+          "episodes": 13,
+          "nextAiringEpisode": null,
+          "coverImage": {
+            "extraLarge": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx104051-tFMIbiffwBLs.jpg",
+            "large": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/medium/bx104051-tFMIbiffwBLs.jpg",
+            "medium": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/small/bx104051-tFMIbiffwBLs.jpg",
+            "color": "#0dbbf1"
+          },
+          "bannerImage": "https://s4.anilist.co/file/anilistcdn/media/anime/banner/104051-6yiBdkd5OkZt.jpg",
+          "externalLinks": [
+            {
+              "url": "https://anime.magireco.com/",
+              "site": "Official Site"
+            },
+            {
+              "url": "https://twitter.com/magireco",
+              "site": "Twitter"
+            },
+            {
+              "url": "https://www.funimation.com/shows/magia-record-puella-magi-madoka-magica-side-story/?qid=7ccfeb2fb117da45#videos",
+              "site": "Funimation"
+            },
+            {
+              "url": "https://www.animelab.com/shows/magia-record-puella-magi-madoka-magica-side-story",
+              "site": "AnimeLab"
+            },
+            {
+              "url": "https://www.hidive.com/tv/magia-record-puella-magi-madoka-magica-side-story",
+              "site": "Hidive"
+            },
+            {
+              "url": "https://www.crunchyroll.com/magia-record-puella-magi-madoka-magica-side-story",
+              "site": "Crunchyroll"
+            }
+          ],
+          "trailer": {
+            "id": "YiRywvGitzs",
+            "site": "youtube",
+            "thumbnail": "https://i.ytimg.com/vi/YiRywvGitzs/hqdefault.jpg"
+          }
+        },
+        {
+          "id": 112748,
+          "description": "Deep inside the Earth lies a magical place called the \"Healing Garden\", which cared for the planet for centuries and is been protected by animal-like fairies named \"Healing Animals\". However, the garden was attacked by the antagonistic group called Bjögens whose goal is to infect the garden and slowly poison the planet. In order to save the Healing Garden, Latte escaped to the human world alongside three \"medical trainee\" Healing Animals, on a mission to find three people who can partner with them. After they meet Nodoka, Chiyu and Hinata, Latte pleaded them to fight for the Healing Garden as they became Pretty Cures in order to fight against the threat of the Bjögens and protect all life on Earth and the Healing Garden. <br><br>(Source: Wikipedia)",
+          "popularity": 1979,
+          "averageScore": 64,
+          "title": {
+            "english": "Healin' Good Pretty Cure",
+            "romaji": "Healin' Good♥Precure",
+            "native": "ヒーリングっど♥プリキュア"
+          },
+          "relations": {
+            "nodes": [
+              {
+                "title": {
+                  "romaji": "Futari wa Precure",
+                  "english": "Pretty Cure"
+                }
+              },
+              {
+                "title": {
+                  "romaji": "Kirakira☆Precure a la Mode",
+                  "english": "KIRA KIRA☆PRETTY CURE A LA MODE"
+                }
+              },
+              {
+                "title": {
+                  "romaji": "Smile Precure!",
+                  "english": "Glitter Force"
+                }
+              },
+              {
+                "title": {
+                  "romaji": "HappinessCharge Precure!",
+                  "english": "Happiness Charge Pretty Cure!"
+                }
+              },
+              {
+                "title": {
+                  "romaji": "Mahoutsukai Precure!",
+                  "english": null
+                }
+              },
+              {
+                "title": {
+                  "romaji": "Heartcatch Precure!",
+                  "english": "Heartcatch Precure!"
+                }
+              },
+              {
+                "title": {
+                  "romaji": "Futari wa Precure: Splash☆Star",
+                  "english": null
+                }
+              },
+              {
+                "title": {
+                  "romaji": "Yes! Precure 5",
+                  "english": "Yes! Pretty Cure 5"
+                }
+              },
+              {
+                "title": {
+                  "romaji": "Suite Precure♪",
+                  "english": null
+                }
+              },
+              {
+                "title": {
+                  "romaji": "Hugtto! Precure",
+                  "english": "Hugtto! Precure"
+                }
+              },
+              {
+                "title": {
+                  "romaji": "Go! Princess Precure",
+                  "english": null
+                }
+              },
+              {
+                "title": {
+                  "romaji": "Dokidoki! Precure",
+                  "english": "Glitter Force Doki Doki"
+                }
+              },
+              {
+                "title": {
+                  "romaji": "Fresh Precure!",
+                  "english": null
+                }
+              },
+              {
+                "title": {
+                  "romaji": "Star☆Twinkle Precure",
+                  "english": null
+                }
+              },
+              {
+                "title": {
+                  "romaji": "Precure Miracle Leap: Minna to no Fushigi na Ichinichi",
+                  "english": null
+                }
+              },
+              {
+                "title": {
+                  "romaji": "Healin' Good♥Precure",
+                  "english": null
+                }
+              },
+              {
+                "title": {
+                  "romaji": "Healin' Good♥Precure Movie",
+                  "english": null
+                }
+              }
+            ]
+          },
+          "genres": ["Action", "Fantasy", "Mahou Shoujo"],
+          "season": "WINTER",
+          "seasonYear": 2020,
+          "startDate": {
+            "year": 2020,
+            "month": 2,
+            "day": 2
+          },
+          "endDate": {
+            "year": null,
+            "month": null,
+            "day": null
+          },
+          "episodes": null,
+          "nextAiringEpisode": {
+            "timeUntilAiring": 211858
+          },
+          "coverImage": {
+            "extraLarge": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx112748-TkfRFNCgQFQX.jpg",
+            "large": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/medium/bx112748-TkfRFNCgQFQX.jpg",
+            "medium": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/small/bx112748-TkfRFNCgQFQX.jpg",
+            "color": "#43bbe4"
+          },
+          "bannerImage": "https://s4.anilist.co/file/anilistcdn/media/anime/banner/112748-M1p4vXdw6X6O.jpg",
+          "externalLinks": [
+            {
+              "url": "http://www.toei-anim.co.jp/tv/healingood_precure/",
+              "site": "Official Site"
+            },
+            {
+              "url": "https://www.crunchyroll.com/healin-good-pretty-cure",
+              "site": "Crunchyroll"
+            }
+          ],
+          "trailer": {
+            "id": "XGJTaiHFgqs",
+            "site": "youtube",
+            "thumbnail": "https://i.ytimg.com/vi/XGJTaiHFgqs/hqdefault.jpg"
+          }
+        },
+        {
+          "id": 106863,
+          "description": "In this world, cats aren't furry four-footed creatures, but human-like girls with ears, tails, and cat-like behaviors. Still kept as pets, they're allowed out on their own if they pass a special training and wear their bells. A young man running his own patisserie lives with two of these cats, Chocola and Vanilla, who help him out around the store. Maple and Cinnamon, two of the cats from home, also come in everyday, and together they enjoy a sweet life. Even if the cats don't always get along – and Azuki and Coconut certainly don't – things are peaceful and calm until a stray kitten follows Chocola home.<br><br>\n(Source: Anime News Network)",
+          "popularity": 18902,
+          "averageScore": 64,
+          "title": {
+            "english": "Nekopara",
+            "romaji": "Nekopara",
+            "native": "ネコぱら"
+          },
+          "relations": {
+            "nodes": [
+              {
+                "title": {
+                  "romaji": "Nekopara OVA",
+                  "english": null
+                }
+              }
+            ]
+          },
+          "genres": ["Comedy", "Slice of Life"],
+          "season": "WINTER",
+          "seasonYear": 2020,
+          "startDate": {
+            "year": 2020,
+            "month": 1,
+            "day": 9
+          },
+          "endDate": {
+            "year": 2020,
+            "month": 3,
+            "day": 26
+          },
+          "episodes": 12,
+          "nextAiringEpisode": null,
+          "coverImage": {
+            "extraLarge": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx106863-CxiCK7HejySK.png",
+            "large": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/medium/bx106863-CxiCK7HejySK.png",
+            "medium": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/small/bx106863-CxiCK7HejySK.png",
+            "color": null
+          },
+          "bannerImage": "https://s4.anilist.co/file/anilistcdn/media/anime/banner/n106863-87foKqUmpj2G.jpg",
+          "externalLinks": [
+            {
+              "url": "https://twitter.com/nekopara_pr",
+              "site": "Twitter"
+            },
+            {
+              "url": "https://nekopara-anime.com",
+              "site": "Official Site"
+            },
+            {
+              "url": "https://twitter.com/nekopara_anime",
+              "site": "Twitter"
+            },
+            {
+              "url": "https://www.funimation.com/shows/nekopara/",
+              "site": "Funimation"
+            },
+            {
+              "url": "https://www.animelab.com/shows/nekopara",
+              "site": "AnimeLab"
+            }
+          ],
+          "trailer": {
+            "id": "wSDfoGrDNjk",
+            "site": "youtube",
+            "thumbnail": "https://i.ytimg.com/vi/wSDfoGrDNjk/hqdefault.jpg"
+          }
+        },
+        {
+          "id": 99807,
+          "description": "One day, Miu Takigawa suddenly receives a letter notifying her that she has been chosen as a member of a brand-new project. Half in disbelief, she heads over to the location stated on the letter. There, she finds seven other girls summoned there in the same fashion. The girls behold a giant, top-secret facility. They stand in bewilderment as they are told:<br>\n<br>\n\"You are going to debut for a major record label as an idol group.\"<br>\n<br>\nA new kind of idol, never-before-seen, is about to be born here…<br>\n<br>\n(Source: Aniplex of America)",
+          "popularity": 7427,
+          "averageScore": 64,
+          "title": {
+            "english": "22/7 (nanabun no nijyuuni)",
+            "romaji": "22/7",
+            "native": "22/7 （ナナブンノニジュウニ）"
+          },
+          "relations": {
+            "nodes": [
+              {
+                "title": {
+                  "romaji": "Ano Hi no Kanojo-tachi",
+                  "english": null
+                }
+              },
+              {
+                "title": {
+                  "romaji": "Boku wa Sonzai Shiteinakatta",
+                  "english": "Boku wa Sonzai Shiteinakatta"
+                }
+              },
+              {
+                "title": {
+                  "romaji": "Rikaisya",
+                  "english": null
+                }
+              },
+              {
+                "title": {
+                  "romaji": "Shampoo no Nioi ga Shita",
+                  "english": "Shampoo no Nioi ga Shita"
+                }
+              },
+              {
+                "title": {
+                  "romaji": "Nani mo Shite Agerarenai",
+                  "english": null
+                }
+              },
+              {
+                "title": {
+                  "romaji": "22/7: 8＋3＝？",
+                  "english": null
+                }
+              },
+              {
+                "title": {
+                  "romaji": "22/7+α",
+                  "english": null
+                }
+              },
+              {
+                "title": {
+                  "romaji": "Kaze wa Fuiteru ka?",
+                  "english": null
+                }
+              }
+            ]
+          },
+          "genres": ["Drama", "Music"],
+          "season": "WINTER",
+          "seasonYear": 2020,
+          "startDate": {
+            "year": 2020,
+            "month": 1,
+            "day": 11
+          },
+          "endDate": {
+            "year": 2020,
+            "month": 3,
+            "day": 28
+          },
+          "episodes": 12,
+          "nextAiringEpisode": null,
+          "coverImage": {
+            "extraLarge": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx99807-bkaSfYalAcbf.jpg",
+            "large": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/medium/bx99807-bkaSfYalAcbf.jpg",
+            "medium": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/small/bx99807-bkaSfYalAcbf.jpg",
+            "color": "#aea1e4"
+          },
+          "bannerImage": "https://s4.anilist.co/file/anilistcdn/media/anime/banner/99807-DZaDma3xetsL.jpg",
+          "externalLinks": [
+            {
+              "url": "https://227anime.com/",
+              "site": "Official Site"
+            },
+            {
+              "url": "https://227anime-usa.com/",
+              "site": "Official Site"
+            },
+            {
+              "url": "https://twitter.com/227anime",
+              "site": "Twitter"
+            },
+            {
+              "url": "https://www.funimation.com/shows/227-nanabun-no-nijyuuni/",
+              "site": "Funimation"
+            },
+            {
+              "url": "https://www.animelab.com/shows/227",
+              "site": "AnimeLab"
+            },
+            {
+              "url": "https://www.crunchyroll.com/227-nanabun-no-nijyuuni",
+              "site": "Crunchyroll"
+            }
+          ],
+          "trailer": {
+            "id": "5VQ88hAc1RY",
+            "site": "youtube",
+            "thumbnail": "https://i.ytimg.com/vi/5VQ88hAc1RY/hqdefault.jpg"
+          }
+        },
+        {
+          "id": 109964,
+          "description": "Spin-off of \"Tama and Friends\" that reimagines the cast of the franchise as humans.<br>\n<br>\n“Tama & Friends: Have you seen my Tama?” debuted in 1983 as a popular character on stationery and accessories. Tama, the beloved neighborhood cat who is known for the patch on his forehead and yellow ears, has now taken on a human form! Featuring Tama and his quirky friends, Uchitama is a brand-new type of heartwarming anime that might even be the new definition of kawaii!?<br>\n<br>\nIn a city somewhere in Japan, there's a flyer often seen on Third Street with a picture of a cat with a kinked tail, bearing the words: “Have you seen Tama?” A young boy gazes at the flyer, but he has fluffy ears on his head…!? Watch the dogs and cats from Third Street take on a human form and get up to some mischief.<br>\n<br>\nTake a peek into the wonderful lives of Tama and his friends.<br>\n<br>\n(Source: Aniplex of America)",
+          "popularity": 2940,
+          "averageScore": 63,
+          "title": {
+            "english": "Uchitama?! Have you seen my Tama?",
+            "romaji": "Uchitama?! Uchi no Tama Shirimasenka?",
+            "native": "うちタマ?!~うちのタマ知りませんか?~"
+          },
+          "relations": {
+            "nodes": [
+              {
+                "title": {
+                  "romaji": "Tama & Friends: Uchi no Tama Shirimasenka?",
+                  "english": null
+                }
+              }
+            ]
+          },
+          "genres": ["Comedy", "Slice of Life"],
+          "season": "WINTER",
+          "seasonYear": 2020,
+          "startDate": {
+            "year": 2020,
+            "month": 1,
+            "day": 10
+          },
+          "endDate": {
+            "year": 2020,
+            "month": 3,
+            "day": 20
+          },
+          "episodes": 11,
+          "nextAiringEpisode": null,
+          "coverImage": {
+            "extraLarge": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx109964-WLzxb4UNBJxM.png",
+            "large": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/medium/bx109964-WLzxb4UNBJxM.png",
+            "medium": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/small/bx109964-WLzxb4UNBJxM.png",
+            "color": "#f1d693"
+          },
+          "bannerImage": "https://s4.anilist.co/file/anilistcdn/media/anime/banner/109964-uZrVTV4PK2ml.jpg",
+          "externalLinks": [
+            {
+              "url": "https://uchitama.com/",
+              "site": "Official Site"
+            },
+            {
+              "url": "https://twitter.com/uchitama_anime",
+              "site": "Twitter"
+            },
+            {
+              "url": "https://www.funimation.com/shows/uchitama-have-you-seen-my-tama/",
+              "site": "Funimation"
+            },
+            {
+              "url": "https://www.animelab.com/shows/uchitama-have-you-seen-my-tama",
+              "site": "AnimeLab"
+            },
+            {
+              "url": "https://www.crunchyroll.com/uchitama-have-you-seen-my-tama",
+              "site": "Crunchyroll"
+            }
+          ],
+          "trailer": {
+            "id": "m_NohQsb3Gs",
+            "site": "youtube",
+            "thumbnail": "https://i.ytimg.com/vi/m_NohQsb3Gs/hqdefault.jpg"
+          }
+        },
+        {
+          "id": 108628,
+          "description": "The anime's college rugby story centers on Natsusa Yuzuki, who expects to be an ace on the rugby team when he enrolls in college. However, he is no longer able to play rugby due to certain circumstances. Ibuki Ueoka is an older fellow student who quit rugby. Yasunari Tsuru is a younger student who finds Natsusa disagreeable. Yuu Mashiro is a younger student who admires and follows Natsusa. Seiichirou Shingyou is Natsusa's close childhood friend. Together, they compete in the Kansai university rugby league.<br>\n<br>\n(Source: Anime News Network)",
+          "popularity": 5780,
+          "averageScore": 62,
+          "title": {
+            "english": "number24",
+            "romaji": "number24",
+            "native": "number24"
+          },
+          "relations": {
+            "nodes": []
+          },
+          "genres": ["Sports"],
+          "season": "WINTER",
+          "seasonYear": 2020,
+          "startDate": {
+            "year": 2020,
+            "month": 1,
+            "day": 8
+          },
+          "endDate": {
+            "year": 2020,
+            "month": 4,
+            "day": 15
+          },
+          "episodes": 12,
+          "nextAiringEpisode": null,
+          "coverImage": {
+            "extraLarge": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx108628-TmkHwStCyOoX.png",
+            "large": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/medium/bx108628-TmkHwStCyOoX.png",
+            "medium": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/small/bx108628-TmkHwStCyOoX.png",
+            "color": "#5dc9f1"
+          },
+          "bannerImage": "https://s4.anilist.co/file/anilistcdn/media/anime/banner/108628-OrEXsxhNvxxf.jpg",
+          "externalLinks": [
+            {
+              "url": "https://number24-anime.com/",
+              "site": "Official Site"
+            },
+            {
+              "url": "https://twitter.com/number24_anime",
+              "site": "Twitter"
+            },
+            {
+              "url": "https://www.funimation.com/shows/number24/",
+              "site": "Funimation"
+            },
+            {
+              "url": "https://www.animelab.com/shows/number24",
+              "site": "AnimeLab"
+            }
+          ],
+          "trailer": {
+            "id": "xNGcLJhsaRk",
+            "site": "youtube",
+            "thumbnail": "https://i.ytimg.com/vi/xNGcLJhsaRk/hqdefault.jpg"
+          }
+        },
+        {
+          "id": 104936,
+          "description": "Seri Koyuki is just trying to have a normal school life, but instead he ends up acting as the straight man to his odd classmate, Kabuto Hanadori. Kabuto is is a delusional high school student, whose fantasies range from believing he is a knight on a journey, to claiming that removing his eyepatch will release a darker alter-ego who he refers to as Michael Offenbarung Dunkelheit. Seri is determined not to let himself get pushed around by Kabuto, but it seems that this will be easier said than done!",
+          "popularity": 7244,
+          "averageScore": 61,
+          "title": {
+            "english": "A Destructive God Sits Next to Me",
+            "romaji": "Boku no Tonari ni Ankoku Hakaishin ga Imasu.",
+            "native": "ぼくのとなりに暗黒破壊神がいます。"
+          },
+          "relations": {
+            "nodes": [
+              {
+                "title": {
+                  "romaji": "Boku no Tonari ni Ankoku Hakaishin ga Imasu",
+                  "english": null
+                }
+              }
+            ]
+          },
+          "genres": ["Comedy", "Slice of Life"],
+          "season": "WINTER",
+          "seasonYear": 2020,
+          "startDate": {
+            "year": 2020,
+            "month": 1,
+            "day": 11
+          },
+          "endDate": {
+            "year": 2020,
+            "month": 3,
+            "day": 28
+          },
+          "episodes": 12,
+          "nextAiringEpisode": null,
+          "coverImage": {
+            "extraLarge": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx104936-pj2LwAKTPZ4u.png",
+            "large": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/medium/bx104936-pj2LwAKTPZ4u.png",
+            "medium": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/small/bx104936-pj2LwAKTPZ4u.png",
+            "color": "#f19343"
+          },
+          "bannerImage": "https://s4.anilist.co/file/anilistcdn/media/anime/banner/104936-NsvIvmXeKLjK.jpg",
+          "externalLinks": [
+            {
+              "url": "https://twitter.com/bokuhaka_anime",
+              "site": "Twitter"
+            },
+            {
+              "url": "http://bokuhaka-anime.com/",
+              "site": "Official Site"
+            },
+            {
+              "url": "https://www.crunchyroll.com/a-destructive-god-sits-next-to-me",
+              "site": "Crunchyroll"
+            }
+          ],
+          "trailer": {
+            "id": "7DR1E7E2gc0",
+            "site": "youtube",
+            "thumbnail": "https://i.ytimg.com/vi/7DR1E7E2gc0/hqdefault.jpg"
+          }
+        },
+        {
+          "id": 101350,
+          "description": "The psychic suspense story revolves around people who possess the ability to infiltrate people's minds and manipulate memories. Their powers have been used in the underworld for covering up incidents, assassinations, and other deeds. These powers can not only destroy other people's spirits, but also corrupt the users' own hearts at the same time. The users had to protect their fragile and insecure hearts, as if chained to each other. They are called \"pets\" out of fear and despising.<br><br>\n\n(Source: Anime News Network)",
+          "popularity": 15649,
+          "averageScore": 59,
+          "title": {
+            "english": "pet",
+            "romaji": "pet",
+            "native": "pet"
+          },
+          "relations": {
+            "nodes": [
+              {
+                "title": {
+                  "romaji": "Pet",
+                  "english": null
+                }
+              }
+            ]
+          },
+          "genres": ["Drama", "Psychological", "Supernatural"],
+          "season": "WINTER",
+          "seasonYear": 2020,
+          "startDate": {
+            "year": 2020,
+            "month": 1,
+            "day": 6
+          },
+          "endDate": {
+            "year": 2020,
+            "month": 3,
+            "day": 30
+          },
+          "episodes": 13,
+          "nextAiringEpisode": null,
+          "coverImage": {
+            "extraLarge": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx101350-nRjxYT3r6qTC.jpg",
+            "large": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/medium/bx101350-nRjxYT3r6qTC.jpg",
+            "medium": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/small/bx101350-nRjxYT3r6qTC.jpg",
+            "color": "#1a43d6"
+          },
+          "bannerImage": "https://s4.anilist.co/file/anilistcdn/media/anime/banner/101350-XpXykQcRZWK6.jpg",
+          "externalLinks": [
+            {
+              "url": "https://pet-anime.com/",
+              "site": "Official Site"
+            },
+            {
+              "url": "https://twitter.com/pet_anime",
+              "site": "Twitter"
+            },
+            {
+              "url": "https://www.amazon.com/dp/B083G1PYGJ",
+              "site": "Amazon"
+            }
+          ],
+          "trailer": {
+            "id": "bhHBR9VWZOE",
+            "site": "youtube",
+            "thumbnail": "https://i.ytimg.com/vi/bhHBR9VWZOE/hqdefault.jpg"
+          }
+        },
+        {
+          "id": 101168,
+          "description": "Every human inhabiting the world of Alcia is branded by a “Count” or a number written on their body. Depending on how each person lives their life, this Count either goes up or down. For Hina’s mother, her total drops to 0 and she’s pulled into the Abyss, never to be seen again. But her mother’s last words send Hina on a quest to find a legendary hero from the Waste War—the fabled Ace!<br>\n<br>\n(Source: Funimation)",
+          "popularity": 27242,
+          "averageScore": 59,
+          "title": {
+            "english": "Plunderer",
+            "romaji": "Plunderer",
+            "native": "プランダラ"
+          },
+          "relations": {
+            "nodes": [
+              {
+                "title": {
+                  "romaji": "Plunderer",
+                  "english": null
+                }
+              }
+            ]
+          },
+          "genres": [
+            "Action",
+            "Adventure",
+            "Comedy",
+            "Drama",
+            "Ecchi",
+            "Fantasy",
+            "Romance"
+          ],
+          "season": "WINTER",
+          "seasonYear": 2020,
+          "startDate": {
+            "year": 2020,
+            "month": 1,
+            "day": 9
+          },
+          "endDate": {
+            "year": 2020,
+            "month": 6,
+            "day": 25
+          },
+          "episodes": 24,
+          "nextAiringEpisode": null,
+          "coverImage": {
+            "extraLarge": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx101168-7bmHkVlFxBCS.png",
+            "large": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/medium/bx101168-7bmHkVlFxBCS.png",
+            "medium": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/small/bx101168-7bmHkVlFxBCS.png",
+            "color": "#BF1010"
+          },
+          "bannerImage": "https://s4.anilist.co/file/anilistcdn/media/anime/banner/101168-55dmHGtGlJOY.jpg",
+          "externalLinks": [
+            {
+              "url": "http://plunderer-info.com/",
+              "site": "Official Site"
+            },
+            {
+              "url": "https://twitter.com/plundereranime",
+              "site": "Twitter"
+            },
+            {
+              "url": "https://www.funimation.com/shows/plunderer/",
+              "site": "Funimation"
+            },
+            {
+              "url": "https://www.animelab.com/shows/plunderer",
+              "site": "AnimeLab"
+            },
+            {
+              "url": "https://www.hulu.com/plunderer",
+              "site": "Hulu"
+            }
+          ],
+          "trailer": {
+            "id": "kbuNKI4SQ0s",
+            "site": "youtube",
+            "thumbnail": "https://i.ytimg.com/vi/kbuNKI4SQ0s/hqdefault.jpg"
+          }
+        },
+        {
+          "id": 110613,
+          "description": "The Warring States Period is a time of feuding warlords. Oda Nobunaga, the greatest of them all, is reborn in modern-day Japan... as a shiba-inu! The other generals of the era, too, have also inexplicably been reborn as dogs. Their warring states rivalry will resume at the dog park!<br><br>(Source: Crunchyroll)",
+          "popularity": 3005,
+          "averageScore": 57,
+          "title": {
+            "english": "Oda Cinnamon Nobunaga",
+            "romaji": "Oda Cinnamon Nobunaga",
+            "native": "織田シナモン信長"
+          },
+          "relations": {
+            "nodes": [
+              {
+                "title": {
+                  "romaji": "Oda Cinnamon Nobunaga",
+                  "english": "Oda Cinnamon Nobunaga"
+                }
+              }
+            ]
+          },
+          "genres": ["Comedy"],
+          "season": "WINTER",
+          "seasonYear": 2020,
+          "startDate": {
+            "year": 2020,
+            "month": 1,
+            "day": 11
+          },
+          "endDate": {
+            "year": 2020,
+            "month": 3,
+            "day": 28
+          },
+          "episodes": 12,
+          "nextAiringEpisode": null,
+          "coverImage": {
+            "extraLarge": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/medium/b110613-UVk4CINXaRnX.jpg",
+            "large": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/medium/b110613-UVk4CINXaRnX.jpg",
+            "medium": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/small/b110613-UVk4CINXaRnX.jpg",
+            "color": "#f1935d"
+          },
+          "bannerImage": "https://s4.anilist.co/file/anilistcdn/media/anime/banner/110613-vA1AClZLd6yp.jpg",
+          "externalLinks": [
+            {
+              "url": "https://nobunaga-cinnamon.com/",
+              "site": "Official Site"
+            },
+            {
+              "url": "https://twitter.com/oda_shinamon",
+              "site": "Twitter"
+            },
+            {
+              "url": "https://www.crunchyroll.com/oda-cinnamon-nobunaga",
+              "site": "Crunchyroll"
+            }
+          ],
+          "trailer": {
+            "id": "48Xrwn8Gsc8",
+            "site": "youtube",
+            "thumbnail": "https://i.ytimg.com/vi/48Xrwn8Gsc8/hqdefault.jpg"
+          }
+        },
+        {
+          "id": 107420,
+          "description": "In the year 2043, Infinite Dendrogram, the world's first successful full-dive VRMMO was released. In addition to its ability to perfectly simulate the five senses, along with its many other amazing features, the game promised to offer players a world full of infinite possibilities. <br><br>Nearly two years later, soon-to-be college freshman, Reiji Mukudori, is finally able to buy a copy of the game and start playing. With some help from his experienced older brother, Shuu, and his partner Embryo, Reiji embarks on an adventure into the world of Infinite Dendrogram. Just what will he discover and encounter in this game world known for its incredible realism and infinite possibilities?<br><br>\n(Source: J-Novel Club)",
+          "popularity": 17301,
+          "averageScore": 57,
+          "title": {
+            "english": "Infinite Dendrogram",
+            "romaji": "Infinite Dendrogram",
+            "native": "インフィニット・デンドログラム"
+          },
+          "relations": {
+            "nodes": [
+              {
+                "title": {
+                  "romaji": "Infinite Dendrogram",
+                  "english": "Infinite Dendrogram"
+                }
+              },
+              {
+                "title": {
+                  "romaji": "Infinite Dendrogram",
+                  "english": null
+                }
+              }
+            ]
+          },
+          "genres": ["Action", "Adventure", "Fantasy"],
+          "season": "WINTER",
+          "seasonYear": 2020,
+          "startDate": {
+            "year": 2020,
+            "month": 1,
+            "day": 9
+          },
+          "endDate": {
+            "year": 2020,
+            "month": 4,
+            "day": 16
+          },
+          "episodes": 13,
+          "nextAiringEpisode": null,
+          "coverImage": {
+            "extraLarge": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx107420-fTC53wOorIsl.jpg",
+            "large": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/medium/bx107420-fTC53wOorIsl.jpg",
+            "medium": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/small/bx107420-fTC53wOorIsl.jpg",
+            "color": "#35aee4"
+          },
+          "bannerImage": "https://s4.anilist.co/file/anilistcdn/media/anime/banner/107420-nH4M41MFz0kt.jpg",
+          "externalLinks": [
+            {
+              "url": "http://www.dendro-anime.jp/",
+              "site": "Official Site"
+            },
+            {
+              "url": "https://twitter.com/dendro_anime",
+              "site": "Twitter"
+            },
+            {
+              "url": "https://www.funimation.com/shows/infinite-dendrogram/",
+              "site": "Funimation"
+            },
+            {
+              "url": "https://www.animelab.com/shows/infinite-dendrogram",
+              "site": "AnimeLab"
+            },
+            {
+              "url": "https://www.hulu.com/infinite-dendrogram",
+              "site": "Hulu"
+            },
+            {
+              "url": "https://www.youtube.com/playlist?list=PLxSscENEp7Jgn4Oax3g9Me3eA6QHG_6m-",
+              "site": "Youtube"
+            }
+          ],
+          "trailer": {
+            "id": "ESwp36zs30g",
+            "site": "youtube",
+            "thumbnail": "https://i.ytimg.com/vi/ESwp36zs30g/hqdefault.jpg"
+          }
+        },
+        {
+          "id": 101367,
+          "description": "A remake of the original 1998-1999 anime of the same name, to commemorate the novels' 25th anniversary. <br>\n<br> Orphen is the greatest sorcerer that the tower has ever seen but he is more interested in chasing the Bloody August, an infamous and very mysterious dragon. Along with his apprentice Majic and their companion Clio he heads off on a quest with the Sword of Baltanders, the only thing that can free the Bloody August or 'Azile' from the spell she is under.<br>\n<br>(Source: Anime News Network)",
+          "popularity": 8126,
+          "averageScore": 53,
+          "title": {
+            "english": "Sorcerous Stabber Orphen",
+            "romaji": "Majutsushi Orphen Hagure Tabi",
+            "native": "魔術士オーフェンはぐれ旅"
+          },
+          "relations": {
+            "nodes": [
+              {
+                "title": {
+                  "romaji": "Majutsushi Orphen",
+                  "english": "Orphen"
+                }
+              },
+              {
+                "title": {
+                  "romaji": "Majutsushi Orphen",
+                  "english": "Sorcerous Stabber Orphen"
+                }
+              },
+              {
+                "title": {
+                  "romaji": "Majutsushi Orphen Hagure Tabi: Tenjin no Isan",
+                  "english": "Sorcerous Stabber Orphen: Celestial Artifacts"
+                }
+              },
+              {
+                "title": {
+                  "romaji": "Majutsushi Orphen Hagure Tabi: Waga Yobigoe ni Kotae yo, Shishi",
+                  "english": "Sorcerous Stabber Orphen: Heed My Call, Beast!"
+                }
+              },
+              {
+                "title": {
+                  "romaji": "Majutsushi Orphen Haguretabi: Waga Mei ni Shitagae Doll  ",
+                  "english": null
+                }
+              },
+              {
+                "title": {
+                  "romaji": "Majutsushi Orphen Haguretabi: Waga Mune de Nemure Bourei",
+                  "english": null
+                }
+              }
+            ]
+          },
+          "genres": ["Action", "Adventure", "Fantasy"],
+          "season": "WINTER",
+          "seasonYear": 2020,
+          "startDate": {
+            "year": 2020,
+            "month": 1,
+            "day": 7
+          },
+          "endDate": {
+            "year": 2020,
+            "month": 3,
+            "day": 31
+          },
+          "episodes": 13,
+          "nextAiringEpisode": null,
+          "coverImage": {
+            "extraLarge": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx101367-ISegytCr3Azy.jpg",
+            "large": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/medium/bx101367-ISegytCr3Azy.jpg",
+            "medium": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/small/bx101367-ISegytCr3Azy.jpg",
+            "color": "#e4d686"
+          },
+          "bannerImage": "https://s4.anilist.co/file/anilistcdn/media/anime/banner/101367-VaO36ryPRywI.jpg",
+          "externalLinks": [
+            {
+              "url": "http://ssorphen-anime.com/",
+              "site": "Official Site"
+            },
+            {
+              "url": "https://twitter.com/orphen25_tv",
+              "site": "Twitter"
+            },
+            {
+              "url": "https://www.funimation.com/shows/sorcerous-stabber-orphen/",
+              "site": "Funimation"
+            },
+            {
+              "url": "https://www.animelab.com/shows/sorcerous-stabber-orphen",
+              "site": "AnimeLab"
+            },
+            {
+              "url": "https://www.hulu.com/sorcerous-stabber-orphen",
+              "site": "Hulu"
+            },
+            {
+              "url": "https://www.youtube.com/playlist?list=PLxSscENEp7JjIwyEPUhDJSbJGzo5IaDD3",
+              "site": "Youtube"
+            }
+          ],
+          "trailer": {
+            "id": "WG_Wi6ixBMg",
+            "site": "youtube",
+            "thumbnail": "https://i.ytimg.com/vi/WG_Wi6ixBMg/hqdefault.jpg"
+          }
+        },
+        {
+          "id": 110615,
+          "description": "ARP (nominally an abbreviation for Artists Republic Production) is a dance vocal group which holds live performances — featuring singing, dancing, and interactive talking with the audience — in real-time using the latest augmented-reality technology. The ikemen (handsome) group members include their de facto leader Shinji, the talented dancer León, and the members of the Rebel Cross duo (designer Daiya and composer/writer Rage).<br><br>(Source: Anime News Network)",
+          "popularity": 1114,
+          "averageScore": 49,
+          "title": {
+            "english": "ARP Backstage Pass",
+            "romaji": "ARP Backstage Pass",
+            "native": "ARP Backstage Pass"
+          },
+          "relations": {
+            "nodes": [
+              {
+                "title": {
+                  "romaji": "ARP Backstage Pass: Celebrate Good Time - Short Stories",
+                  "english": "APR Backstage Pass Episode 6.5"
+                }
+              },
+              {
+                "title": {
+                  "romaji": "ARP Backstage Pass: Paradise",
+                  "english": null
+                }
+              }
+            ]
+          },
+          "genres": ["Music"],
+          "season": "WINTER",
+          "seasonYear": 2020,
+          "startDate": {
+            "year": 2020,
+            "month": 1,
+            "day": 13
+          },
+          "endDate": {
+            "year": 2020,
+            "month": 3,
+            "day": 31
+          },
+          "episodes": 10,
+          "nextAiringEpisode": null,
+          "coverImage": {
+            "extraLarge": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx110615-BPAvwgEZ7iTn.png",
+            "large": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/medium/bx110615-BPAvwgEZ7iTn.png",
+            "medium": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/small/bx110615-BPAvwgEZ7iTn.png",
+            "color": null
+          },
+          "bannerImage": "https://s4.anilist.co/file/anilistcdn/media/anime/banner/110615-qkyfTqWGwN7I.jpg",
+          "externalLinks": [
+            {
+              "url": "http://arp-anime.com/",
+              "site": "Official Site"
+            },
+            {
+              "url": "https://twitter.com/arp_anime",
+              "site": "Twitter"
+            },
+            {
+              "url": "https://www.crunchyroll.com/arp-backstage-pass",
+              "site": "Crunchyroll"
+            }
+          ],
+          "trailer": {
+            "id": "uscQS9BhzcQ",
+            "site": "youtube",
+            "thumbnail": "https://i.ytimg.com/vi/uscQS9BhzcQ/hqdefault.jpg"
+          }
+        },
+        {
+          "id": 98515,
+          "description": "The series centers on Makoto Shiranui, a boy who travels to Tokyo seeking to become the apprentice of Mamoru Hoshisato, a world-famous magician and friend of his parents. Ever since he had watched a show by Mamoru and his wife Maive, he had dreamed of being a magician. Their daughter Kana (nicknamed Hatena) has been Makoto's friend since childhood. Even though Tokyo has had a rash of burglaries by a beautiful woman thief, Makoto can rest easy as long as Hatena is there. When he arrives at the Hoshisato residence, a haunted mansion, the family butler Jeeves and the maid Emma greet him, and he is reunited with Hatena, only to find out that they don't really get along now.<br><br>\n\n(Source: Anime News Network)",
+          "popularity": 5847,
+          "averageScore": 49,
+          "title": {
+            "english": "Hatena Illusion",
+            "romaji": "Hatena☆Illusion",
+            "native": "はてな☆イリュージョン"
+          },
+          "relations": {
+            "nodes": [
+              {
+                "title": {
+                  "romaji": "Hatena☆Illusion",
+                  "english": null
+                }
+              },
+              {
+                "title": {
+                  "romaji": "Hatena☆Illusion",
+                  "english": null
+                }
+              }
+            ]
+          },
+          "genres": ["Comedy", "Ecchi", "Romance", "Supernatural"],
+          "season": "WINTER",
+          "seasonYear": 2020,
+          "startDate": {
+            "year": 2020,
+            "month": 1,
+            "day": 9
+          },
+          "endDate": {
+            "year": 2020,
+            "month": 6,
+            "day": 4
+          },
+          "episodes": 12,
+          "nextAiringEpisode": null,
+          "coverImage": {
+            "extraLarge": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx98515-sSZiUx4VI0KH.png",
+            "large": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/medium/bx98515-sSZiUx4VI0KH.png",
+            "medium": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/small/bx98515-sSZiUx4VI0KH.png",
+            "color": "#286bf1"
+          },
+          "bannerImage": "https://s4.anilist.co/file/anilistcdn/media/anime/banner/98515-5kTCS2I8WdYI.jpg",
+          "externalLinks": [
+            {
+              "url": "http://hatenaillusion-anime.com/",
+              "site": "Official Site"
+            },
+            {
+              "url": "https://twitter.com/hatena_anime",
+              "site": "Twitter"
+            },
+            {
+              "url": "https://www.funimation.com/shows/hatena-illusion/",
+              "site": "Funimation"
+            },
+            {
+              "url": "https://www.animelab.com/shows/hatena-illusion",
+              "site": "AnimeLab"
+            }
+          ],
+          "trailer": {
+            "id": "MDyi_KbcPYs",
+            "site": "youtube",
+            "thumbnail": "https://i.ytimg.com/vi/MDyi_KbcPYs/hqdefault.jpg"
+          }
+        },
+        {
+          "id": 113472,
+          "description": "The super elite school Y Academy is shrouded in many mysteries. The ‘YSP Club’ tackles those very mysteries. And not just that, they can also transform into 'Yo-kai Heroes’. They are entrusted with the mission of solving the greatest mysteries in Yo-kai history. An overly powerful student council, a ruthless disciplinary committee, and even an alien invasion.<br><br>\nWhat awaits Jinpei, and the other 'YSP Club’ members? A bright future? Or perhaps...Sudden gag overload. Touching developments that’ll move you to tears. A completely new experience is waiting for you. Unravel the biggest mystery of the Y Academy...no, the entire world.<br><br>(Source: Yokai Watch Wiki)",
+          "popularity": 222,
+          "averageScore": null,
+          "title": {
+            "english": null,
+            "romaji": "Youkai Watch Jam: Youkai Gakuen Y - N to no Souguu",
+            "native": "妖怪ウォッチJam: 妖怪学園Y 〜Nとの遭遇〜"
+          },
+          "relations": {
+            "nodes": [
+              {
+                "title": {
+                  "romaji": "Youkai Watch: Youkai Gakuen Y - Neko wa Hero ni Nareru ka",
+                  "english": null
+                }
+              }
+            ]
+          },
+          "genres": ["Comedy", "Fantasy", "Supernatural"],
+          "season": "WINTER",
+          "seasonYear": 2020,
+          "startDate": {
+            "year": 2019,
+            "month": 12,
+            "day": 27
+          },
+          "endDate": {
+            "year": null,
+            "month": null,
+            "day": null
+          },
+          "episodes": null,
+          "nextAiringEpisode": {
+            "timeUntilAiring": 74758
+          },
+          "coverImage": {
+            "extraLarge": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx113472-eCohv2grT8J4.png",
+            "large": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/medium/bx113472-eCohv2grT8J4.png",
+            "medium": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/small/bx113472-eCohv2grT8J4.png",
+            "color": "#e45d50"
+          },
+          "bannerImage": null,
+          "externalLinks": [
+            {
+              "url": "https://www.tv-tokyo.co.jp/anime/youkai-watch2020/",
+              "site": "Official Site"
+            }
+          ],
+          "trailer": null
+        }
+      ]
+    }
+  }
+}

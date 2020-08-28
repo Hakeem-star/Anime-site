@@ -1,0 +1,94 @@
+{
+  "data": {
+    "Page": {
+      "media": [
+        {
+          "id": 106625,
+          "episodes": 13,
+          "nextAiringEpisode": null,
+          "streamingEpisodes": [
+            {
+              "title": "Episode 13 - The Second Day",
+              "thumbnail": "https://img1.ak.crunchyroll.com/i/spire2-tmb/6de20b02eae283b0f324eef6e96503f61585935185_full.jpg",
+              "url": "http://www.crunchyroll.com/haikyu/episode-13-the-second-day-792664",
+              "site": "Crunchyroll"
+            },
+            {
+              "title": "Episode 12 - Vivid",
+              "thumbnail": "https://img1.ak.crunchyroll.com/i/spire1-tmb/d596486d900ee8aa70c8e8ac08066de31585301310_full.jpg",
+              "url": "http://www.crunchyroll.com/haikyu/episode-12-vivid-792663",
+              "site": "Crunchyroll"
+            },
+            {
+              "title": "Episode 11 - A Chance to Connect",
+              "thumbnail": "https://img1.ak.crunchyroll.com/i/spire3-tmb/ff5f7336b29c7c501138613901b2c7021584721296_full.jpg",
+              "url": "http://www.crunchyroll.com/haikyu/episode-11-a-chance-to-connect-792662",
+              "site": "Crunchyroll"
+            },
+            {
+              "title": "Episode 10 - Battle Lines",
+              "thumbnail": "https://img1.ak.crunchyroll.com/i/spire3-tmb/adcb79ec021aceb19588f3ca6cefdddd1584120248_full.jpg",
+              "url": "http://www.crunchyroll.com/haikyu/episode-10-battle-lines-792661",
+              "site": "Crunchyroll"
+            },
+            {
+              "title": "Episode 9 - Everyone's Night",
+              "thumbnail": "https://img1.ak.crunchyroll.com/i/spire2-tmb/ce506892c5cd562fb3df7ffe596542b01583516777_full.jpg",
+              "url": "http://www.crunchyroll.com/haikyu/episode-9-everyones-night-792660",
+              "site": "Crunchyroll"
+            },
+            {
+              "title": "Episode 8 - Challenger",
+              "thumbnail": "https://img1.ak.crunchyroll.com/i/spire3-tmb/0df1a88972950b47673f8b3a694181741582914908_full.jpg",
+              "url": "http://www.crunchyroll.com/haikyu/episode-8-challenger-792659",
+              "site": "Crunchyroll"
+            },
+            {
+              "title": "Episode 7 - Return",
+              "thumbnail": "https://img1.ak.crunchyroll.com/i/spire1-tmb/555af30c2bff1171edf5ba812bc5f2a01582288410_full.jpg",
+              "url": "http://www.crunchyroll.com/haikyu/episode-7-return-792658",
+              "site": "Crunchyroll"
+            },
+            {
+              "title": "Episode 6 - Enhancements",
+              "thumbnail": "https://img1.ak.crunchyroll.com/i/spire2-tmb/07aa52ff2f9a2cf7d42f04d4344c57c01581702429_full.jpg",
+              "url": "http://www.crunchyroll.com/haikyu/episode-6-enhancements-792657",
+              "site": "Crunchyroll"
+            },
+            {
+              "title": "Episode 5 - Hunger",
+              "thumbnail": "https://img1.ak.crunchyroll.com/i/spire1-tmb/afbfd905b41682aecf14e32b3b9619c11581085829_full.jpg",
+              "url": "http://www.crunchyroll.com/haikyu/episode-5-hunger-792656",
+              "site": "Crunchyroll"
+            },
+            {
+              "title": "Episode 4 - Take It Easy",
+              "thumbnail": "https://img1.ak.crunchyroll.com/i/spire4-tmb/fa218f45a79eb699a33db634cf99de391580509091_full.jpg",
+              "url": "http://www.crunchyroll.com/haikyu/episode-4-take-it-easy-792655",
+              "site": "Crunchyroll"
+            },
+            {
+              "title": "Episode 3 - Perspective",
+              "thumbnail": "https://img1.ak.crunchyroll.com/i/spire4-tmb/150700d2b6a7ce693d837aea08682fa61579867576_full.jpg",
+              "url": "http://www.crunchyroll.com/haikyu/episode-3-perspective-792654",
+              "site": "Crunchyroll"
+            },
+            {
+              "title": "Episode 2 - Lost",
+              "thumbnail": "https://img1.ak.crunchyroll.com/i/spire2-tmb/01fcc0a06b8c24c2a86711a005c5fa491579273338_full.jpg",
+              "url": "http://www.crunchyroll.com/haikyu/episode-2-lost-792653",
+              "site": "Crunchyroll"
+            },
+            {
+              "title": "Episode 1 - Introductions",
+              "thumbnail": "https://img1.ak.crunchyroll.com/i/spire4-tmb/7ef410c2fcac15bcd97d4a88dcf536d71578683468_full.jpg",
+              "url": "http://www.crunchyroll.com/haikyu/episode-1-introductions-792652",
+              "site": "Crunchyroll"
+            }
+          ],
+          "averageScore": 85
+        }
+      ]
+    }
+  }
+}

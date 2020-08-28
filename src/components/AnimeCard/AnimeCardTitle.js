@@ -3,6 +3,7 @@ import { css } from "@emotion/core";
 import { AnimeCardContext } from "./AnimeCard";
 import AnimeCardGallery from "./AnimeCardGallery";
 import AnimeRecommendations from "./AnimeRecommendations";
+import AnimeAdditionalInfo from "./AnimeAdditionalInfo";
 
 const titleContainerStyle = css`
   color: white;
@@ -35,21 +36,31 @@ export default function AnimeCardTitle() {
     imageHoverTitleStyles,
     openDiscussionStyles,
     galleryImages,
+    additionalInfoData,
+    additionalInfoVisibleState,
     galleryPageVisibleState,
     recommendationsPageVisibleState,
     recommendationsData,
   } = useContext(AnimeCardContext);
 
   function innerPageToDisplay() {
+    //If we are viewing the gallery
     if (galleryPageVisibleState) {
       return galleryImages.gfycats ? (
         <AnimeCardGallery images={galleryImages.gfycats} />
       ) : null;
-    } else if (
-      recommendationsPageVisibleState &&
-      recommendationsData.length > 0
+    }
+    //If we are viewing the recommendations page
+    else if (
+      recommendationsPageVisibleState
+      // recommendationsData.length > 0
     ) {
       return <AnimeRecommendations recommendations={recommendationsData} />;
+    } else if (
+      additionalInfoVisibleState &&
+      Object.keys(additionalInfoData).length > 0
+    ) {
+      return <AnimeAdditionalInfo additionalInfoData={additionalInfoData} />;
     }
   }
 

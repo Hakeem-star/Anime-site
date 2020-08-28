@@ -49,16 +49,21 @@ export default function SynopsisCard() {
     AnimeCardContext
   );
   return (
-    <div
-      css={[synopsisCardStyle, imageHoverSynopsisStyles]}
-      className="synopsis-card"
-    >
-      <p
+    <div css={[synopsisCardStyle, imageHoverSynopsisStyles]}>
+      <div
         css={css`
-          padding-bottom: 30px;
+          grid-column: 1/2;
+          grid-row: 1/2;
         `}
-        dangerouslySetInnerHTML={{ __html: description }}
-      ></p>
+        className="synopsis-card"
+      >
+        <p
+          css={css`
+            padding-bottom: 30px;
+          `}
+          dangerouslySetInnerHTML={{ __html: description }}
+        ></p>
+      </div>
     </div>
   );
 }

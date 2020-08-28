@@ -50,9 +50,7 @@ export default function AnimeImageCard() {
       //Add styles to relevent components so the card can go fullScreen
       imageCardClickedSylesChange().on();
     }
-    console.log("before", expandCardToContainer);
     setExpandCardToContainer((state) => !state);
-    console.log("after", expandCardToContainer);
   }
 
   return (
@@ -65,7 +63,6 @@ export default function AnimeImageCard() {
       }}
       onMouseLeave={() => {
         //set current styles
-        console.log(!expandCardToContainer);
         if (!expandCardToContainer) {
           //set new styles
           imageCardHoverSylesChange().off();

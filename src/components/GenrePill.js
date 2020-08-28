@@ -1,5 +1,7 @@
 import React from "react";
 import { css } from "@emotion/core";
+import PropTypes from "prop-types";
+
 //Needs to filter on click
 const pillStyle = css`
   /* width: 80px; */
@@ -28,3 +30,8 @@ export default function GenrePill({ text, colorOveride, pillClick }) {
     </button>
   );
 }
+GenrePill.propTypes = {
+  text: PropTypes.string,
+  colorOveride: PropTypes.object,
+  pillClick: PropTypes.func,
+};

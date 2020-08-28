@@ -1,0 +1,283 @@
+{
+  "data": {
+    "Page": {
+      "media": [
+        {
+          "id": 106625,
+          "recommendations": {
+            "nodes": [
+              {
+                "mediaRecommendation": {
+                  "coverImage": {
+                    "medium": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/small/bx11771-82QwcjXwGoeg.jpg",
+                    "color": "#50aefe"
+                  },
+                  "externalLinks": [
+                    {
+                      "url": "http://www.crunchyroll.com/kurokos-basketball",
+                      "site": "Crunchyroll"
+                    },
+                    {
+                      "url": "http://www.kurobas.com/",
+                      "site": "Official Site"
+                    },
+                    {
+                      "url": "https://twitter.com/kurobasanime/",
+                      "site": "Twitter"
+                    },
+                    {
+                      "url": "https://www.animelab.com/shows/kurokos-basketball",
+                      "site": "AnimeLab"
+                    }
+                  ],
+                  "popularity": 71837,
+                  "title": {
+                    "romaji": "Kuroko no Basket",
+                    "english": "Kuroko's Basketball",
+                    "native": "黒子のバスケ",
+                    "userPreferred": "Kuroko no Basket"
+                  }
+                }
+              },
+              {
+                "mediaRecommendation": {
+                  "coverImage": {
+                    "medium": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/small/bx18689-HrvWZjpWvxMr.jpg",
+                    "color": "#5093e4"
+                  },
+                  "externalLinks": [
+                    {
+                      "url": "http://www.crunchyroll.com/ace-of-the-diamond",
+                      "site": "Crunchyroll"
+                    },
+                    {
+                      "url": "http://diaace.com/",
+                      "site": "Official Site"
+                    },
+                    {
+                      "url": "http://www.tv-tokyo.co.jp/anime/diaace",
+                      "site": "Official Site"
+                    }
+                  ],
+                  "popularity": 22969,
+                  "title": {
+                    "romaji": "Diamond no Ace",
+                    "english": "Ace of the Diamond",
+                    "native": "ダイヤのA",
+                    "userPreferred": "Diamond no Ace"
+                  }
+                }
+              },
+              {
+                "mediaRecommendation": {
+                  "coverImage": {
+                    "medium": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/small/bx21085-NzufvE5JSAjK.jpg",
+                    "color": "#fec950"
+                  },
+                  "externalLinks": [
+                    {
+                      "url": "http://www.crunchyroll.com/ace-of-the-diamond",
+                      "site": "Crunchyroll"
+                    }
+                  ],
+                  "popularity": 11636,
+                  "title": {
+                    "romaji": "Diamond no Ace: Second Season",
+                    "english": "Ace of the Diamond Second Season",
+                    "native": "ダイヤのA～Second Season～",
+                    "userPreferred": "Diamond no Ace: Second Season"
+                  }
+                }
+              },
+              {
+                "mediaRecommendation": {
+                  "coverImage": {
+                    "medium": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/small/bx101903-smbtaZBYXFop.jpg",
+                    "color": "#5078e4"
+                  },
+                  "externalLinks": [
+                    {
+                      "url": "http://kazetsuyo-anime.com/",
+                      "site": "Official Site"
+                    },
+                    {
+                      "url": "https://twitter.com/kazetsuyo_anime",
+                      "site": "Twitter"
+                    },
+                    {
+                      "url": "https://www.crunchyroll.com/run-with-the-wind",
+                      "site": "Crunchyroll"
+                    },
+                    {
+                      "url": "https://www.hidive.com/tv/run-with-the-wind",
+                      "site": "Hidive"
+                    }
+                  ],
+                  "popularity": 28856,
+                  "title": {
+                    "romaji": "Kaze ga Tsuyoku Fuiteiru",
+                    "english": "Run with the Wind",
+                    "native": "風が強く吹いている",
+                    "userPreferred": "Kaze ga Tsuyoku Fuiteiru"
+                  }
+                }
+              },
+              {
+                "mediaRecommendation": {
+                  "coverImage": {
+                    "medium": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/small/nx170-EHrwa8o5hJGo.jpg",
+                    "color": "#bb4328"
+                  },
+                  "externalLinks": [
+                    {
+                      "url": "http://www.crunchyroll.com/slam-dunk",
+                      "site": "Crunchyroll"
+                    },
+                    {
+                      "url": "http://www.funimation.com/shows/slam-dunk/",
+                      "site": "Funimation"
+                    }
+                  ],
+                  "popularity": 18024,
+                  "title": {
+                    "romaji": "Slam Dunk",
+                    "english": "Slam Dunk",
+                    "native": "スラムダンク",
+                    "userPreferred": "Slam Dunk"
+                  }
+                }
+              },
+              {
+                "mediaRecommendation": {
+                  "coverImage": {
+                    "medium": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/small/bx20510-7YPpNueZjzhC.png",
+                    "color": "#5dbbf1"
+                  },
+                  "externalLinks": [
+                    {
+                      "url": "http://www3.nhk.or.jp/anime/babysteps/index.html",
+                      "site": "Official Site"
+                    }
+                  ],
+                  "popularity": 15164,
+                  "title": {
+                    "romaji": "Baby Steps",
+                    "english": null,
+                    "native": "ベイビーステップ",
+                    "userPreferred": "Baby Steps"
+                  }
+                }
+              },
+              {
+                "mediaRecommendation": {
+                  "coverImage": {
+                    "medium": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/small/bx263-G7RlubsM73YY.png",
+                    "color": "#f1935d"
+                  },
+                  "externalLinks": [],
+                  "popularity": 35417,
+                  "title": {
+                    "romaji": "Hajime no Ippo",
+                    "english": "Fighting Spirit",
+                    "native": "はじめの一歩 THE FIGHTING!",
+                    "userPreferred": "Hajime no Ippo"
+                  }
+                }
+              },
+              {
+                "mediaRecommendation": {
+                  "coverImage": {
+                    "medium": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/small/bx11061-sIpBprNRfzCe.png",
+                    "color": "#f1d65d"
+                  },
+                  "externalLinks": [
+                    {
+                      "url": "http://www.crunchyroll.com/hunter-x-hunter",
+                      "site": "Crunchyroll"
+                    },
+                    {
+                      "url": "https://www.hulu.com/hunter-x-hunter",
+                      "site": "Hulu"
+                    },
+                    {
+                      "url": "https://www.netflix.com/title/70300472",
+                      "site": "Netflix"
+                    },
+                    {
+                      "url": "https://vrv.co/series/GY3VKX1MR/Hunter-x-Hunter",
+                      "site": "VRV"
+                    },
+                    {
+                      "url": "https://www.viz.com/watch/streaming/hunter-x-hunter",
+                      "site": "Viz"
+                    },
+                    {
+                      "url": "https://www.animelab.com/shows/hunter-x-hunter",
+                      "site": "AnimeLab"
+                    },
+                    {
+                      "url": "https://play.hbomax.com/series/urn:hbo:series:GXuFH8wd2WcPCwgEAAAy4",
+                      "site": "HBO Max"
+                    },
+                    {
+                      "url": "https://www.funimation.com/shows/hunter-x-hunter/",
+                      "site": "Funimation"
+                    },
+                    {
+                      "url": "https://tubitv.com/series/1627/hunter_x_hunter",
+                      "site": "Tubi TV"
+                    }
+                  ],
+                  "popularity": 181570,
+                  "title": {
+                    "romaji": "Hunter x Hunter (2011)",
+                    "english": "Hunter x Hunter (2011)",
+                    "native": "ハンター×ハンター (2011)",
+                    "userPreferred": "Hunter x Hunter (2011)"
+                  }
+                }
+              },
+              {
+                "mediaRecommendation": {
+                  "coverImage": {
+                    "medium": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/small/bx101239-gkX4JdUvv3JE.jpg",
+                    "color": "#1aaed6"
+                  },
+                  "externalLinks": [
+                    {
+                      "url": "http://ahirunosora.jp/",
+                      "site": "Official Site"
+                    },
+                    {
+                      "url": "https://twitter.com/ahirunosora_tv",
+                      "site": "Twitter"
+                    },
+                    {
+                      "url": "https://www.crunchyroll.com/ahiru-no-sora",
+                      "site": "Crunchyroll"
+                    },
+                    {
+                      "url": "https://www.hidive.com/tv/ahiru-no-sora",
+                      "site": "Hidive"
+                    },
+                    {
+                      "url": "https://vrv.co/series/G6NVGNJGY/Ahiru-no-Sora",
+                      "site": "VRV"
+                    }
+                  ],
+                  "popularity": 21494,
+                  "title": {
+                    "romaji": "Ahiru no Sora",
+                    "english": "Ahiru no Sora",
+                    "native": "あひるの空",
+                    "userPreferred": "Ahiru no Sora"
+                  }
+                }
+              }
+            ]
+          }
+        }
+      ]
+    }
+  }
+}

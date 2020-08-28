@@ -33,11 +33,9 @@ export default function GenrePillList({ genres, colour, addCss }) {
             console.log(genre);
             filterSeasonData(genre, setSeasonData, rawSeasonData);
           }}
-          colorOveride={[
-            css`
-              background-color: ${colour};
-            `,
-          ]}
+          colorOveride={css`
+            background-color: ${colour};
+          `}
           key={genre}
           text={genre}
         />
@@ -49,4 +47,5 @@ export default function GenrePillList({ genres, colour, addCss }) {
 GenrePillList.propTypes = {
   genres: PropTypes.array,
   colour: PropTypes.string,
+  addCss: PropTypes.object,
 };

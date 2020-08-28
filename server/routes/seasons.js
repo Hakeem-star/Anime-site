@@ -18,4 +18,16 @@ router.route("/reviews/:id").get((req, res) => {
   });
 });
 
+router.route("/additional_info/:id").get((req, res) => {
+  //Change the API request based on the url
+  //Recommendations
+  graphQLQueries
+    .getAdditionalAnimeInformation(req.params.id)
+    .then((response) => {
+      console.log(response.data);
+      res.send(response.data.data.Page.media);
+      res.end();
+    });
+});
+
 module.exports = router;
