@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react";
 import { css } from "@emotion/core";
-import Header from "../components/header";
+import Header from "../components/Header";
 import Background from "../components/Background";
 import AnimeCardsList from "../components/AnimeCardsList";
 import { Route, Redirect, useHistory } from "react-router-dom";
