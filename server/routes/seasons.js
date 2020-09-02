@@ -9,7 +9,7 @@ router.route(/\/(WINTER|SUMMER|FALL|SPRING)/i).get((req, res) => {
   });
 });
 
-router.route("/reviews/:id").get((req, res) => {
+router.route("/recommendations/:id").get((req, res) => {
   //Change the API request based on the url
   //Recommendations
   graphQLQueries.getAnimeRecommendations(req.params.id).then((response) => {

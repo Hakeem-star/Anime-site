@@ -24,7 +24,7 @@ const GenrePillListStyle = css`
 
 export default function GenrePillList({ genres, colour, addCss }) {
   const { setSeasonData, rawSeasonData } = useContext(seasonsHomePage);
-  const maximumGenres = genres.length > 4 ? genres.slice(3) : genres;
+  const maximumGenres = genres.length > 4 ? genres.slice(0, 6) : genres;
   return (
     <div css={[GenrePillListStyle, addCss]}>
       {maximumGenres.map((genre) => (
@@ -33,9 +33,7 @@ export default function GenrePillList({ genres, colour, addCss }) {
             console.log(genre);
             filterSeasonData(genre, setSeasonData, rawSeasonData);
           }}
-          colorOveride={css`
-            background-color: ${colour};
-          `}
+          colour={colour}
           key={genre}
           text={genre}
         />

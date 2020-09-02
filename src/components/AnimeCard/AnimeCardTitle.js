@@ -3,7 +3,7 @@ import { css } from "@emotion/core";
 import { AnimeCardContext } from "./AnimeCard";
 import AnimeCardGallery from "./AnimeCardGallery";
 import AnimeRecommendations from "./AnimeRecommendations";
-import AnimeAdditionalInfo from "./AnimeAdditionalInfo";
+import AnimeAdditionalInfoView from "./AnimeAdditionalInfoView";
 
 const titleContainerStyle = css`
   color: white;
@@ -57,10 +57,13 @@ export default function AnimeCardTitle() {
     ) {
       return <AnimeRecommendations recommendations={recommendationsData} />;
     } else if (
+      //If we are viewing the addition info page
       additionalInfoVisibleState &&
       Object.keys(additionalInfoData).length > 0
     ) {
-      return <AnimeAdditionalInfo additionalInfoData={additionalInfoData} />;
+      return (
+        <AnimeAdditionalInfoView additionalInfoData={additionalInfoData} />
+      );
     }
   }
 
@@ -69,7 +72,11 @@ export default function AnimeCardTitle() {
       className="title-container"
       css={[titleContainerStyle, imageHoverTitleStyles, openDiscussionStyles]}
     >
-      <div>
+      <div
+        css={css`
+          max-width: 250px;
+        `}
+      >
         <p>{title.english || title.romaji}</p>
       </div>
       {/* //discussion thread */}

@@ -131,7 +131,7 @@ export default function AnimeCard({ animeData }) {
   useEffect(() => {
     //Get Anime Review data
     if (recommendationsPageVisibleState)
-      Axios.get(`/api/seasons/reviews/${id}`).then((res) => {
+      Axios.get(`/api/seasons/recommendations/${id}`).then((res) => {
         console.log("CARD", res.data[0].recommendations.nodes);
         setRecommendationsData(res.data[0].recommendations.nodes);
       });

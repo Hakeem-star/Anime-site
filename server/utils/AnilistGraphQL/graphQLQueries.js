@@ -76,7 +76,7 @@ query ($id:Int ){
         nodes {
           mediaRecommendation {
             coverImage {
-              medium
+              large
               color
             }
             externalLinks {

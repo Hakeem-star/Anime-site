@@ -16,20 +16,30 @@ const ratingsBlockStyle = css`
   border-radius: 9px 9px 0 0;
 `;
 
+function processPotentialAverageScoreValues(averageScore) {
+  if (averageScore === null) {
+    return css`
+      background: linear-gradient(to right, #33ff0000, #33ff0000);
+    `;
+  } else {
+    return css`
+      background: linear-gradient(
+        to right,
+        #33ff00 0%,
+        #33ff00 ${averageScore}%,
+        #ff0000 ${averageScore}% 100%
+      );
+    `;
+  }
+}
+
 export default function RatingsBlock({ averageScore }) {
   return (
     <div css={ratingsBlockContainerStyle} className="ratings-container">
       <div
         css={[
           ratingsBlockStyle,
-          css`
-            background: linear-gradient(
-              to right,
-              #33ff00 0%,
-              #33ff00 ${averageScore}%,
-              #ff0000 ${averageScore}% 100%
-            );
-          `,
+          processPotentialAverageScoreValues(averageScore),
         ]}
       ></div>
     </div>
