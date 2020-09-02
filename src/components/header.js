@@ -16,12 +16,14 @@ const headerStyle = css`
   top: 0;
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
+  justify-content: center;
   z-index: 10;
   background: white;
   padding: 0 7.5%;
   .nav {
     display: flex;
-    width: 370px;
+    width: 100%;
+    max-width: 370px;
     margin: auto;
     justify-content: space-between;
     font-family: overpass;
@@ -44,6 +46,21 @@ const headerStyle = css`
     }
     .fall:hover {
       color: #f27d16;
+    }
+  }
+
+  @media (max-width: 1300px) {
+    height: 100px;
+    grid-template-columns: minmax(0, 370px);
+    grid-template-rows: 50% auto;
+    .nav {
+      grid-column: 1/2;
+    }
+    .header-likes,
+    .header-filter-options {
+      grid-column: 1/2;
+      grid-row: 2/3;
+      margin: 0;
     }
   }
 `;
@@ -139,6 +156,7 @@ export default function Header({
   return (
     <header css={headerStyle}>
       <div
+        className="header-likes"
         css={css`
           display: flex;
           flex-direction: row;
@@ -221,6 +239,9 @@ export default function Header({
           span {
             margin-right: 20px;
             cursor: pointer;
+          }
+          span:last-of-type {
+            margin: 0;
           }
         `}
       >

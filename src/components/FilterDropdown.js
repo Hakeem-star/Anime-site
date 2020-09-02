@@ -1,7 +1,9 @@
-import React from "react";
+import React, { useState } from "react";
 import { css } from "@emotion/core";
 
 export default function FilterDropdown({ aggregatedGenres, filterByGenre }) {
+  const [currentFilterValue, setCurrentFilterValue] = useState("None");
+
   return (
     <div
       css={css`
