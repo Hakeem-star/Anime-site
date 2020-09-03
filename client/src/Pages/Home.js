@@ -133,6 +133,10 @@ export default function Home() {
                 margin: 185px auto 0;
                 position: relative;
                 z-index: 1;
+                @media (max-width: 640px) {
+                  /* Not Mobile */
+                  margin: 55px auto 0;
+                }
               `}
             >
               <seasonsHomePage.Provider

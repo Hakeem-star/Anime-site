@@ -37,6 +37,8 @@ const titleContainerStyle = css`
     z-index: 3;
     p {
       color: rgb(110, 133, 158);
+      /* for emoji characters */
+      text-shadow: 0 0 0 rgb(110, 133, 158);
       text-align: center;
     }
   }
