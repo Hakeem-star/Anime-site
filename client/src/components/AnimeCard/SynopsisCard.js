@@ -47,6 +47,8 @@ const synopsisCardStyle = css`
     position: static;
     width: 100%;
     margin-left: 0;
+    margin-left: auto;
+    margin-right: auto;
   }
 `;
 
