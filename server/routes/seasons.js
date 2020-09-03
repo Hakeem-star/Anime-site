@@ -24,7 +24,6 @@ router.route("/additional_info/:id").get((req, res) => {
   graphQLQueries
     .getAdditionalAnimeInformation(req.params.id)
     .then((response) => {
-      console.log(response.data);
       res.send(response.data.data.Page.media);
       res.end();
     });

@@ -16,6 +16,11 @@ app.use(express.json());
 //   });
 // });
 
+// Priority serve any static files.
+app.use(express.static(path.resolve(__dirname, "../client/dist")));
+
+// Answer API requests.
+
 /////////////////////////////////////
 // Get Seasonal Anime Data
 const seasons = require("./routes/seasons.js");
