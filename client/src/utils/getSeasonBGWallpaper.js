@@ -1,3 +1,8 @@
+import winter from "../images/Winter.jpg";
+import spring from "../images/Spring.jpg";
+import summer from "../images/Summer.jpg";
+import fall from "../images/Fall.jpg";
+
 export function getSeasonBGWallpaper(location) {
   console.log(location, window.location.pathname);
   const seasonPath = (location || window.location).pathname
@@ -7,19 +12,19 @@ export function getSeasonBGWallpaper(location) {
   let currentSeason;
   switch (seasonPath) {
     case "WINTER":
-      currentSeason = "/src/images/Winter.jpg";
+      currentSeason = winter;
       break;
     case "SPRING":
-      currentSeason = "/src/images/Spring.jpg";
+      currentSeason = spring;
       break;
     case "SUMMER":
-      currentSeason = "/src/images/Summer.jpg";
+      currentSeason = summer;
       break;
     case "FALL":
-      currentSeason = "/src/images/Fall.jpg";
+      currentSeason = fall;
       break;
     default:
-      currentSeason = "/src/images/Winter.jpg";
+      currentSeason = winter;
       break;
   }
   return currentSeason;

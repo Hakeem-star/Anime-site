@@ -8,7 +8,6 @@ const imageCardStyle = css`
   position: absolute;
   width: 360px;
   height: 270px;
-  background-color: red;
   border-radius: 5px;
   margin: 20px;
   background-size: cover;

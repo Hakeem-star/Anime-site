@@ -22,12 +22,14 @@ module.exports = {
         ],
       },
       {
-        test: /\.(png|jpg|gif)$/i,
+        test: /\.(gif|png|jpg|svg)(\?.*$|$)/,
         use: [
           {
             loader: "url-loader",
             options: {
-              limit: 8192,
+              limit: 800000000000000192,
+              name: "[name].[ext]",
+              publicPath: "images/",
             },
           },
         ],
