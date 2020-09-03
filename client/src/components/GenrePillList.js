@@ -24,8 +24,12 @@ const GenrePillListStyle = css`
     /* Mobile */
     position: static;
     width: 100%;
-    padding: 10px 50px;
+    padding: 10px;
     grid-template-columns: auto auto auto;
+    grid-template-rows: minmax(0px, auto);
+    margin-top: auto;
+    margin-bottom: 20px;
+    height: auto;
   }
 `;
 

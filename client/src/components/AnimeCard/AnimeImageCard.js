@@ -21,6 +21,7 @@ const imageCardStyle = css`
     right: auto;
     margin: auto;
     margin-top: 20px;
+    max-width: 90%;
   }
 `;
 

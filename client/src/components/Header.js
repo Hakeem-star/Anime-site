@@ -50,9 +50,12 @@ const headerStyle = css`
   }
 
   @media (max-width: 1300px) {
+    /* Mobile */
     height: 100px;
     grid-template-columns: minmax(0, 370px);
     grid-template-rows: 50% auto;
+    position: sticky;
+    top: -50px;
     .nav {
       grid-column: 1/2;
     }

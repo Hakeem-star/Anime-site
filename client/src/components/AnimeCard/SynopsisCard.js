@@ -49,6 +49,7 @@ const synopsisCardStyle = css`
     margin-left: 0;
     margin-left: auto;
     margin-right: auto;
+    flex: 1;
   }
 `;
 

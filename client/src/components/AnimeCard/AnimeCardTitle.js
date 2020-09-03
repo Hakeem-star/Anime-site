@@ -36,6 +36,7 @@ const titleContainerStyle = css`
     margin: 0;
     z-index: 3;
     p {
+      color: rgb(110, 133, 158);
       text-align: center;
     }
   }

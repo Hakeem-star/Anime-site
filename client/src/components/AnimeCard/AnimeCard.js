@@ -22,11 +22,15 @@ const AnimeCardStyle = css`
   background: #f0f8ff59;
   margin-bottom: 80px;
   justify-self: center;
+  margin-left: auto;
+  margin-right: auto;
   overflow: hidden;
   perspective: 900px;
   @media (max-width: 640px) {
     /* Mobile */
     height: 800px;
+    display: flex;
+    flex-direction: column;
   }
 `;
 
