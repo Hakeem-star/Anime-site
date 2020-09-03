@@ -29,7 +29,7 @@ const headerStyle = css`
     font-family: overpass;
     font-size: 1rem;
     grid-column: 2/3;
-    a {
+    a:link {
       text-decoration: none;
     }
     a:visited {
