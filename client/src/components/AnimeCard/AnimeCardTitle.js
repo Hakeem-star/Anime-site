@@ -28,6 +28,17 @@ const titleContainerStyle = css`
   font-size: 1.1rem;
   line-height: 1.2;
   transition: all 0.5s ease-out;
+  @media (max-width: 640px) {
+    position: static;
+    right: auto;
+    max-width: 100%;
+    width: 100%;
+    margin: 0;
+    z-index: 3;
+    p {
+      text-align: center;
+    }
+  }
 `;
 
 export default function AnimeCardTitle() {
@@ -75,6 +86,8 @@ export default function AnimeCardTitle() {
       <div
         css={css`
           max-width: 250px;
+          text-align: center;
+          margin: auto;
         `}
       >
         <p>{title.english || title.romaji}</p>

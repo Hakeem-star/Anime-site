@@ -17,6 +17,11 @@ const expandTitleStyles = css`
   margin: 0;
   top: 0;
   right: 0;
+  overflow: hidden;
+  @media (max-width: 640px) {
+    max-height: 100%;
+    height: 100%;
+  }
 `;
 
 const additionalInfoStyles = css`
@@ -52,6 +57,13 @@ export default function AnimeCardOptions() {
         & > * {
           width: 20px;
           height: 20px;
+        }
+
+        @media (max-width: 640px) {
+          /* Mobile */
+          position: static;
+          right: auto;
+          z-index: 4;
         }
       `}
     >

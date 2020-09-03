@@ -20,6 +20,13 @@ const GenrePillListStyle = css`
   // justify-items: center;
   align-items: center;
   transition: transform 0.8s ease;
+  @media (max-width: 640px) {
+    /* Mobile */
+    position: static;
+    width: 100%;
+    padding: 10px;
+    grid-template-columns: auto auto auto;
+  }
 `;
 
 export default function GenrePillList({ genres, colour, addCss }) {

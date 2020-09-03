@@ -15,6 +15,13 @@ const imageCardStyle = css`
   transition: width 0.8s ease-out, height 0.8s ease-out, margin 0.8s ease-out;
   overflow: hidden;
   cursor: pointer;
+  @media (max-width: 640px) {
+    /* Mobile */
+    position: static;
+    right: auto;
+    margin: auto;
+    margin-top: 20px;
+  }
 `;
 
 export default function AnimeImageCard() {
@@ -88,15 +95,20 @@ export default function AnimeImageCard() {
             background-color: #000000a1;
             opacity: 0;
             transition: all 0.8s ease;
+            @media (max-width: 640px) {
+              /* Mobile */
+              opacity: 1;
+              background-color: #00000000;
+            }
           `,
           imageOverlayHoverStyles,
         ]}
       >
         {youtubePlayerVisible ? (
           <YouTube
-            onClick={() => {
-              console.log("CLOCL");
-            }}
+            // onClick={() => {
+            //   console.log("CLOCL");
+            // }}
             videoId={trailer.id}
             opts={{
               width: "100%",

@@ -13,4 +13,8 @@ export const innerTitleContainerGeneralStyle = css`
   ::-webkit-scrollbar-thumb {
     background: #555;
   }
+  @media (max-width: 640px) {
+    position: static;
+    width: 100%;
+  }
 `;

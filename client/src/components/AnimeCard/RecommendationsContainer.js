@@ -21,8 +21,8 @@ export default function RecommendationsContainer({
         margin-top: 20px;
         box-shadow: 3px 3px 3px 0px #65656552;
 
-        img {
-          width: 100%;
+        @media (max-width: 640px) {
+          width: 90%;
         }
       `}
     >
@@ -32,6 +32,18 @@ export default function RecommendationsContainer({
           border-right: 1px solid;
           grid-row: 1/3;
           grid-column: 1/2;
+          img {
+            width: 100%;
+          }
+          @media (max-width: 640px) {
+            display: grid;
+            place-content: center;
+            img {
+              max-height: 100%;
+              height: 100%;
+              width: auto;
+            }
+          }
         `}
       >
         <img src={image} alt={title} />

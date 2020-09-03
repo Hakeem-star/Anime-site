@@ -42,6 +42,12 @@ const synopsisCardStyle = css`
   ::-webkit-scrollbar-thumb:hover {
     background: #555;
   }
+
+  @media (max-width: 640px) {
+    position: static;
+    width: 100%;
+    margin-left: 0;
+  }
 `;
 
 export default function SynopsisCard() {

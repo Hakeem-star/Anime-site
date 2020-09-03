@@ -24,6 +24,10 @@ const AnimeCardStyle = css`
   justify-self: center;
   overflow: hidden;
   perspective: 900px;
+  @media (max-width: 640px) {
+    /* Mobile */
+    height: 800px;
+  }
 `;
 
 export default function AnimeCard({ animeData }) {
@@ -65,17 +69,26 @@ export default function AnimeCard({ animeData }) {
     return {
       on: () => {
         setImageHoverSynopsisStyles(css`
-          transform: translateX(35%);
+          @media (min-width: 640px) {
+            /* Not Mobile */
+            transform: translateX(35%);
+          }
         `);
         setImageCardHoverStyles(css`
-          width: 60%;
-          height: 70%;
+          @media (min-width: 640px) {
+            /* Not Mobile */
+            width: 60%;
+            height: 70%;
+          }
         `);
         setImageOverlayHoverStyles(css`
           opacity: 1;
         `);
         setPillButtonsHoverStyles(css`
-          transform: translateY(25%);
+          @media (min-width: 640px) {
+            /* Not Mobile */
+            transform: translateY(25%);
+          }
         `);
       },
       off: () => {
@@ -91,21 +104,33 @@ export default function AnimeCard({ animeData }) {
       on: () => {
         //set new styles
         setImageHoverTitleStyles(css`
-          transform: translateX(200%);
+          @media (min-width: 640px) {
+            /* Not Mobile */
+            transform: translateX(200%);
+          }
         `);
         setImageHoverSynopsisStyles(css`
-          transform: translateX(150%);
+          @media (min-width: 640px) {
+            /* Not Mobile */
+            transform: translateX(150%);
+          }
         `);
         setImageCardHoverStyles(css`
-          width: 100%;
-          height: 100%;
-          margin: 0;
+          @media (min-width: 640px) {
+            /* Not Mobile */
+            width: 100%;
+            height: 100%;
+            margin: 0;
+          }
         `);
         setImageOverlayHoverStyles(css`
           opacity: 1;
         `);
         setPillButtonsHoverStyles(css`
-          transform: translateY(200%);
+          @media (min-width: 640px) {
+            /* Not Mobile */
+            transform: translateY(200%);
+          }
         `);
       },
       off: () => {

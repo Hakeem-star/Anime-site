@@ -44,7 +44,7 @@ export default function GenrePill({ text, colour, pillClick }) {
   return (
     <button
       title={`Filter page by ${text}`}
-      onClick={pillClick}
+      // onClick={pillClick}
       css={[
         pillStyle,
         css`

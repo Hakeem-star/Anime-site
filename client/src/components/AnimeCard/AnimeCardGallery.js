@@ -37,6 +37,14 @@ export default function AnimeCardGallery({ images }) {
               height: 100%;
             }
           }
+
+          @media (max-width: 640px) {
+            div {
+              width: 90%;
+              img {
+              }
+            }
+          }
         `,
       ]}
     >

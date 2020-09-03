@@ -22,6 +22,10 @@ export default function EpisodeContainer({ episode }) {
         margin-top: 20px;
         box-shadow: 3px 3px 3px 0px #65656552;
         transition: box-shadow 0.3s ease;
+
+        @media (max-width: 640px) {
+          width: 90%;
+        }
         img {
           max-height: 100%;
           transition: transform 0.3s ease;
