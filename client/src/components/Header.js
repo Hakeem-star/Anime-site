@@ -6,6 +6,8 @@ import { BiFoodMenu } from "react-icons/bi";
 import FilterDropdown from "./FilterDropdown";
 import SortDropdown from "./SortDropdown";
 import SearchInput from "./SearchInput";
+import { Route } from "react-router-dom";
+
 const headerStyle = css`
   color: black;
   font-size: 50px;
@@ -181,28 +183,30 @@ export default function Header({
           }
         `}
       >
-        <div
-          css={css`
-            display: flex;
-            flex-direction: row;
-            align-items: center;
-            transition: transform 0.5s cubic-bezier(0.37, 2, 0.42, 1.02);
-          `}
-        >
-          <BiFoodMenu
+        <Link to="/likes/all" className="winter">
+          <div
             css={css`
-              height: 30px;
-            `}
-          />
-
-          <p
-            css={css`
-              margin-left: 10px;
+              display: flex;
+              flex-direction: row;
+              align-items: center;
+              transition: transform 0.5s cubic-bezier(0.37, 2, 0.42, 1.02);
             `}
           >
-            My Likes
-          </p>
-        </div>
+            <BiFoodMenu
+              css={css`
+                height: 30px;
+              `}
+            />
+
+            <p
+              css={css`
+                margin-left: 10px;
+              `}
+            >
+              My Likes
+            </p>
+          </div>
+        </Link>
       </div>
       <ul className="nav">
         <li>
@@ -215,6 +219,13 @@ export default function Header({
             Spring
           </Link>
         </li>
+        <Route path="/likes">
+          <li>
+            <Link to="/likes/all" className="all">
+              All
+            </Link>
+          </li>
+        </Route>
         <li>
           <Link to="/summer" className="summer">
             Summer

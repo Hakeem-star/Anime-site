@@ -1,4 +1,4 @@
-import React, { useState, useContext } from "react";
+import React, { useState, useContext, useEffect } from "react";
 import { AiFillHeart } from "react-icons/ai";
 import { IoMdImages, IoIosInformationCircle } from "react-icons/io";
 import { RiHeartAddLine } from "react-icons/ri";
@@ -6,6 +6,7 @@ import { css } from "@emotion/core";
 import { AnimeCardContext } from "./AnimeCard";
 import { BiDirections } from "react-icons/bi";
 import getAdditionalAnimeInfo from "../../utils/getAdditionalAnimeInfo";
+import { seasonsHomePageContext } from "../../App";
 
 const expandTitleStyles = css`
   width: 100%;
@@ -40,8 +41,13 @@ export default function AnimeCardOptions() {
     recommendationsPageVisibleState,
   } = useContext(AnimeCardContext);
 
+  const { setLikedAnime, likedAnime } = useContext(seasonsHomePageContext);
+
   const [addedTocollection, setAddedTocollection] = useState(false);
-  setOpenDiscussionStyles;
+
+  useEffect(() => {
+    if (likedAnime.includes(id)) setAddedTocollection(true);
+  }, []);
   return (
     <div
       css={css`
@@ -130,12 +136,21 @@ export default function AnimeCardOptions() {
         <AiFillHeart
           onClick={() => {
             setAddedTocollection((state) => !state);
+            //Click to remove from collection
+            setLikedAnime((state) =>
+              state.filter((stateID) => {
+                return stateID !== id;
+              })
+            );
           }}
         />
       ) : (
         <RiHeartAddLine
           onClick={() => {
             setAddedTocollection((state) => !state);
+            //
+            //Click to add to collection
+            setLikedAnime((state) => [id, ...state]);
           }}
         />
       )}

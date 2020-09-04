@@ -45,7 +45,7 @@ const synopsisCardStyle = css`
 
   @media (max-width: 640px) {
     position: static;
-    width: 100%;
+    width: 90%;
     margin-left: 0;
     margin-left: auto;
     margin-right: auto;

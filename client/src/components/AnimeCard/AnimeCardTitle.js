@@ -32,7 +32,7 @@ const titleContainerStyle = css`
     position: static;
     right: auto;
     max-width: 100%;
-    width: 100%;
+    width: 90%;
     margin: 0;
     z-index: 3;
     p {

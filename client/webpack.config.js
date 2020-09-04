@@ -1,6 +1,7 @@
 const HtmlWebPackPlugin = require("html-webpack-plugin");
 
 module.exports = {
+  output: { publicPath: "/" },
   module: {
     rules: [
       {
@@ -27,7 +28,7 @@ module.exports = {
           {
             loader: "url-loader",
             options: {
-              limit: 800000000000000192,
+              limit: 800000000000192,
               name: "[name].[ext]",
               publicPath: "images/",
             },
@@ -57,6 +58,7 @@ module.exports = {
       filename: "./index.html",
     }),
   ],
+
   devServer: {
     historyApiFallback: true,
     proxy: {
