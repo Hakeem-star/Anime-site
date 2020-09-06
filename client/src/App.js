@@ -28,6 +28,7 @@ export default function App() {
   useEffect(() => {
     //Retrieve liked animes from storage on app mount
     const storedLikes = window.localStorage.getItem("likedAnime");
+    console.log(storedLikes);
     if (!storedLikes) {
       window.localStorage.setItem("likedAnime", JSON.stringify(storedLikes));
     } else {

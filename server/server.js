@@ -17,7 +17,7 @@ app.use(express.json());
 // });
 
 // Heroku - Priority serve any static files.
-// app.use(express.static(path.resolve(__dirname, "../client/dist")));
+app.use(express.static(path.resolve(__dirname, "../client/dist")));
 
 // Answer API requests.
 
@@ -43,9 +43,9 @@ app.use("/api/gyfcat", gyfcatGifs);
 ///////////////////////////////////
 
 // Heroku - All remaining requests return the React app, so it can handle routing.
-// app.get("*", function (request, response) {
-//   response.sendFile(path.resolve(__dirname, "../client/dist", "index.html"));
-// });
+app.get("*", function (request, response) {
+  response.sendFile(path.resolve(__dirname, "../client/dist", "index.html"));
+});
 
 app.listen(port, () => {
   console.log(`Server is running on port: ${port}`);
