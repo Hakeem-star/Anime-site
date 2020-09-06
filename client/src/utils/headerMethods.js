@@ -1,8 +1,13 @@
 export function aggregateGenres(data) {
-  const genreSet = new Set();
+  const tempArr = [];
   data.forEach((element) => {
-    genreSet.add(...element.genres);
+    //If there is a genre in the array, add it to the genreSet.
+    //Otherwise it'll add undefined to the filters
+    if (element.genres.length > 0) {
+      return tempArr.push(...element.genres);
+    }
   });
+  const genreSet = new Set(tempArr);
 
   return Array.from(genreSet);
 }

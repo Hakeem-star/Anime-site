@@ -30,7 +30,6 @@ module.exports = {
             options: {
               limit: 800000000000192,
               name: "[name].[ext]",
-              publicPath: "images/",
             },
           },
         ],

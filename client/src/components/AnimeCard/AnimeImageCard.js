@@ -11,6 +11,7 @@ const imageCardStyle = css`
   border-radius: 5px;
   margin: 20px;
   background-size: cover;
+  background-position: center;
   box-shadow: -3px 1px 11px 4px #65656552;
   transition: width 0.8s ease-out, height 0.8s ease-out, margin 0.8s ease-out;
   overflow: hidden;

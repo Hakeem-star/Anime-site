@@ -249,7 +249,7 @@ export default function Header({
           </Route>
 
           <Route path="/">
-            <Link to="/likes/all" className="likes-link">
+            <Link to="/likes" className="likes-link">
               <div
                 css={css`
                   display: flex;
@@ -276,46 +276,42 @@ export default function Header({
           </Route>
         </Switch>
       </div>
-      <ul className="nav">
-        <li
-          css={css`
-            color: ${pageLinkColor.winter};
-          `}
-          className="winter"
-        >
-          <Link to="/winter">Winter</Link>
-        </li>
-        <li
-          css={css`
-            color: ${pageLinkColor.spring};
-          `}
-          className="spring"
-        >
-          <Link to="/spring">Spring</Link>
-        </li>
-        <Route path="/likes">
-          <li className="all">
-            <Link to="/likes/all">All</Link>
+      <Route path={["/winter", "/summer", "/fall", "/spring"]}>
+        <ul className="nav">
+          <li
+            css={css`
+              color: ${pageLinkColor.winter};
+            `}
+            className="winter"
+          >
+            <Link to="/winter">Winter</Link>
           </li>
-        </Route>
-        <li
-          css={css`
-            color: ${pageLinkColor.summer};
-          `}
-          className="summer"
-        >
-          <Link to="/summer">Summer</Link>
-        </li>
-        <li
-          css={css`
-            color: ${pageLinkColor.fall};
-          `}
-          className="fall"
-        >
-          <Link to="/fall">Fall</Link>
-        </li>
-      </ul>
-
+          <li
+            css={css`
+              color: ${pageLinkColor.spring};
+            `}
+            className="spring"
+          >
+            <Link to="/spring">Spring</Link>
+          </li>
+          <li
+            css={css`
+              color: ${pageLinkColor.summer};
+            `}
+            className="summer"
+          >
+            <Link to="/summer">Summer</Link>
+          </li>
+          <li
+            css={css`
+              color: ${pageLinkColor.fall};
+            `}
+            className="fall"
+          >
+            <Link to="/fall">Fall</Link>
+          </li>
+        </ul>
+      </Route>
       <div
         className="header-filter-options"
         css={css`

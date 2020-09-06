@@ -40,8 +40,6 @@ export default function AnimeCard({
   animeDataReadyState,
   cardIndex,
 }) {
-  const [displayData, setDisplayData] = useState(animeDataReadyState);
-
   //Styles
   const [imageHoverTitleStyles, setImageHoverTitleStyles] = useState({});
   const [imageHoverSynopsisStyles, setImageHoverSynopsisStyles] = useState({});

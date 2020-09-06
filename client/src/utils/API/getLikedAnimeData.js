@@ -16,7 +16,6 @@ export default function getLikedAnimeData(
   if (seasons.some(matchSeason)) {
     Axios.post(`/api/likes`, { ids, season: seasonPath })
       .then((res) => {
-        console.log(res.data);
         setAnimeDataReadyState(true);
         setRawLikedAnimeData(res.data);
       })

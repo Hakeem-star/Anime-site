@@ -8,6 +8,7 @@ import {
   filterByGenre,
   sortAnimePage,
   searchAnimePage,
+  aggregateGenres,
 } from "./utils/headerMethods";
 import Background from "./components/Background";
 import MyLikes from "./Pages/MyLikes";
@@ -42,6 +43,8 @@ export default function App() {
   useEffect(() => {
     //Whenever the raw data changes, update the season data so it's unfiltered
     setSeasonData(rawSeasonData);
+    console.log("update");
+    setAggregatedGenres(aggregateGenres(rawSeasonData));
   }, [rawSeasonData]);
 
   return (

@@ -44,10 +44,10 @@ export default function AnimeCardOptions() {
 
   const { setLikedAnime, likedAnime } = useContext(seasonsHomePageContext);
 
-  const [addedTocollection, setAddedTocollection] = useState(false);
+  const [addedTocollection, setAddedToCollection] = useState(false);
 
   useEffect(() => {
-    if (likedAnime.includes(id)) setAddedTocollection(true);
+    if (likedAnime.includes(id)) setAddedToCollection(true);
   }, []);
   return (
     <div
@@ -144,7 +144,7 @@ export default function AnimeCardOptions() {
         <AiFillHeart
           title="Unlike"
           onClick={() => {
-            setAddedTocollection((state) => !state);
+            setAddedToCollection((state) => !state);
             //Click to remove from collection
             setLikedAnime((state) =>
               state.filter((stateID) => {
@@ -157,7 +157,7 @@ export default function AnimeCardOptions() {
         <RiHeartAddLine
           title="Like"
           onClick={() => {
-            setAddedTocollection((state) => !state);
+            setAddedToCollection((state) => !state);
             //
             //Click to add to collection
             setLikedAnime((state) => [id, ...state]);

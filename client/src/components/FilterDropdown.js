@@ -7,7 +7,10 @@ export default function FilterDropdown({ aggregatedGenres, filterByGenre }) {
   return (
     <div
       css={css`
-        width: 100px;
+        height: 300px;
+        overflow-y: auto;
+        overflow-x: hidden;
+
         div {
           margin: 10px;
           cursor: pointer;
@@ -15,6 +18,15 @@ export default function FilterDropdown({ aggregatedGenres, filterByGenre }) {
           :hover {
             background: yellow;
           }
+        }
+        ::-webkit-scrollbar {
+          width: 10px;
+          opacity: 0;
+        }
+
+        /* Handle */
+        ::-webkit-scrollbar-thumb {
+          background: #888;
         }
       `}
     >

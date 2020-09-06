@@ -3,7 +3,6 @@ import AnimeCardsList from "../components/AnimeCardsList";
 import { useLocation } from "react-router-dom";
 import getSeasonData from "../utils/API/getSeasonData";
 import { getSeasonBGWallpaper } from "../utils/getSeasonBGWallpaper";
-import { aggregateGenres } from "../utils/headerMethods";
 import { seasonsHomePageContext } from "../App";
 
 export default function Home() {
@@ -16,7 +15,7 @@ export default function Home() {
     setRawSeasonData,
     setBgState,
     setSeasonData,
-    setAggregatedGenres,
+
     rawSeasonData,
     seasonData,
   } = useContext(seasonsHomePageContext);
@@ -29,13 +28,12 @@ export default function Home() {
     setBgState(getSeasonBGWallpaper(location));
   }, [location]);
 
-  useEffect(() => {
-    //Whenever the raw data changes, update the season data so it's unfiltered
-    setSeasonData(rawSeasonData);
-    setAggregatedGenres(aggregateGenres(rawSeasonData));
+  // useEffect(() => {
+  //   //Whenever the raw data changes, update the season data so it's unfiltered
+  //   setAggregatedGenres(aggregateGenres(rawSeasonData));
 
-    //If the raw season data changes, it indicates a fetch from the API
-  }, [rawSeasonData]);
+  //   //If the raw season data changes, it indicates a fetch from the API
+  // }, [rawSeasonData]);
 
   return (
     <>

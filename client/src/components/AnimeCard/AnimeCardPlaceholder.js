@@ -24,10 +24,15 @@ const fadeOut = keyframes`
 
 const load = keyframes`
 from {
-  left: -150px;
+  transform:translateX(-100%);
+}
+90%{
+  opacity:1
 }
 to   {
-  left: 100%;
+  transform:translateX(0%);
+  opacity:0;
+
 }
 `;
 
@@ -52,21 +57,28 @@ export default function AnimeCardPlaceholder({
             content: "";
             display: block;
             position: absolute;
-            left: -150px;
             top: 0;
             height: 100%;
-            width: 150px;
+            width: 100%;
             background: linear-gradient(
               to right,
               transparent 0%,
-              #e8e8e8 50%,
+              #e8e8e8 70%,
               transparent 100%
             );
              {
               /* using the card index to add a slight delay */
             }
-            animation: ${load} 1s cubic-bezier(0.4, 0, 0.2, 1)
-              ${cardIndex * 500}ms ${!animeDataReadyState ? "infinite" : 1};
+            //Fade out when animeData is ready
+            ${!animeDataReadyState
+              ? css`
+                  animation: ${load} 1s cubic-bezier(0.4, 0, 0.2, 1)
+                    ${cardIndex * 500}ms
+                    ${!animeDataReadyState ? "infinite" : 1} forwards;
+                `
+              : css`
+                  animation: ${fadeOut} 0.5s forwards 0.5s;
+                `}
           }
         `,
 
@@ -75,7 +87,7 @@ export default function AnimeCardPlaceholder({
               animation: ${fadeIn} 0.5s;
             `
           : css`
-              animation: ${fadeOut} 0.3s forwards;
+              animation: ${fadeOut} 0.5s forwards 0.5s;
             `,
       ]}
     ></div>

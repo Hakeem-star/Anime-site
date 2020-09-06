@@ -6,7 +6,7 @@ const GlobalStyle = css`
   }
   /* Custom cursor */
   html {
-    cursor: url("src/images/icons8-naruto-sign-32(copy).png"), auto;
+    cursor: url("/src/images/icons8-naruto-sign-32(copy).png"), auto;
   }
 
   /* Fonts */
