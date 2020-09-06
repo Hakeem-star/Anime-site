@@ -43,7 +43,6 @@ function setContrast(colour) {
 export default function GenrePill({ text, colour, pillClick }) {
   return (
     <button
-      title={`Filter page by ${text}`}
       // onClick={pillClick}
       css={[
         pillStyle,

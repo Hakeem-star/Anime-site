@@ -8,9 +8,8 @@ import AnimeAdditionalInfoView from "./AnimeAdditionalInfoView";
 const titleContainerStyle = css`
   color: white;
   position: absolute;
-  right: 0;
+  right: 20px;
   margin-top: 20px;
-  margin-right: 20px;
   top: 51px;
   padding: 10px 30px;
   border-radius: 5px;
@@ -33,7 +32,7 @@ const titleContainerStyle = css`
     right: auto;
     max-width: 100%;
     width: 90%;
-    margin: 0;
+    margin: auto;
     z-index: 3;
     p {
       color: rgb(110, 133, 158);
@@ -89,8 +88,10 @@ export default function AnimeCardTitle() {
       <div
         css={css`
           max-width: 250px;
-          text-align: center;
-          margin: auto;
+          text-align: left;
+          @media (max-width: 640px) {
+            margin: auto;
+          }
         `}
       >
         <p>{title.english || title.romaji}</p>

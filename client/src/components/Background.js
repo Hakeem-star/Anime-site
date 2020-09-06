@@ -7,7 +7,7 @@ const PageBackgroundStyle = css`
   top: 0;
   width: 100vw;
   height: 100vh;
-  background-image: url("/src/images/masaaki-komori-Z8TQv3yKQd4-unsplash.jpg");
+  background-image: url("");
   background-size: cover;
   background-position: center;
   opacity: 0.4;

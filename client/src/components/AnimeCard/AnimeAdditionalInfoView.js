@@ -14,6 +14,15 @@ function timestampToDate(timestamp) {
 export default function AnimeAdditionalInfoView({ additionalInfoData }) {
   return (
     <div css={innerTitleContainerGeneralStyle}>
+      <p
+        css={css`
+          font-size: 0.9rem;
+          margin-bottom: 10px;
+        `}
+      >
+        {/* If the amount of episodes is not available, display N/A */}
+        Episodes: {additionalInfoData.episodes || "N/A"}
+      </p>
       {additionalInfoData.nextAiringEpisode !== null ? (
         <div
           css={css`

@@ -9,6 +9,7 @@ import AnimeCardOptions from "./AnimeCardOptions";
 import AnimeCardTitle from "./AnimeCardTitle";
 import Axios from "axios";
 import RatingsBlock from "./RatingsBlock";
+import AnimeCardPlaceholder from "./AnimeCardPlaceholder";
 
 export const AnimeCardContext = React.createContext();
 
@@ -34,18 +35,12 @@ const AnimeCardStyle = css`
   }
 `;
 
-export default function AnimeCard({ animeData }) {
-  const {
-    relations,
-    averageScore,
-    coverImage,
-    description,
-    genres,
-    id,
-    popularity,
-    title,
-    trailer,
-  } = animeData;
+export default function AnimeCard({
+  animeData,
+  animeDataReadyState,
+  cardIndex,
+}) {
+  const [displayData, setDisplayData] = useState(animeDataReadyState);
 
   //Styles
   const [imageHoverTitleStyles, setImageHoverTitleStyles] = useState({});
@@ -72,6 +67,12 @@ export default function AnimeCard({ animeData }) {
     //set new styles
     return {
       on: () => {
+        setImageHoverTitleStyles(css`
+          @media (min-width: 640px) {
+            /* Not Mobile */
+            transform: translateX(50%);
+          }
+        `);
         setImageHoverSynopsisStyles(css`
           @media (min-width: 640px) {
             /* Not Mobile */
@@ -96,6 +97,7 @@ export default function AnimeCard({ animeData }) {
         `);
       },
       off: () => {
+        setImageHoverTitleStyles({});
         setImageHoverSynopsisStyles({});
         setImageCardHoverStyles({});
         setImageOverlayHoverStyles({});
@@ -148,43 +150,58 @@ export default function AnimeCard({ animeData }) {
     };
   }
 
-  useEffect(() => {
-    //Get Anime additional info
-    if (additionalInfoVisibleState)
-      Axios.get(`/api/seasons/additional_info/${id}`).then((res) => {
-        console.log(res.data[0]);
-        setAdditionalInfoData(res.data[0]);
-      });
-  }, [additionalInfoVisibleState]);
+  let {
+    relations,
+    averageScore,
+    coverImage,
+    description,
+    genres,
+    id,
+    popularity,
+    title,
+    trailer,
+  } = animeData;
 
   useEffect(() => {
-    //Get Anime Review data
-    if (recommendationsPageVisibleState)
-      Axios.get(`/api/seasons/recommendations/${id}`).then((res) => {
-        console.log("CARD", res.data[0].recommendations.nodes);
-        setRecommendationsData(res.data[0].recommendations.nodes);
-      });
-  }, [recommendationsPageVisibleState]);
+    if (animeDataReadyState)
+      if (additionalInfoVisibleState)
+        //Get Anime additional info
+        Axios.get(`/api/seasons/additional_info/${id}`).then((res) => {
+          console.log(res.data[0]);
+          setAdditionalInfoData(res.data[0]);
+        });
+  }, [additionalInfoVisibleState, animeDataReadyState]);
 
   useEffect(() => {
-    // console.log(title.english, title.romaji);
-    //Get Anime Gallery data
-    //We need to use relations where we can to increase the search results
-    const dataInGallery = Object.keys(galleryImages);
-    if (galleryPageVisibleState && dataInGallery < 1) {
-      const cleanName = (title.english || title.romaji).replace(
-        /[^0-9a-zA-Z:,]+/,
-        " "
-      );
+    if (animeDataReadyState)
+      if (recommendationsPageVisibleState)
+        //Get Anime Review data
+        Axios.get(`/api/seasons/recommendations/${id}`).then((res) => {
+          console.log("CARD", res.data[0].recommendations.nodes);
+          setRecommendationsData(res.data[0].recommendations.nodes);
+        });
+  }, [recommendationsPageVisibleState, animeDataReadyState]);
 
-      Axios.get(`/api/gyfcat/anime/${cleanName}`).then((res) => {
-        console.log(res.data);
-        setgalleryImages(res.data);
+  useEffect(() => {
+    if (animeDataReadyState) {
+      //Get Anime Gallery data
+      //We need to use relations where we can to increase the search results
+      const dataInGallery = Object.keys(galleryImages);
+      if (galleryPageVisibleState && dataInGallery < 1) {
+        const cleanName = (title.english || title.romaji).replace(
+          /[^0-9a-zA-Z:,]+/,
+          " "
+        );
 
-        // setExtraTitleContent(<GalleryList>galleryImages</GalleryList>)
-      });
+        Axios.get(`/api/gyfcat/anime/${cleanName}`).then((res) => {
+          console.log(res.data);
+          setgalleryImages(res.data);
+
+          // setExtraTitleContent(<GalleryList>galleryImages</GalleryList>)
+        });
+      }
     }
-  }, [galleryPageVisibleState]);
+  }, [galleryPageVisibleState, animeDataReadyState]);
 
   return (
     <AnimeCardContext.Provider
@@ -215,16 +232,26 @@ export default function AnimeCard({ animeData }) {
       }}
     >
       <div css={AnimeCardStyle}>
-        <RatingsBlock averageScore={averageScore} />
-        <AnimeCardOptions />
-        <AnimeCardTitle />
-        <AnimeImageCard />
-        <SynopsisCard />
-        <GenrePillList
-          addCss={pillButtonsHoverStyles}
-          colour={coverImage.color}
-          genres={genres}
+        {/* //placeholder for data loading */}
+        <AnimeCardPlaceholder
+          cardIndex={cardIndex}
+          animeDataReadyState={animeDataReadyState}
         />
+        {/* if the data isn't ready, don't render content */}
+        {animeDataReadyState && (
+          <>
+            <RatingsBlock averageScore={averageScore} />
+            <AnimeCardOptions />
+            <AnimeCardTitle />
+            <AnimeImageCard />
+            <SynopsisCard />
+            <GenrePillList
+              addCss={pillButtonsHoverStyles}
+              colour={coverImage.color}
+              genres={genres}
+            />
+          </>
+        )}
       </div>
     </AnimeCardContext.Provider>
   );

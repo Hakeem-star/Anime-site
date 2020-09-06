@@ -1,14 +1,16 @@
-import React, { useState, useEffect, useContext } from "react";
-import { css } from "@emotion/core";
+import React, { useEffect, useContext, useState } from "react";
 import AnimeCardsList from "../components/AnimeCardsList";
-import { Route, Redirect, useHistory } from "react-router-dom";
+import { useLocation } from "react-router-dom";
 import getSeasonData from "../utils/API/getSeasonData";
 import { getSeasonBGWallpaper } from "../utils/getSeasonBGWallpaper";
 import { aggregateGenres } from "../utils/headerMethods";
 import { seasonsHomePageContext } from "../App";
 
 export default function Home() {
-  const history = useHistory();
+  const location = useLocation();
+
+  //No season data yet. Signal to card to show placeholder
+  const [animeDataReadyState, setAnimeDataReadyState] = useState(false);
 
   const {
     setRawSeasonData,
@@ -20,28 +22,27 @@ export default function Home() {
   } = useContext(seasonsHomePageContext);
 
   useEffect(() => {
-    //get the correct season on mount and use that to call the API
-    getSeasonData(setRawSeasonData);
-    setBgState(getSeasonBGWallpaper());
-  }, []);
-
-  useEffect(() => {
-    //Set up a listener to get the right season and use that to call the API
-    history.listen((location) => {
-      getSeasonData(setRawSeasonData);
-      setBgState(getSeasonBGWallpaper(location));
-    });
-  }, [history]);
+    //Page has changed so the data isn't ready yet
+    setAnimeDataReadyState(false);
+    //Set up a listener to get the right season and use that to call the API. Once complete change animeDataReadyState to true
+    getSeasonData(setRawSeasonData, setAnimeDataReadyState);
+    setBgState(getSeasonBGWallpaper(location));
+  }, [location]);
 
   useEffect(() => {
     //Whenever the raw data changes, update the season data so it's unfiltered
     setSeasonData(rawSeasonData);
     setAggregatedGenres(aggregateGenres(rawSeasonData));
+
+    //If the raw season data changes, it indicates a fetch from the API
   }, [rawSeasonData]);
 
   return (
     <>
-      <AnimeCardsList seasonData={seasonData}></AnimeCardsList>
+      <AnimeCardsList
+        animeDataReadyState={animeDataReadyState}
+        seasonData={seasonData}
+      ></AnimeCardsList>
     </>
   );
 }

@@ -2,7 +2,7 @@ import React from "react";
 import AnimeCard from "./AnimeCard/AnimeCard";
 import { css } from "@emotion/core";
 
-export default function AnimeCardsList({ seasonData }) {
+export default function AnimeCardsList({ seasonData, animeDataReadyState }) {
   return (
     <div
       css={css`
@@ -14,8 +14,15 @@ export default function AnimeCardsList({ seasonData }) {
         grid-template-rows: auto;
       `}
     >
-      {seasonData.map((animeData) => {
-        return <AnimeCard animeData={animeData} key={animeData.id} />;
+      {seasonData.map((animeData, index) => {
+        return (
+          <AnimeCard
+            cardIndex={index}
+            animeDataReadyState={animeDataReadyState}
+            animeData={animeData}
+            key={animeData.id}
+          />
+        );
       })}
     </div>
   );

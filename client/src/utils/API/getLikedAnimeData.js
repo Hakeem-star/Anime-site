@@ -1,6 +1,10 @@
 import Axios from "axios";
 
-export default function getLikedAnimeData(setRawLikedAnimeData, ids) {
+export default function getLikedAnimeData(
+  setRawLikedAnimeData,
+  ids,
+  setAnimeDataReadyState
+) {
   const seasons = ["winter", "summer", "spring", "fall", "all"];
   //Use All if no additional path
   const seasonPath = (
@@ -12,6 +16,8 @@ export default function getLikedAnimeData(setRawLikedAnimeData, ids) {
   if (seasons.some(matchSeason)) {
     Axios.post(`/api/likes`, { ids, season: seasonPath })
       .then((res) => {
+        console.log(res.data);
+        setAnimeDataReadyState(true);
         setRawLikedAnimeData(res.data);
       })
       .catch((err) => {

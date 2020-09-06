@@ -39,6 +39,7 @@ export default function AnimeCardOptions() {
     setRecommendationsPageVisibleState,
     galleryPageVisibleState,
     recommendationsPageVisibleState,
+    imageHoverSynopsisStyles,
   } = useContext(AnimeCardContext);
 
   const { setLikedAnime, likedAnime } = useContext(seasonsHomePageContext);
@@ -50,31 +51,36 @@ export default function AnimeCardOptions() {
   }, []);
   return (
     <div
-      css={css`
-        position: absolute;
-        right: 0;
-        margin: 20px;
-        display: grid;
-        grid-gap: 20px;
-        place-items: center;
-        grid-auto-flow: column;
-        cursor: pointer;
-        z-index: 3;
-        & > * {
-          width: 20px;
-          height: 20px;
-        }
+      css={[
+        css`
+          position: absolute;
+          right: 0;
+          margin: 20px;
+          display: grid;
+          grid-gap: 20px;
+          place-items: center;
+          grid-auto-flow: column;
+          cursor: pointer;
+          z-index: 3;
+          & > * {
+            width: 20px;
+            height: 20px;
+          }
 
-        @media (max-width: 640px) {
-          /* Mobile */
-          position: static;
-          right: auto;
-          z-index: 4;
-        }
-      `}
+          @media (max-width: 640px) {
+            /* Mobile */
+            position: static;
+            right: auto;
+            z-index: 4;
+          }
+          transition: all 0.5s ease;
+        `,
+        imageHoverSynopsisStyles,
+      ]}
     >
       {/* Show us information about the anime */}
       <IoIosInformationCircle
+        title="Info & Episodes"
         onClick={() => {
           if (!recommendationsPageVisibleState && !galleryPageVisibleState) {
             //open this thing
@@ -94,6 +100,7 @@ export default function AnimeCardOptions() {
         }}
       />
       <IoMdImages
+        title="Images"
         onClick={() => {
           //If the review pages are closed, open the expansion
           if (!recommendationsPageVisibleState && !additionalInfoVisibleState) {
@@ -113,6 +120,7 @@ export default function AnimeCardOptions() {
         }}
       />
       <BiDirections
+        title="Recommendations"
         onClick={() => {
           if (!galleryPageVisibleState && !additionalInfoVisibleState) {
             //open this thing
@@ -134,6 +142,7 @@ export default function AnimeCardOptions() {
       />
       {addedTocollection ? (
         <AiFillHeart
+          title="Unlike"
           onClick={() => {
             setAddedTocollection((state) => !state);
             //Click to remove from collection
@@ -146,6 +155,7 @@ export default function AnimeCardOptions() {
         />
       ) : (
         <RiHeartAddLine
+          title="Like"
           onClick={() => {
             setAddedTocollection((state) => !state);
             //

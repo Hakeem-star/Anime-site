@@ -14,6 +14,7 @@ const ratingsBlockStyle = css`
   height: 25px;
   background: linear-gradient(to right, #33ff00, #33ff00);
   border-radius: 9px 9px 0 0;
+  transition: all 0.8s ease;
 `;
 
 function processPotentialAverageScoreValues(averageScore) {

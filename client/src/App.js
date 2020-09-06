@@ -30,7 +30,6 @@ export default function App() {
     if (!storedLikes) {
       window.localStorage.setItem("likedAnime", JSON.stringify(storedLikes));
     } else {
-      console.log("storedLikes", storedLikes);
       setLikedAnime(JSON.parse(storedLikes));
     }
   }, []);
@@ -54,7 +53,6 @@ export default function App() {
 
       <Header
         aggregatedGenres={aggregatedGenres}
-        setBgState={setBgState}
         filterByGenre={(genre) => {
           filterByGenre(genre, setSeasonData, rawSeasonData);
         }}
@@ -83,7 +81,8 @@ export default function App() {
             margin: 185px auto 0;
             position: relative;
             z-index: 1;
-            @media (max-width: 640px) {
+
+            @media (max-width: 1300px) {
               /* Not Mobile */
               margin: 55px auto 0;
             }
@@ -94,6 +93,7 @@ export default function App() {
               path="/likes"
               render={() => (
                 <MyLikes
+                  setBgState={setBgState}
                   likedAnime={likedAnime}
                   setRawSeasonData={setRawSeasonData}
                   seasonData={seasonData}

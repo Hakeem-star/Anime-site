@@ -23,6 +23,7 @@ export default function RecommendationsContainer({
 
         @media (max-width: 640px) {
           width: 90%;
+          height: 180px;
         }
       `}
     >
@@ -33,15 +34,15 @@ export default function RecommendationsContainer({
           grid-row: 1/3;
           grid-column: 1/2;
           img {
-            width: 100%;
+            height: 100%;
+            width: auto;
           }
           @media (max-width: 640px) {
             display: grid;
             place-content: center;
             img {
-              max-height: 100%;
-              height: 100%;
-              width: auto;
+              height: auto;
+              width: 100%;
             }
           }
         `}

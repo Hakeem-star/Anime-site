@@ -1,8 +1,13 @@
-import React, { useState } from "react";
+import React, { useEffect, useRef } from "react";
 import { css } from "@emotion/core";
 import { BiSearchAlt } from "react-icons/bi";
 
 export default function SearchInput({ searchAnimePage }) {
+  const searchInput = useRef(null);
+  useEffect(() => {
+    //Focus on the input on mount
+    searchInput.current.focus();
+  }, []);
   return (
     <div
       css={css`
@@ -13,6 +18,7 @@ export default function SearchInput({ searchAnimePage }) {
       `}
     >
       <input
+        ref={searchInput}
         onChange={(event) => {
           searchAnimePage(event.target.value);
         }}
