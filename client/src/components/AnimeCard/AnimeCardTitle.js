@@ -16,7 +16,7 @@ const titleContainerStyle = css`
   font-size: 1.1rem;
   z-index: 1;
   max-width: 320px;
-  max-height: 100px;
+  max-height: 62px;
   min-height: 1px;
   min-width: 1px;
   box-shadow: -3px 1px 5px 0px #65656552;
@@ -27,6 +27,21 @@ const titleContainerStyle = css`
   font-size: 1.1rem;
   line-height: 1.2;
   transition: all 0.5s ease-out;
+  overflow: auto;
+  ::-webkit-scrollbar {
+    width: 10px;
+    opacity: 0;
+  }
+
+  &:hover {
+    ::-webkit-scrollbar-thumb {
+      background: #888;
+    }
+  }
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    background: #8880;
+  }
   @media (max-width: 640px) {
     position: static;
     right: auto;

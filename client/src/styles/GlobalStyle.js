@@ -4,13 +4,14 @@ const GlobalStyle = css`
   @media (max-width: 1300px) {
     font-size: 14px;
   }
+  /* Fonts */
+  @import url("https://fonts.googleapis.com/css2?family=Overpass:wght@100;200;300;400;600&display=swap");
+
   /* Custom cursor */
   html {
     cursor: url("/src/images/icons8-naruto-sign-32(copy).png"), auto;
+    font-family: "overpass";
   }
-
-  /* Fonts */
-  @import url("https://fonts.googleapis.com/css2?family=Overpass:wght@100;200;300;400;600&display=swap");
 
   /* CSS reset */
   html,

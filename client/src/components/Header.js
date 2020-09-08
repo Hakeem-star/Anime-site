@@ -6,6 +6,7 @@ import { BiFoodMenu } from "react-icons/bi";
 import FilterDropdown from "./FilterDropdown";
 import SortDropdown from "./SortDropdown";
 import SearchInput from "./SearchInput";
+import { AiFillHeart } from "react-icons/ai";
 
 const headerStyle = css`
   color: black;
@@ -240,6 +241,7 @@ export default function Header({
                 <p
                   css={css`
                     margin-left: 10px;
+                    padding-top: 4px;
                   `}
                 >
                   Home
@@ -259,7 +261,7 @@ export default function Header({
                   color: black;
                 `}
               >
-                <BiFoodMenu
+                <AiFillHeart
                   css={css`
                     height: 30px;
                   `}
@@ -267,6 +269,7 @@ export default function Header({
                 <p
                   css={css`
                     margin-left: 10px;
+                    padding-top: 4px;
                   `}
                 >
                   My Likes

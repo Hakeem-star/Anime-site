@@ -25,10 +25,6 @@ const expandTitleStyles = css`
   }
 `;
 
-const additionalInfoStyles = css`
-  transform: rotateY(180deg);
-`;
-
 export default function AnimeCardOptions() {
   const {
     id,
@@ -45,10 +41,12 @@ export default function AnimeCardOptions() {
   const { setLikedAnime, likedAnime } = useContext(seasonsHomePageContext);
 
   const [addedTocollection, setAddedToCollection] = useState(false);
+  const [optionsDescription, setOptionsDescription] = useState("");
 
   useEffect(() => {
     if (likedAnime.includes(id)) setAddedToCollection(true);
   }, []);
+
   return (
     <div
       css={[
@@ -78,9 +76,28 @@ export default function AnimeCardOptions() {
         imageHoverSynopsisStyles,
       ]}
     >
+      <p
+        css={css`
+          width: 100%;
+          padding-top: 4px;
+          @media (max-width: 1000px) {
+            /* Mobile */
+            display: none;
+          }
+        `}
+        className="card-options__description"
+      >
+        {optionsDescription}
+      </p>
       {/* Show us information about the anime */}
       <IoIosInformationCircle
         title="Info & Episodes"
+        onMouseOver={() => {
+          setOptionsDescription("Info & Episodes");
+        }}
+        onMouseLeave={() => {
+          setOptionsDescription("");
+        }}
         onClick={() => {
           if (!recommendationsPageVisibleState && !galleryPageVisibleState) {
             //open this thing
@@ -101,6 +118,12 @@ export default function AnimeCardOptions() {
       />
       <IoMdImages
         title="Images"
+        onMouseOver={() => {
+          setOptionsDescription("Images");
+        }}
+        onMouseLeave={() => {
+          setOptionsDescription("");
+        }}
         onClick={() => {
           //If the review pages are closed, open the expansion
           if (!recommendationsPageVisibleState && !additionalInfoVisibleState) {
@@ -121,6 +144,12 @@ export default function AnimeCardOptions() {
       />
       <BiDirections
         title="Recommendations"
+        onMouseOver={() => {
+          setOptionsDescription("Recommendations");
+        }}
+        onMouseLeave={() => {
+          setOptionsDescription("");
+        }}
         onClick={() => {
           if (!galleryPageVisibleState && !additionalInfoVisibleState) {
             //open this thing

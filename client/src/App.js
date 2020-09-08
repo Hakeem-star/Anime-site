@@ -52,7 +52,7 @@ export default function App() {
     <>
       <Global styles={GlobalStyle} />
       <Route exact path="/">
-        <Redirect to="/winter" />
+        <Redirect to="/summer" />
       </Route>
 
       <Header
