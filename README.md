@@ -1,13 +1,13 @@
 # Anime site
 
-A recreation of anichart.net pulling from several APIs; built with React, NodeJs, Express Webpack, &amp; Emotion.
+An anime site inspired by anichart.net, pulling from several APIs; built with React, NodeJs, Express Webpack, &amp; Emotion.
 
 Keep up to date on the latest Anime!
 
 Live at - 
 https://hakeems-anime-site.herokuapp.com
 
-![Anime-Site video](https://media.giphy.com/media/XdCdG5mbJZiKLAhW0q/giphy.gif)
+[![Anime-Site video](https://media.giphy.com/media/XdCdG5mbJZiKLAhW0q/giphy.gif)](https://media.giphy.com/media/XdCdG5mbJZiKLAhW0q/source.gif)
 
 This website allows you to see the latest Anime, links you to legal streams, offers recommendations & much more!
 
