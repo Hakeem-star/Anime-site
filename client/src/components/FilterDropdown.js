@@ -2,8 +2,6 @@ import React, { useState } from "react";
 import { css } from "@emotion/core";
 
 export default function FilterDropdown({ aggregatedGenres, filterByGenre }) {
-  const [currentFilterValue, setCurrentFilterValue] = useState("None");
-
   return (
     <div
       css={css`
@@ -31,6 +29,7 @@ export default function FilterDropdown({ aggregatedGenres, filterByGenre }) {
       `}
     >
       <div
+        title="Clear Filter"
         onClick={() => {
           filterByGenre("None");
         }}
@@ -40,6 +39,7 @@ export default function FilterDropdown({ aggregatedGenres, filterByGenre }) {
       {aggregatedGenres.map((genre, index) => {
         return (
           <div
+            title={genre}
             key={index}
             onClick={() => {
               filterByGenre(genre);

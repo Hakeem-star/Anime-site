@@ -33,6 +33,7 @@ export default function SortDropdown({ sortAnimePage }) {
         `}
       >
         <div
+          title="Ascending"
           onClick={() => {
             setSortDirection("asc");
           }}
@@ -44,6 +45,7 @@ export default function SortDropdown({ sortAnimePage }) {
           ASC
         </div>
         <div
+          title="Decending"
           css={css`
             background: ${activeSortOrderStyle("desc", sortDirection)};
           `}
@@ -55,6 +57,7 @@ export default function SortDropdown({ sortAnimePage }) {
         </div>
       </div>
       <div
+        title="Name"
         onClick={(event) => {
           sortAnimePage(sortDirection, event.target.textContent);
         }}
@@ -62,6 +65,7 @@ export default function SortDropdown({ sortAnimePage }) {
         Name
       </div>
       <div
+        title="Popularity"
         onClick={(event) => {
           sortAnimePage(sortDirection, event.target.textContent);
         }}
@@ -69,6 +73,7 @@ export default function SortDropdown({ sortAnimePage }) {
         Popularity
       </div>
       <div
+        title="Score"
         onClick={(event) => {
           sortAnimePage(sortDirection, event.target.textContent);
         }}

@@ -85,6 +85,7 @@ export default function Header({
     winter: "inherit",
     fall: "inherit",
   });
+  const [currentSearch, setCurrentSearch] = useState("");
 
   useEffect(() => {
     //Listen for clicks off the filter elements to indicate intent to close the popups
@@ -165,7 +166,13 @@ export default function Header({
         break;
 
       case "Search":
-        output = <SearchInput searchAnimePage={searchAnimePage} />;
+        output = (
+          <SearchInput
+            currentSearch={currentSearch}
+            setCurrentSearch={setCurrentSearch}
+            searchAnimePage={searchAnimePage}
+          />
+        );
         break;
 
       default:

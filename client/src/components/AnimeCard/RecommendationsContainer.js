@@ -34,16 +34,12 @@ export default function RecommendationsContainer({
           grid-row: 1/3;
           grid-column: 1/2;
           img {
-            height: 100%;
-            width: auto;
+            height: auto;
+            width: 100%;
           }
           @media (max-width: 640px) {
             display: grid;
             place-content: center;
-            img {
-              height: auto;
-              width: 100%;
-            }
           }
         `}
       >

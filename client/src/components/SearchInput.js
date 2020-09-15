@@ -1,13 +1,18 @@
 import React, { useEffect, useRef } from "react";
 import { css } from "@emotion/core";
-import { BiSearchAlt } from "react-icons/bi";
+import PropTypes from "prop-types";
 
-export default function SearchInput({ searchAnimePage }) {
+export default function SearchInput({
+  searchAnimePage,
+  currentSearch,
+  setCurrentSearch,
+}) {
   const searchInput = useRef(null);
   useEffect(() => {
     //Focus on the input on mount
     searchInput.current.focus();
-  }, []);
+    searchInput.current.value = currentSearch;
+  }, [currentSearch]);
   return (
     <div
       css={css`
@@ -21,6 +26,7 @@ export default function SearchInput({ searchAnimePage }) {
         ref={searchInput}
         onChange={(event) => {
           searchAnimePage(event.target.value);
+          setCurrentSearch(event.target.value);
         }}
         css={css`
           width: 200px;
@@ -34,3 +40,8 @@ export default function SearchInput({ searchAnimePage }) {
     </div>
   );
 }
+SearchInput.propTypes = {
+  searchAnimePage: PropTypes.func,
+  currentSearch: PropTypes.string,
+  setCurrentSearch: PropTypes.func,
+};
