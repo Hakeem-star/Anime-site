@@ -171,6 +171,12 @@ export default function AnimeCardOptions() {
       />
       {addedTocollection ? (
         <AiFillHeart
+          onMouseOver={() => {
+            setOptionsDescription("Unlike");
+          }}
+          onMouseLeave={() => {
+            setOptionsDescription("");
+          }}
           title="Unlike"
           onClick={() => {
             setAddedToCollection((state) => !state);
@@ -185,6 +191,12 @@ export default function AnimeCardOptions() {
       ) : (
         <RiHeartAddLine
           title="Like"
+          onMouseOver={() => {
+            setOptionsDescription("Like");
+          }}
+          onMouseLeave={() => {
+            setOptionsDescription("");
+          }}
           onClick={() => {
             setAddedToCollection((state) => !state);
             //

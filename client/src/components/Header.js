@@ -225,6 +225,7 @@ export default function Header({
           <Route path="/likes">
             <Link to="/" className="likes-link">
               <div
+                title="Go to homepage"
                 css={css`
                   display: flex;
                   flex-direction: row;
@@ -253,6 +254,7 @@ export default function Header({
           <Route path="/">
             <Link to="/likes" className="likes-link">
               <div
+                title="View your liked Anime"
                 css={css`
                   display: flex;
                   flex-direction: row;
@@ -282,6 +284,7 @@ export default function Header({
       <Route path={["/winter", "/summer", "/fall", "/spring"]}>
         <ul className="nav">
           <li
+            title="View Winter Anime"
             css={css`
               color: ${pageLinkColor.winter};
             `}
@@ -290,6 +293,7 @@ export default function Header({
             <Link to="/winter">Winter</Link>
           </li>
           <li
+            title="View Spring Anime"
             css={css`
               color: ${pageLinkColor.spring};
             `}
@@ -298,6 +302,7 @@ export default function Header({
             <Link to="/spring">Spring</Link>
           </li>
           <li
+            title="View Summer Anime"
             css={css`
               color: ${pageLinkColor.summer};
             `}
@@ -306,6 +311,7 @@ export default function Header({
             <Link to="/summer">Summer</Link>
           </li>
           <li
+            title="View Fall Anime"
             css={css`
               color: ${pageLinkColor.fall};
             `}
@@ -336,6 +342,7 @@ export default function Header({
         `}
       >
         <span
+          title="Filter for anime on current page"
           onClick={() =>
             setViewOptionsModalState((state) =>
               state === "Filter" ? false : "Filter"
@@ -345,6 +352,7 @@ export default function Header({
           Filter
         </span>
         <span
+          title="Sort anime on current page"
           onClick={() =>
             setViewOptionsModalState((state) =>
               state === "Sort" ? false : "Sort"
@@ -354,6 +362,7 @@ export default function Header({
           Sort
         </span>
         <span
+          title="Search for anime on current page"
           onClick={() =>
             setViewOptionsModalState((state) =>
               state === "Search" ? false : "Search"

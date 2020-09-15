@@ -73,7 +73,6 @@ export default function AnimeCardPlaceholder({
             ${!animeDataReadyState
               ? css`
                   animation: ${load} 1s cubic-bezier(0.4, 0, 0.2, 1)
-                    ${cardIndex * 500}ms
                     ${!animeDataReadyState ? "infinite" : 1} forwards;
                 `
               : css`

@@ -230,7 +230,7 @@ export default function AnimeCard({
       }}
     >
       <div css={AnimeCardStyle}>
-        {/* //placeholder for data loading */}
+        {/* //placeholder for data loading. Its visibility is based on the animeDataReadyState */}
         <AnimeCardPlaceholder
           cardIndex={cardIndex}
           animeDataReadyState={animeDataReadyState}

@@ -8,6 +8,7 @@ export default function AnimeCardsList({ seasonData, animeDataReadyState }) {
     Array(4).fill({})
   );
 
+  //Ref to emsure we are on the second initialisation of this component
   const initial = useRef(null);
 
   useEffect(() => {

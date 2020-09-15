@@ -67,7 +67,7 @@ export function searchAnimePage(value, setData, rawData) {
       const title = element.title.english
         ? element.title.english.toLowerCase()
         : element.title.romaji.toLowerCase();
-      return title.includes(value);
+      return title.includes(value.toLowerCase());
     })
   );
 }
