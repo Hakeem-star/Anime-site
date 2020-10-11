@@ -1,8 +1,8 @@
 const { default: Axios } = require("axios");
 
 const seasonDataQuery = ` 
- query ($season:MediaSeason) { Page(page: 1) {
-    media(seasonYear: 2020, season: $season, format: TV, sort: SCORE_DESC) {
+ query ($season:MediaSeason, $seasonYear: Int) { Page(page: 1) {
+    media(seasonYear: $seasonYear, season: $season, format: TV, sort: SCORE_DESC) {
       id
       description
       popularity
@@ -58,10 +58,10 @@ const seasonDataQuery = `
 }
 `;
 
-async function getSeasonData(season) {
+async function getSeasonData(season, year) {
   return await Axios.post("https://graphql.anilist.co", {
     query: seasonDataQuery,
-    variables: { season },
+    variables: { season, seasonYear: year },
   }).catch(function (error) {
     console.log(error);
   });

@@ -11,14 +11,9 @@ export default function Home() {
   //No season data yet. Signal to card to show placeholder
   const [animeDataReadyState, setAnimeDataReadyState] = useState(false);
 
-  const {
-    setRawSeasonData,
-    setBgState,
-    setSeasonData,
-    rawSeasonData,
-    seasonData,
-    selectedYear,
-  } = useContext(seasonsHomePageContext);
+  const { setRawSeasonData, setBgState, seasonData, selectedYear } = useContext(
+    seasonsHomePageContext
+  );
 
   useEffect(() => {
     //Page has changed so the data isn't ready yet
@@ -26,7 +21,9 @@ export default function Home() {
     //Set up a listener to get the right season and use that to call the API. Once complete change animeDataReadyState to true
     getSeasonData(selectedYear, setRawSeasonData, setAnimeDataReadyState);
     setBgState(getSeasonBGWallpaper(location));
-  }, [location]);
+    //Fetch new data when the selected year or page changes
+    //This might need to be more restrictive to prevent it being triggered by irrelevent page changes
+  }, [location, selectedYear]);
 
   return (
     <>

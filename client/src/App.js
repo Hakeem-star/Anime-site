@@ -8,7 +8,7 @@ import {
   filterByGenre,
   sortAnimePage,
   searchAnimePage,
-  aggregateGenres,
+  aggregateGenres,, filterByYear
 } from "./utils/headerMethods";
 import Background from "./components/Background";
 import MyLikes from "./Pages/MyLikes";
@@ -75,6 +75,9 @@ export default function App() {
         selectedYear={selectedYear}
         setselectedYear={setselectedYear}
         aggregatedGenres={aggregatedGenres}
+        filterByYear={(genre) => {
+          filterByYear(genre, setSeasonData, rawSeasonData);
+        }}
         filterByGenre={(genre) => {
           filterByGenre(genre, setSeasonData, rawSeasonData);
         }}
