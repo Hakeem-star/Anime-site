@@ -15,6 +15,20 @@ import MyLikes from "./Pages/MyLikes";
 
 export const seasonsHomePageContext = React.createContext();
 
+function currentSeason() {
+  //Get the numeric value of the month and match it to a season
+  const monthNumber = new Date().getMonth();
+  if (monthNumber < 3) {
+    return "winter";
+  }
+  if (monthNumber < 6) {
+    return "spring";
+  }
+  if (monthNumber < 9) {
+    return "summer";
+  }
+  return "fall";
+}
 export default function App() {
   const [bgState, setBgState] = useState(
     "/src/images/masaaki-komori-Z8TQv3yKQd4-unsplash.jpg"
@@ -24,7 +38,9 @@ export default function App() {
   const [seasonData, setSeasonData] = useState([]);
   const [aggregatedGenres, setAggregatedGenres] = useState([]);
   const [likedAnime, setLikedAnime] = useState([]);
-
+  const [selectedYear, setselectedYear] = useState(() =>
+    new Date().getFullYear()
+  );
   useEffect(() => {
     //Retrieve liked animes from storage on app mount
     const storedLikes = window.localStorage.getItem("likedAnime");
@@ -44,7 +60,7 @@ export default function App() {
   useEffect(() => {
     //Whenever the raw data changes, update the season data so it's unfiltered
     setSeasonData(rawSeasonData);
-    console.log("update");
+    // console.log("update");
     setAggregatedGenres(aggregateGenres(rawSeasonData));
   }, [rawSeasonData]);
 
@@ -52,10 +68,12 @@ export default function App() {
     <>
       <Global styles={GlobalStyle} />
       <Route exact path="/">
-        <Redirect to="/summer" />
+        <Redirect to={`/${currentSeason()}`} />
       </Route>
 
       <Header
+        selectedYear={selectedYear}
+        setselectedYear={setselectedYear}
         aggregatedGenres={aggregatedGenres}
         filterByGenre={(genre) => {
           filterByGenre(genre, setSeasonData, rawSeasonData);
@@ -77,6 +95,7 @@ export default function App() {
           seasonData,
           setLikedAnime,
           likedAnime,
+          selectedYear,
         }}
       >
         <section

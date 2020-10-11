@@ -7,6 +7,7 @@ import FilterDropdown from "./FilterDropdown";
 import SortDropdown from "./SortDropdown";
 import SearchInput from "./SearchInput";
 import { AiFillHeart } from "react-icons/ai";
+import YearDropdown from "./YearDropdown";
 
 const headerStyle = css`
   color: black;
@@ -77,6 +78,8 @@ export default function Header({
   filterByGenre,
   sortAnimePage,
   searchAnimePage,
+  selectedYear,
+  setselectedYear,
 }) {
   const [viewOptionsModalState, setViewOptionsModalState] = useState(null);
   const [pageLinkColor, setPageLinkColor] = useState({
@@ -153,6 +156,14 @@ export default function Header({
   function viewOptionsChange(state) {
     let output = null;
     switch (state) {
+      case "Year":
+        output = (
+          <YearDropdown
+            selectedYear={selectedYear}
+            setselectedYear={setselectedYear}
+          />
+        );
+        break;
       case "Filter":
         output = (
           <FilterDropdown
@@ -348,6 +359,16 @@ export default function Header({
           }
         `}
       >
+        <span
+          title="Choose a year"
+          onClick={() =>
+            setViewOptionsModalState((state) =>
+              state === "Year" ? false : "Year"
+            )
+          }
+        >
+          Year
+        </span>
         <span
           title="Filter for anime on current page"
           onClick={() =>

@@ -60,7 +60,7 @@ export default function AnimeCardOptions() {
           grid-auto-flow: column;
           cursor: pointer;
           z-index: 3;
-          & > * {
+          & > svg {
             width: 20px;
             height: 20px;
           }
@@ -78,11 +78,16 @@ export default function AnimeCardOptions() {
     >
       <p
         css={css`
-          width: 100%;
+          width: auto;
           padding-top: 4px;
-          @media (max-width: 1000px) {
-            /* Mobile */
-            display: none;
+          position: absolute;
+          left: 0;
+          transform: translateX(calc(-100% - 10px));
+          display: grid;
+          background: white;
+          place-items: center;
+          @media (max-width: 1600px) {
+            /* laptop */
           }
         `}
         className="card-options__description"
