@@ -2,7 +2,11 @@ import React, { useEffect, useState, useRef } from "react";
 import AnimeCard from "./AnimeCard/AnimeCard";
 import { css } from "@emotion/core";
 
-export default function AnimeCardsList({ seasonData, animeDataReadyState }) {
+export default function AnimeCardsList({
+  seasonData,
+  animeDataReadyState,
+  setAnimeDataReadyState,
+}) {
   //Create dummy data so we get placeholders when the page loads/refreshes if the data isn't ready
   const [seasonDataContainer, setSeasonDataContainer] = useState(
     Array(4).fill({})
@@ -30,6 +34,7 @@ export default function AnimeCardsList({ seasonData, animeDataReadyState }) {
       {seasonDataContainer.map((animeData, index) => {
         return (
           <AnimeCard
+            setAnimeDataReadyState={setAnimeDataReadyState}
             cardIndex={index}
             animeDataReadyState={animeDataReadyState}
             animeData={animeData}

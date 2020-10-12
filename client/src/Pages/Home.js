@@ -19,17 +19,22 @@ export default function Home() {
     //Page has changed so the data isn't ready yet
     setAnimeDataReadyState(false);
     //Set up a listener to get the right season and use that to call the API. Once complete change animeDataReadyState to true
-    getSeasonData(selectedYear, setRawSeasonData, setAnimeDataReadyState);
+    getSeasonData(selectedYear, setRawSeasonData);
     setBgState(getSeasonBGWallpaper(location));
     //Fetch new data when the selected year or page changes
     //This might need to be more restrictive to prevent it being triggered by irrelevent page changes
   }, [location, selectedYear]);
+
+  // useEffect(() => {
+  //   setAnimeDataReadyState(true);
+  // }, [seasonData, animeDataReadyState]);
 
   return (
     <>
       <AnimeCardsList
         animeDataReadyState={animeDataReadyState}
         seasonData={seasonData}
+        setAnimeDataReadyState={setAnimeDataReadyState}
       ></AnimeCardsList>
     </>
   );

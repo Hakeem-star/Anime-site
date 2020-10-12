@@ -39,6 +39,7 @@ export default function AnimeCard({
   animeData,
   animeDataReadyState,
   cardIndex,
+  setAnimeDataReadyState,
 }) {
   //Styles
   const [imageHoverTitleStyles, setImageHoverTitleStyles] = useState({});
@@ -159,6 +160,7 @@ export default function AnimeCard({
     title,
     trailer,
   } = animeData;
+
   useEffect(() => {
     if (animeDataReadyState)
       if (additionalInfoVisibleState)
@@ -196,6 +198,10 @@ export default function AnimeCard({
     }
   }, [galleryPageVisibleState, animeDataReadyState]);
 
+  useEffect(() => {
+    coverImage && setAnimeDataReadyState(true);
+    console.log("YAAY", coverImage);
+  }, [coverImage]);
   return (
     <AnimeCardContext.Provider
       value={{

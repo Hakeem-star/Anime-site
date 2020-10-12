@@ -14,7 +14,6 @@ export default function getSeasonData(
     Axios.get(`/api/seasons/main/${seasonPath}/${year}`)
       .then((res) => {
         setRawSeasonData(res.data);
-        setAnimeDataReadyState(true);
       })
       .catch((err) => {
         console.log(err);
