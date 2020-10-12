@@ -12,6 +12,18 @@ export function aggregateGenres(data) {
   return Array.from(genreSet);
 }
 
+export function filterByYear(year, setData, rawData) {
+  if (year === "All") {
+    setData(rawData);
+  } else {
+    setData(
+      rawData.filter((element) => {
+        return element.seasonYear === year;
+      })
+    );
+  }
+}
+
 export function filterByGenre(genre, setData, rawData) {
   if (genre === "None") {
     setData(rawData);

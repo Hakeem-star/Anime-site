@@ -10,7 +10,6 @@ export default function getSeasonData(
   const matchSeason = (season) => {
     return season.toUpperCase() === seasonPath;
   };
-  console.log("getting");
   if (seasons.some(matchSeason)) {
     Axios.get(`/api/seasons/main/${seasonPath}/${year}`)
       .then((res) => {

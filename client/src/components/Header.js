@@ -75,11 +75,14 @@ const headerStyle = css`
 
 export default function Header({
   aggregatedGenres,
+  filterByYear,
   filterByGenre,
   sortAnimePage,
   searchAnimePage,
   selectedYear,
   setselectedYear,
+  likedSelectedYear,
+  setLikedSelectedYear,
 }) {
   const [viewOptionsModalState, setViewOptionsModalState] = useState(null);
   const [pageLinkColor, setPageLinkColor] = useState({
@@ -161,6 +164,9 @@ export default function Header({
           <YearDropdown
             selectedYear={selectedYear}
             setselectedYear={setselectedYear}
+            filterByYear={filterByYear}
+            likedSelectedYear={likedSelectedYear}
+            setLikedSelectedYear={setLikedSelectedYear}
           />
         );
         break;

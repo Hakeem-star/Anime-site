@@ -159,13 +159,11 @@ export default function AnimeCard({
     title,
     trailer,
   } = animeData;
-
   useEffect(() => {
     if (animeDataReadyState)
       if (additionalInfoVisibleState)
         //Get Anime additional info
         Axios.get(`/api/seasons/additional_info/${id}`).then((res) => {
-          console.log(res.data[0]);
           setAdditionalInfoData(res.data[0]);
         });
   }, [additionalInfoVisibleState, animeDataReadyState]);
@@ -175,7 +173,6 @@ export default function AnimeCard({
       if (recommendationsPageVisibleState)
         //Get Anime Review data
         Axios.get(`/api/seasons/recommendations/${id}`).then((res) => {
-          console.log("CARD", res.data[0].recommendations.nodes);
           setRecommendationsData(res.data[0].recommendations.nodes);
         });
   }, [recommendationsPageVisibleState, animeDataReadyState]);
@@ -192,9 +189,7 @@ export default function AnimeCard({
         );
 
         Axios.get(`/api/gyfcat/anime/${cleanName}`).then((res) => {
-          console.log(res.data);
           setgalleryImages(res.data);
-
           // setExtraTitleContent(<GalleryList>galleryImages</GalleryList>)
         });
       }

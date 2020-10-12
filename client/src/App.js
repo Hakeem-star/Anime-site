@@ -8,7 +8,8 @@ import {
   filterByGenre,
   sortAnimePage,
   searchAnimePage,
-  aggregateGenres,, filterByYear
+  aggregateGenres,
+  filterByYear,
 } from "./utils/headerMethods";
 import Background from "./components/Background";
 import MyLikes from "./Pages/MyLikes";
@@ -41,10 +42,11 @@ export default function App() {
   const [selectedYear, setselectedYear] = useState(() =>
     new Date().getFullYear()
   );
+  const [likedSelectedYear, setLikedSelectedYear] = useState("All");
+
   useEffect(() => {
     //Retrieve liked animes from storage on app mount
     const storedLikes = window.localStorage.getItem("likedAnime");
-    console.log(storedLikes);
     if (!storedLikes) {
       window.localStorage.setItem("likedAnime", JSON.stringify(storedLikes));
     } else {
@@ -64,6 +66,17 @@ export default function App() {
     setAggregatedGenres(aggregateGenres(rawSeasonData));
   }, [rawSeasonData]);
 
+  useEffect(() => {
+    //Whenever we change pages between likes and seasons
+    const seasonPath = (location || window.location).pathname.split("/")[1];
+    console.log(likedSelectedYear, selectedYear);
+    if (seasonPath === "likes") {
+      filterByYear(likedSelectedYear, setSeasonData, rawSeasonData);
+    } else {
+      filterByYear(selectedYear, setSeasonData, rawSeasonData);
+    }
+  }, [location]);
+
   return (
     <>
       <Global styles={GlobalStyle} />
@@ -74,9 +87,11 @@ export default function App() {
       <Header
         selectedYear={selectedYear}
         setselectedYear={setselectedYear}
+        likedSelectedYear={likedSelectedYear}
+        setLikedSelectedYear={setLikedSelectedYear}
         aggregatedGenres={aggregatedGenres}
-        filterByYear={(genre) => {
-          filterByYear(genre, setSeasonData, rawSeasonData);
+        filterByYear={(year) => {
+          filterByYear(year, setSeasonData, rawSeasonData);
         }}
         filterByGenre={(genre) => {
           filterByGenre(genre, setSeasonData, rawSeasonData);
