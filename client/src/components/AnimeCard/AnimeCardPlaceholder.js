@@ -25,6 +25,10 @@ const fadeOut = keyframes`
 const load = keyframes`
 from {
   transform:translateX(-100%);
+  opacity:0
+}
+20%{
+  opacity:1
 }
 90%{
   opacity:1
@@ -40,11 +44,13 @@ export default function AnimeCardPlaceholder({
   animeDataReadyState,
   cardIndex,
 }) {
+  console.log({ animeDataReadyState });
   //Styles
   return (
     <div
       css={[
         css`
+          opacity: 0;
           position: absolute;
           top: 0;
           width: 100%;
@@ -53,6 +59,7 @@ export default function AnimeCardPlaceholder({
           background: white;
           pointer-events: none;
           overflow: hidden;
+          transition: opacity 0.5s;
           &::before {
             content: "";
             display: block;
@@ -70,23 +77,16 @@ export default function AnimeCardPlaceholder({
               /* using the card index to add a slight delay */
             }
             //Fade out when animeData is ready
-            ${!animeDataReadyState
-              ? css`
-                  animation: ${load} 1s cubic-bezier(0.4, 0, 0.2, 1)
-                    ${!animeDataReadyState ? "infinite" : 1} forwards;
-                `
-              : css`
-                  animation: ${fadeOut} 0.5s forwards 0.5s;
-                `}
+            animation: ${load} 1s cubic-bezier(0.4, 0, 0.2, 1) infinite both;
           }
         `,
 
         !animeDataReadyState
           ? css`
-              animation: ${fadeIn} 0.5s;
+              opacity: 1;
             `
           : css`
-              animation: ${fadeOut} 0.5s forwards 0.5s;
+              opacity: 0;
             `,
       ]}
     ></div>

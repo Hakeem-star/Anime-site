@@ -200,7 +200,7 @@ export default function AnimeCard({
 
   useEffect(() => {
     coverImage && setAnimeDataReadyState(true);
-    console.log("YAAY", coverImage);
+    // console.log("YAAY", coverImage);
   }, [coverImage]);
   return (
     <AnimeCardContext.Provider

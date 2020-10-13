@@ -21,7 +21,7 @@ export default function MyLikes() {
       getLikedAnimeData(setRawSeasonData, likedAnime, setAnimeDataReadyState);
     } else {
       setRawSeasonData([]);
-      setAnimeDataReadyState(true);
+      // setAnimeDataReadyState(true);
     }
   }, [likedAnime]);
 
@@ -33,6 +33,7 @@ export default function MyLikes() {
           <AnimeCardsList
             animeDataReadyState={animeDataReadyState}
             seasonData={seasonData}
+            setAnimeDataReadyState={setAnimeDataReadyState}
           />
         </div>
       )}
