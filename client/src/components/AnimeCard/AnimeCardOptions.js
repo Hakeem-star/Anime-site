@@ -40,12 +40,11 @@ export default function AnimeCardOptions() {
 
   const { setLikedAnime, likedAnime } = useContext(seasonsHomePageContext);
 
-  const [addedTocollection, setAddedToCollection] = useState(false);
+  const [addedTocollection, setAddedToCollection] = useState(() => {
+    //set the initial value depending on whether the id of the anime is in the likedAnime list
+    return likedAnime.includes(id);
+  });
   const [optionsDescription, setOptionsDescription] = useState("");
-
-  useEffect(() => {
-    if (likedAnime.includes(id)) setAddedToCollection(true);
-  }, []);
 
   return (
     <div
@@ -184,10 +183,11 @@ export default function AnimeCardOptions() {
           }}
           title="Unlike"
           onClick={() => {
+            //Changes the liked status of the anime
             setAddedToCollection((state) => !state);
             //Click to remove from collection
-            setLikedAnime((state) =>
-              state.filter((stateID) => {
+            setLikedAnime((likedAnime) =>
+              likedAnime.filter((stateID) => {
                 return stateID !== id;
               })
             );
@@ -203,10 +203,10 @@ export default function AnimeCardOptions() {
             setOptionsDescription("");
           }}
           onClick={() => {
+            //Changes the liked status of the anime
             setAddedToCollection((state) => !state);
-            //
             //Click to add to collection
-            setLikedAnime((state) => [id, ...state]);
+            setLikedAnime((likedAnime) => [id, ...likedAnime]);
           }}
         />
       )}

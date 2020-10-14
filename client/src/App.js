@@ -34,14 +34,21 @@ export default function App() {
   const [bgState, setBgState] = useState(
     "/src/images/masaaki-komori-Z8TQv3yKQd4-unsplash.jpg"
   );
-
+  //Raw data from API
   const [rawSeasonData, setRawSeasonData] = useState([]);
+  //Raw data containing all liked anime full Data, created so the year filter always has a backup of Raw anime data to manipulate
+  const [rawLikedSeasonData, setRawLikedSeasonData] = useState([]);
+  //Manipulated data via filter or sort
   const [seasonData, setSeasonData] = useState([]);
+  //Aggregated genres for filter dropdown
   const [aggregatedGenres, setAggregatedGenres] = useState([]);
+  //List of liked Anime Ids
   const [likedAnime, setLikedAnime] = useState([]);
+  //Selected year for the year dropdown
   const [selectedYear, setselectedYear] = useState(() =>
     new Date().getFullYear()
   );
+  //Seleted year for dropdown on liked page
   const [likedSelectedYear, setLikedSelectedYear] = useState("All");
 
   useEffect(() => {
@@ -55,26 +62,15 @@ export default function App() {
   }, []);
 
   useEffect(() => {
-    //Set new likes anime array to storage when added or removed
+    //Set new liked anime array to storage when added or removed
     window.localStorage.setItem("likedAnime", JSON.stringify(likedAnime));
   }, [likedAnime]);
 
   useEffect(() => {
-    //Whenever the raw data changes, update the season data so it's unfiltered
+    //Whenever the raw data changes, update the season data so it's not filtered
     setSeasonData(rawSeasonData);
     setAggregatedGenres(aggregateGenres(rawSeasonData));
   }, [rawSeasonData]);
-
-  useEffect(() => {
-    //Whenever we change pages between likes and seasons
-    const seasonPath = (location || window.location).pathname.split("/")[1];
-    console.log(likedSelectedYear, selectedYear);
-    if (seasonPath === "likes") {
-      filterByYear(likedSelectedYear, setSeasonData, rawSeasonData);
-    } else {
-      filterByYear(selectedYear, setSeasonData, rawSeasonData);
-    }
-  }, [location]);
 
   return (
     <>
@@ -90,7 +86,7 @@ export default function App() {
         setLikedSelectedYear={setLikedSelectedYear}
         aggregatedGenres={aggregatedGenres}
         filterByYear={(year) => {
-          filterByYear(year, setSeasonData, rawSeasonData);
+          filterByYear(year, setRawSeasonData, rawLikedSeasonData);
         }}
         filterByGenre={(genre) => {
           filterByGenre(genre, setSeasonData, rawSeasonData);
@@ -113,6 +109,8 @@ export default function App() {
           setLikedAnime,
           likedAnime,
           selectedYear,
+          rawLikedSeasonData,
+          setRawLikedSeasonData,
         }}
       >
         <section
@@ -129,17 +127,7 @@ export default function App() {
           `}
         >
           <Switch>
-            <Route
-              path="/likes"
-              render={() => (
-                <MyLikes
-                  setBgState={setBgState}
-                  likedAnime={likedAnime}
-                  setRawSeasonData={setRawSeasonData}
-                  seasonData={seasonData}
-                />
-              )}
-            />
+            <Route path="/likes" render={() => <MyLikes />} />
             <Route path="/" render={() => <Home />} />
           </Switch>
         </section>
