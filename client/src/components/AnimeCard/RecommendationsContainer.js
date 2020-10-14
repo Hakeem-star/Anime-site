@@ -83,7 +83,7 @@ export default function RecommendationsContainer({
         {externalLinks.length > 0 ? (
           externalLinks.map((value) => {
             return (
-              <a key={value} href={value.url}>
+              <a key={value.url} href={value.url}>
                 <p>{value.site}</p>
               </a>
             );

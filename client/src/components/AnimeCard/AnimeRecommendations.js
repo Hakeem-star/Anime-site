@@ -4,7 +4,6 @@ import { innerTitleContainerGeneralStyle } from "./styles/innerTitleStyles";
 import PropTypes from "prop-types";
 import RecommendationsContainer from "./RecommendationsContainer";
 export default function AnimeRecommendations({ recommendations }) {
-  console.log(recommendations);
   return (
     <>
       <p
@@ -33,7 +32,7 @@ export default function AnimeRecommendations({ recommendations }) {
           const externalLinks = anime.mediaRecommendation.externalLinks;
           return (
             <RecommendationsContainer
-              key={index}
+              key={title}
               image={image}
               title={title}
               externalLinks={externalLinks}

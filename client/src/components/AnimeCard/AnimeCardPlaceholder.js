@@ -40,11 +40,7 @@ to   {
 }
 `;
 
-export default function AnimeCardPlaceholder({
-  animeDataReadyState,
-  cardIndex,
-}) {
-  console.log({ animeDataReadyState });
+export default function AnimeCardPlaceholder({ animeDataReadyState }) {
   //Styles
   return (
     <div
@@ -73,9 +69,7 @@ export default function AnimeCardPlaceholder({
               #e8e8e8 70%,
               transparent 100%
             );
-             {
-              /* using the card index to add a slight delay */
-            }
+
             //Fade out when animeData is ready
             animation: ${load} 1s cubic-bezier(0.4, 0, 0.2, 1) infinite both;
           }
