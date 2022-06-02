@@ -4,6 +4,14 @@ An anime site inspired by anichart.net, pulling from several APIs; built with Re
 
 Keep up to date on the latest Anime!
 
+I wanted to try a different method of hosting other than Firebase, so I chose Heroku.
+
+As I am using Herokus free tier and it's not a site with a lot of visitors, it might take a while to load up on your first visit.
+
+It now automatically takes you to the page showing the current season depending on the current month.
+
+It will also update the years as well so if you visit in 2021, it will show you the 2021 anime.
+
 Live at - 
 https://hakeems-anime-site.herokuapp.com
 
@@ -11,7 +19,7 @@ https://hakeems-anime-site.herokuapp.com
 
 This website allows you to see the latest Anime, links you to legal streams, offers recommendations & much more!
 
-It also uses local storage to store your liked anime.
+It uses local storage to store your liked anime.
 
 ## To run locally -
 
