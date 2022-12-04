@@ -2,8 +2,8 @@
   "builds": [
     {
       "src": "/server/server.js",
-      "use": "@now/node"
+      "use": "@vercel/node"
     }
   ],
-  "rewrites": [{ "source": "/api/(.*)", "destination": "/server/server.js" }]
+  "rewrites": [{ "source": "/(.*)", "destination": "/server/server.js" }]
 }
