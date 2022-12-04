@@ -13,7 +13,7 @@ It now automatically takes you to the page showing the current season depending 
 It will also update the years as well so if you visit in 2021, it will show you the 2021 anime.
 
 Live at - 
-https://hakeems-anime-site.herokuapp.com
+https://anime-site-hakeem.vercel.app/
 
 [![Anime-Site video](https://media.giphy.com/media/XdCdG5mbJZiKLAhW0q/giphy.gif)](https://media.giphy.com/media/XdCdG5mbJZiKLAhW0q/source.gif)
 
